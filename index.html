@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 10 Online Test Portal - Home</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #ffffff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        nav .logo span {
+            color: #3498db;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        /* Hero / Header Section */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        /* Subject Grid and Cards */
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .subject-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 6px solid #3498db;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+
+        .subject-card .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .subject-card h3 {
+            font-size: 1.6rem;
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }
+
+        .subject-card p {
+            color: #7f8c8d;
+            font-size: 1rem;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        /* Start Button */
+        .btn-start {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn-start:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 20px;
+            margin-top: 80px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Class10<span>Test</span></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Class 10 Online Test Portal</h1>
+        <p>Bihar & CBSE Board exam ki taiyari ke liye sabse behtar mulyankan plateform. Apna subject chunye aur shuru karein!</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2 class="section-title">Apne Subjects Chunein</h2>
+        
+        <div class="subject-grid">
+            
+            <!-- Science Card -->
+            <div class="subject-card" style="border-top-color: #e74c3c;">
+                <div class="icon">🔬</div>
+                <h3>Science (विज्ञान)</h3>
+                <p>Physics, Chemistry aur Biology ke chapter-wise online mock tests.</p>
+                <a href="#" class="btn-start">Start Test</a>
+            </div>
+
+            <!-- Maths Card -->
+            <div class="subject-card" style="border-top-color: #2ecc71;">
+                <div class="icon">📐</div>
+                <h3>Mathematics (गणित)</h3>
+                <p>Algebra, Geometry aur Trigonometry ke objective prashno ka sanchay.</p>
+                <a href="#" class="btn-start">Start Test</a>
+            </div>
+
+            <!-- Social Science Card -->
+            <div class="subject-card" style="border-top-color: #f1c40f;">
+                <div class="icon">🌍</div>
+                <h3>Social Science (SST)</h3>
+                <p>History, Geography, Civics aur Economics ke mahatvapurna objective sawal.</p>
+                <a href="#" class="btn-start">Start Test</a>
+            </div>
+
+            <!-- Hindi Card -->
+            <div class="subject-card" style="border-top-color: #9b59b6;">
+                <div class="icon">✍️</div>
+                <h3>Hindi (हिंदी)</h3>
+                <p>Vyakaran aur textbook par aadharit sabhi mukhya objective test series.</p>
+                <a href="#" class="btn-start">Start Test</a>
+            </div>
+
+            <!-- English Card -->
+            <div class="subject-card" style="border-top-color: #1abc9c;">
+                <div class="icon">📖</div>
+                <h3>English</h3>
+                <p>Grammar rules, comprehension, and literature-based practice papers.</p>
+                <a href="#" class="btn-start">Start Test</a>
+            </div>
+
+            <!-- Sanskrit Card -->
+            <div class="subject-card" style="border-top-color: #e67e22;">
+                <div class="icon">📜</div>
+                <h3>Sanskrit (संस्कृत)</h3>
+                <p>Vyakaran aur pathyapustak ke sabhi anivary MCQ questions.</p>
+                <a href="#" class="btn-start">Start Test</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Class 10 Test Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
