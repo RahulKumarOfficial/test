@@ -2,102 +2,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  <title>Dream Success Classes - Pro Portal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Dream Success Classes - Elite Assessment Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   
   <style>
-    :root { --primary-color: #5c67f2; --accent-color: #ff6b6b; --bg-color: #f0f2f5; --white: #ffffff; --success-color: #2ecc71; --review-color: #f39c12; }
-    body { font-family: 'Poppins', sans-serif; background: var(--bg-color); margin: 0; padding: 0; display: flex; justify-content: center; overflow-x: hidden; }
+    :root { 
+      --primary-color: #2563eb; 
+      --primary-light: #eff6ff;
+      --primary-hover: #1d4ed8;
+      --accent-color: #e11d48; 
+      --bg-color: #f8fafc; 
+      --white: #ffffff; 
+      --success-color: #16a34a; 
+      --review-color: #ea580c; 
+      --unvisited-color: #64748b;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border-color: #e2e8f0;
+      
+      --result-bg: #1e293b; 
+      --result-card-bg: rgba(255, 255, 255, 0.07);
+    }
     
-    .container { width: 98%; max-width: 1200px; background: var(--white); min-height: 100vh; padding: 15px; box-sizing: border-box; position: relative; transition: margin-right 0.3s; }
+    body { 
+      font-family: 'Inter', sans-serif; 
+      background-color: var(--bg-color);
+      background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+      background-size: 24px 24px;
+      margin: 0; padding: 0; 
+      display: flex; justify-content: center; 
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .container { 
+      width: 100%; max-width: 1200px; 
+      background: var(--white); min-height: 100vh; 
+      padding: 12px 24px; box-sizing: border-box; 
+      position: relative; transition: margin-right 0.3s ease; 
+    }
 
-    /* Login Section */
-    #nameInput { text-align: center; padding-top: 50px; display: flex; flex-direction: column; align-items: center; }
-    .category-tag { font-size: 18px; font-weight: 600; color: #2d3436; margin-bottom: 5px; display: block; }
-    h2 { color: var(--primary-color); margin: 0 0 25px 0; font-size: 26px; font-weight: 700; }
-    #studentName { width: 90%; max-width: 400px; padding: 16px; font-size: 16px; border: 2px solid #edf2f7; border-radius: 12px; outline: none; margin-bottom: 20px; text-align: center; }
-    .start-btn { width: 90%; max-width: 400px; padding: 18px; background: var(--primary-color); color: white; border: none; border-radius: 12px; font-size: 18px; font-weight: 600; cursor: pointer; }
+    /* FUTURE AD BANNER CONTAINER STYLE */
+    .future-ad-banner {
+      display: none; 
+      width: 100%;
+      height: 60px;
+      background: #f1f5f9;
+      border: 2px dashed #cbd5e1;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      align-items: center;
+      justify-content: center;
+      color: #94a3b8;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      box-sizing: border-box;
+    }
 
-    /* Header & Top Progress Bar */
+    #nameInput { 
+      text-align: center; padding: 50px 40px; 
+      display: flex; flex-direction: column; align-items: center; 
+      max-width: 460px; margin: 40px auto;
+      border: 1px solid var(--border-color); border-radius: 16px;
+      box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.05);
+    }
+    .category-tag { 
+      font-size: 11px; font-weight: 700; color: var(--primary-color); 
+      margin-bottom: 20px; background: var(--primary-light);
+      padding: 6px 14px; border-radius: 20px; text-transform: uppercase;
+    }
+    h2 { margin: 0 0 30px 0; font-size: 26px; font-weight: 700; }
+    #studentName { 
+      width: 100%; padding: 14px 16px; font-size: 15px; 
+      border: 1px solid #cbd5e1; border-radius: 8px; outline: none; 
+      margin-bottom: 20px; text-align: center; box-sizing: border-box;
+    }
+    
+    .start-btn { 
+      width: 100%; padding: 16px; background: var(--primary-color); 
+      color: white; border: none; border-radius: 8px; 
+      font-size: 15px; font-weight: 600; cursor: pointer;
+    }
+
     #testContainer { display: none; width: 100%; }
-    .top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; padding: 10px; background: #fcfcfc; border-radius: 10px; }
-    .header-right { display: flex; align-items: center; gap: 8px; }
-    #timer { font-size: 14px; font-weight: 600; color: var(--accent-color); background: #fff5f5; padding: 6px 12px; border-radius: 50px; border: 1px solid #ffe3e3; }
-    #paletteToggle { background: var(--primary-color); color: white; border: none; width: 35px; height: 35px; border-radius: 8px; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; }
+    
+    .top-bar { 
+      display: flex; justify-content: space-between; align-items: center; 
+      margin-bottom: 14px; padding: 12px 20px; 
+      background: #f8fafc; border-radius: 12px; border: 1px solid var(--border-color);
+    }
+    .header-right { display: flex; align-items: center; gap: 12px; }
+    #timer { 
+      font-size: 15px; font-weight: 700; color: var(--accent-color); 
+      background: #fef2f2; padding: 8px 16px; border-radius: 8px; 
+    }
+    #paletteToggle { 
+      background: #ffffff; border: 1px solid var(--border-color); 
+      width: 38px; height: 38px; border-radius: 8px; cursor: pointer;
+    }
 
-    #progressBar { width: 100%; background: #f1f3f5; height: 6px; border-radius: 10px; margin-bottom: 20px; overflow: hidden; }
-    #progressBar div { height: 100%; background: var(--primary-color); width: 0%; transition: 0.4s; }
+    .progress-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      background: #f8fafc;
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+    .q-counter-badge {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary-color);
+      background: var(--primary-light);
+      padding: 6px 12px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .progress-bar-container {
+      flex-grow: 1;
+      background: #e2e8f0;
+      height: 8px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--primary-color);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
 
-    /* Question Styling */
-    .question { font-size: 19px; font-weight: 600; margin-bottom: 15px; color: #2d3436; line-height: 1.6; padding: 10px 0; }
-    .q-image { max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 15px; display: block; border: 1px solid #eee; }
-    .options { display: flex; flex-direction: column; gap: 12px; width: 100%; }
-    .option-label { display: flex; align-items: center; padding: 16px; border: 2px solid #f1f3f5; border-radius: 12px; cursor: pointer; font-size: 16px; width: 100%; box-sizing: border-box; transition: 0.2s; background: #fff; }
-    .option-label.selected { border-color: var(--primary-color); background: #f0f3ff; font-weight: 600; }
+    .question-box {
+      margin-bottom: 24px;
+    }
+    .question { 
+      font-size: 19px; 
+      font-weight: 600; 
+      color: var(--text-main); 
+      line-height: 1.6; 
+      margin: 0 0 16px 0;
+    }
+    .q-image { max-width: 100%; height: auto; border-radius: 12px; margin-bottom: 24px; border: 1px solid var(--border-color); }
+    
+    .options { display: flex; flex-direction: column; gap: 12px; width: 100%; counter-reset: option-counter; }
+    .option-label { 
+      display: flex; align-items: center; padding: 16px 20px; 
+      border: 1px solid var(--border-color); border-radius: 8px; 
+      cursor: pointer; font-size: 15px; box-sizing: border-box; 
+      background: #fff; transition: all 0.15s ease;
+    }
+    .option-label::before {
+      counter-increment: option-counter;
+      content: counter(option-counter, uppercase);
+      display: flex; align-items: center; justify-content: center;
+      width: 26px; height: 26px; background: #f1f5f9;
+      border: 1px solid var(--border-color); border-radius: 6px;
+      margin-right: 14px; font-size: 12px; font-weight: 600; color: var(--text-muted);
+    }
+    .option-label:hover { border-color: #cbd5e1; background: #f8fafc; }
+    .option-label.selected { border-color: var(--primary-color); background: var(--primary-light); font-weight: 500; color: var(--primary-color); }
+    .option-label.selected::before { background: var(--primary-color); border-color: var(--primary-color); color: white; }
 
-    /* Buttons Row */
-    .buttons { display: flex; flex-direction: row; flex-wrap: nowrap; gap: 5px; margin-top: 30px; padding-bottom: 20px; width: 100%; justify-content: space-between; }
-    .nav-btn { flex: 1; padding: 15px 5px; border-radius: 10px; border: none; font-weight: 600; cursor: pointer; font-size: 14px; text-align: center; white-space: nowrap; }
-    .prev { background: #e9ecef; color: #495057; }
-    .review-btn { background: var(--review-color); color: white; }
+    /* =========================================================
+       PERFECTLY BALANCED BOTTOM BUTTONS CONSOLE
+       ========================================================= */
+    .buttons { 
+      display: flex; 
+      gap: 8px; 
+      margin-top: 40px; 
+      padding-bottom: 20px; 
+      width: 100%; 
+      box-sizing: border-box;
+    }
+    .nav-btn { 
+      flex: 1; /* Har ek button ko screen par barabar space milegi */
+      padding: 14px 4px; 
+      border-radius: 8px; 
+      border: 1px solid transparent; 
+      font-weight: 600; 
+      cursor: pointer; 
+      font-size: 13.5px; 
+      text-align: center;
+      box-sizing: border-box;
+      transition: all 0.15s ease; 
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      white-space: nowrap; /* Text line break nahi hoga */
+    }
+    
+    .prev { background: #ffffff; color: var(--text-muted); border-color: var(--border-color); }
+    .prev:disabled { opacity: 0.4; cursor: not-allowed; box-shadow: none; }
+    .review-btn { background: #fffbeb; color: #b45309; border-color: #fef3c7; }
     .submit-mid { background: var(--accent-color); color: white; }
-    .next { background: var(--primary-color); color: white; }
+    .next { background: var(--primary-color); color: white; font-weight: 700; }
+    .next:hover { background: #1d4ed8; }
 
-    /* Side Palette */
-    #sidePalette { position: fixed; right: -320px; top: 0; width: 300px; height: 100%; background: white; box-shadow: -5px 0 15px rgba(0,0,0,0.1); transition: 0.3s; z-index: 1001; padding: 20px; box-sizing: border-box; }
-    #sidePalette.open { right: 0; }
-    .palette-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 20px; overflow-y: auto; max-height: 80vh; }
-    .palette-btn { width: 50px; height: 50px; border-radius: 8px; border: 1px solid #ddd; background: #f8f9fa; cursor: pointer; font-weight: 600; display: flex; align-items: center; justify-content: center; }
+    /* Side Palette Hub */
+    #sidePalette { position: fixed; right: -340px; top: 0; width: 320px; height: 100%; background: white; box-shadow: -10px 0 20px rgba(0,0,0,0.03); transition: transform 0.2s ease; z-index: 1001; padding: 24px; box-sizing: border-box; display: flex; flex-direction: column; }
+    #sidePalette.open { transform: translateX(-340px); }
+    
+    .stats-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 16px 0; background: #f8fafc; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); text-align: center; }
+    .stat-box { font-size: 11px; font-weight: 500; color: var(--text-muted); }
+    .stat-box data { display: block; font-size: 16px; font-weight: 700; color: var(--text-main); margin-top: 2px; }
+
+    .palette-legend { display: flex; justify-content: space-between; padding-top: 10px; border-top: 1px solid var(--border-color); font-size: 11px; color: var(--text-muted); text-align: center; }
+    .leg-item span { display: block; width: 16px; height: 16px; border-radius: 4px; margin: 0 auto 4px auto; }
+
+    .palette-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 20px; overflow-y: auto; flex-grow: 1; }
+    .palette-btn { width: 100%; aspect-ratio: 1; border-radius: 8px; border: 1px solid var(--border-color); background: #f8fafc; cursor: pointer; font-weight: 600; font-size: 14px; color: var(--text-muted); }
     .palette-btn.answered { background: var(--success-color); color: white; border-color: var(--success-color); }
     .palette-btn.reviewed { background: var(--review-color); color: white; border-color: var(--review-color); }
-    .palette-btn.current { border: 3px solid var(--primary-color); }
+    .palette-btn.current { border: 2px solid var(--primary-color); color: var(--primary-color); background: var(--primary-light); font-weight: 700; }
 
-    /* PC Side Palette Fix */
     @media (min-width: 1025px) {
-      .container { margin-right: 300px; width: calc(100% - 300px); max-width: 100%; }
-      #sidePalette { right: 0 !important; border-left: 1px solid #eee; box-shadow: none; }
+      .container { margin-right: 320px; width: calc(100% - 320px); max-width: 100%; border-right: 1px solid var(--border-color); padding-top: 16px; }
+      #sidePalette { right: 0 !important; border-left: 1px solid var(--border-color); box-shadow: none; transform: none !important; }
       #sidePalette button[onclick="togglePalette()"] { display: none; }
       #paletteToggle { display: none; }
     }
 
     @media (max-width: 767px) { 
-      .buttons { position: fixed; bottom: 0; left: 0; background: white; padding: 10px 5px; box-shadow: 0 -5px 15px rgba(0,0,0,0.08); z-index: 999; gap: 4px; } 
-      #testContainer { padding-bottom: 100px; } 
+      .container { padding: 12px 16px; }
+      /* Mobile Dynamic Bottom Fixed Action Panel */
+      .buttons { 
+        position: fixed; 
+        bottom: 0; 
+        left: 0; 
+        background: white; 
+        padding: 10px 12px; 
+        box-shadow: 0 -6px 20px rgba(0,0,0,0.06); 
+        z-index: 999; 
+        gap: 8px;
+        margin-top: 0;
+      } 
+      #testContainer { padding-bottom: 90px; } 
     }
 
-    /* Summary Styling */
-    .summary-header { background: #f0f3ff; padding: 15px; border-radius: 12px; margin-bottom: 15px; border: 1px solid #dce3ff; text-align: center; }
-    .summary-box { max-height: 350px; overflow-y: auto; background: #ffffff; padding: 5px; border-radius: 10px; text-align: left; }
-    .sum-item { padding: 12px; margin-bottom: 10px; border-radius: 10px; border: 1px solid #eee; font-size: 13px; }
-    .sum-correct { border-left: 5px solid var(--success-color); background: #f6fffa; }
-    .sum-wrong { border-left: 5px solid var(--accent-color); background: #fffcfc; }
-    .sum-skipped { border-left: 5px solid #ccc; background: #fafafa; }
+    /* Executive Result Card CSS */
+    .summary-header { 
+      background: var(--result-bg); 
+      padding: 24px; border-radius: 12px; margin-bottom: 20px; color: white; text-align: center; 
+    }
+    .summary-header h3 { margin: 0 0 6px 0; font-size: 16px; font-weight: 500; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; }
+    .score-display { font-size: 32px; font-weight: 800; color: #ffffff; margin: 6px 0; letter-spacing: -0.02em; }
+    
+    .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 18px; }
+    .m-card { background: var(--result-card-bg); padding: 12px 4px; border-radius: 8px; font-size: 11px; font-weight: 500; color: #94a3b8; }
+    .m-card b { display: block; font-size: 16px; font-weight: 700; color: #ffffff; margin-top: 2px; }
+
+    .summary-box { max-height: 320px; overflow-y: auto; text-align: left; }
+    .sum-item { padding: 14px 16px; margin-bottom: 10px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 13.5px; line-height: 1.5; }
+    .sum-item b { font-size: 14px; color: var(--text-main); display: inline-block; margin-bottom: 4px; }
+    .sum-correct { border-left: 4px solid var(--success-color); background: #f0fdf4; }
+    .sum-wrong { border-left: 4px solid var(--accent-color); background: #fef2f2; }
+    .sum-skipped { border-left: 4px solid var(--unvisited-color); background: #f8fafc; }
+    
+    .palette-grid::-webkit-scrollbar, .summary-box::-webkit-scrollbar { width: 5px; }
+    .palette-grid::-webkit-scrollbar-thumb, .summary-box::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 10px; }
   </style>
 </head>
 <body>
 
   <div class="container">
+    
+    <div class="future-ad-banner" id="topAdBanner">
+       Banner Advertisement Space
+    </div>
+
     <div id="nameInput">
-      <span class="category-tag">📖 Lucent Online Quiz</span>
-      <h2>Quiz : By Rahul Kumar</h2>
-      <input type="text" id="studentName" placeholder="Student's Name" autocomplete="off">
-      <br>
+      <span class="category-tag">📖 Lucent Online Assessment</span>
+      <h2>Quiz Management Portal</h2>
+      <input type="text" id="studentName" placeholder="Enter Student Full Name" autocomplete="off">
       <button class="start-btn" onclick="startTest()">Start Online Test</button>
     </div>
 
     <div id="testContainer">
       <div class="top-bar">
-        <span id="testTitle" style="font-weight:600; color:#555;">Candidate</span>
+        <span id="testTitle" style="font-weight:600; color: var(--text-main);">Loading User...</span>
         <div class="header-right">
-          <div id="timer">🕒 10:00</div>
+          <div id="timer">🕒 50:00</div>
           <button id="paletteToggle" onclick="togglePalette()">☰</button>
         </div>
       </div>
-      <div id="progressBar"><div></div></div>
-      <div id="quiz"></div>
+      
+      <div class="progress-row">
+         <span class="q-counter-badge" id="qCounter">00/00</span>
+         <div class="progress-bar-container">
+            <div class="progress-fill" id="progressFill"></div>
+         </div>
+      </div>
+      
+      <div id="quizBox">
+         <div class="question-box">
+            <div class="question" id="qText">Loading Question Content...</div>
+         </div>
+         <div id="qImageContainer"></div>
+         <div class="options" id="qOptions"></div>
+      </div>
+      
       <div class="buttons">
         <button class="nav-btn prev" id="prevBtn" onclick="previousQuestion()">Previous</button>
         <button class="nav-btn review-btn" onclick="markReview()">Review</button>
@@ -108,62 +316,69 @@
   </div>
 
   <div id="sidePalette">
-    <button style="width:100%; padding:10px; border:none; background:#eee; border-radius:8px; cursor:pointer;" onclick="togglePalette()">✕ Close Menu</button>
+    <button style="width:100%; padding:12px; border:1px solid var(--border-color); background:#f1f5f9; border-radius:8px; cursor:pointer; font-weight:500;" onclick="togglePalette()">✕ Close Panel</button>
+    <div class="stats-summary">
+      <div class="stat-box">Solved<data id="statSolved" style="color:var(--success-color)">0</data></div>
+      <div class="stat-box">Review<data id="statReview" style="color:var(--review-color)">0</data></div>
+      <div class="stat-box">Remaining<data id="statLeft">0</data></div>
+    </div>
+    <div class="palette-legend">
+      <div class="leg-item"><span style="background:var(--success-color)"></span>Solved</div>
+      <div class="leg-item"><span style="background:var(--review-color)"></span>Review</div>
+      <div class="leg-item"><span style="background:#f8fafc; border:1px solid var(--border-color)"></span>Unsaved</div>
+    </div>
     <div class="palette-grid" id="paletteGrid"></div>
   </div>
 
 <script>
-  /*********************************************************
-   * 1. CONFIGURATION (Yahan se edit karein)
-   *********************************************************/
-  // Apna JSON Link yahan daalein
-  const JSON_LINK = "history-10.json"; 
-  
-  // Test ka Samay (Seconds mein) - 600 = 10 Minute
+  const JSON_LINK = "https://rahulkumarofficial.github.io/test/history-10.json"; 
   let timeLeft = 3000; 
-  
-  // Negative Marking Kitni hogi?
-  const NEGATIVE_MARK = 0.0; 
+  const NEGATIVE_MARK = 0.25; 
 
-  /*********************************************************
-   * 2. MAIN LOGIC (Dhyan se edit karein)
-   *********************************************************/
   let questions = [], currentIdx = 0, userAns = [], reviewList = [], timerId = null, sName = "";
 
   function saveToLocal() {
     const data = { sName, questions, currentIdx, userAns, reviewList, timeLeft, isActive: true };
-    localStorage.setItem('quiz_session_v2', JSON.stringify(data));
+    localStorage.setItem('quiz_session_elite', JSON.stringify(data));
   }
 
   window.onload = function() {
-    const savedData = localStorage.getItem('quiz_session_v2');
+    const savedData = localStorage.getItem('quiz_session_elite');
     if (savedData) {
       const data = JSON.parse(savedData);
       if (data.isActive) {
         Swal.fire({
-          title: 'Resume Test?', text: "Pichla test jari rakhein?", icon: 'info',
-          showCancelButton: true, confirmButtonText: 'Yes', cancelButtonText: 'No'
+          title: 'Resume Assessment?', text: "Pichla session mila hai. Kya aap wahan se jari rakhna chahte hain?", icon: 'info',
+          showCancelButton: true, confirmButtonText: 'Yes, Resume', cancelButtonText: 'No, Start Fresh'
         }).then((result) => {
           if (result.isConfirmed) {
             sName = data.sName; questions = data.questions; currentIdx = data.currentIdx;
             userAns = data.userAns; reviewList = data.reviewList; timeLeft = data.timeLeft;
             launchTest();
-          } else { localStorage.removeItem('quiz_session_v2'); }
+          } else { localStorage.removeItem('quiz_session_elite'); }
         });
       }
     }
+
+    window.addEventListener('keydown', (e) => {
+      if (document.getElementById('testContainer').style.display === 'block') {
+        if (e.key === 'ArrowRight' || e.key.toLowerCase() === 'n') { handleNext(); }
+        else if (e.key === 'ArrowLeft' || e.key.toLowerCase() === 'p') { previousQuestion(); }
+        else if (e.key.toLowerCase() === 'r') { markReview(); }
+      }
+    });
   };
 
   async function startTest() {
     sName = document.getElementById('studentName').value.trim();
-    if(!sName) return Swal.fire('Oops!', 'Pehle apna naam likhein.', 'warning');
+    if(!sName) return Swal.fire('Attention Required', 'Kripya apna poora naam darj karein.', 'warning');
     
-    Swal.fire({title: 'Loading Quiz...', didOpen: () => Swal.showLoading()});
+    Swal.fire({title: 'Initializing Portal...', didOpen: () => Swal.showLoading()});
     
     try {
       const response = await fetch(JSON_LINK);
       const data = await response.json();
-      questions = [...data].sort(() => Math.random() - 0.5); // Shuffle
+      questions = [...data].sort(() => Math.random() - 0.5); 
       userAns = new Array(questions.length).fill(null);
       reviewList = new Array(questions.length).fill(false);
       Swal.close();
@@ -172,7 +387,7 @@
       if (elem.requestFullscreen) { elem.requestFullscreen(); }
       launchTest();
     } catch (e) {
-      Swal.fire('Error', 'Data load nahi ho paya. Link check karein!', 'error');
+      Swal.fire('Connection Error', 'Questions load karne me samasya hui.', 'error');
     }
   }
 
@@ -190,18 +405,26 @@
 
   function loadQuestion() {
     const q = questions[currentIdx];
-    document.getElementById('testTitle').innerText = sName;
-    let imgHtml = q.image ? `<img src="${q.image}" class="q-image">` : '';
-    document.getElementById('quiz').innerHTML = `
-      <div class="question">(${currentIdx+1}/${questions.length}) ${q.question}</div>
-      ${imgHtml}
-      <div class="options">
-        ${q.options.map(o => `<label class="option-label ${userAns[currentIdx] === o ? 'selected' : ''}" onclick="saveAns('${o}', this)"><span>${o}</span></label>`).join('')}
-      </div>`;
+    document.getElementById('testTitle').innerText = `${sName}`;
+    
+    let currentNum = (currentIdx + 1) < 10 ? `0${currentIdx + 1}` : (currentIdx + 1);
+    let totalNum = questions.length < 10 ? `0${questions.length}` : questions.length;
+    
+    document.getElementById('qCounter').innerText = `(${currentNum}/${totalNum})`;
+    document.getElementById('qText').innerText = q.question;
+    
+    let imgContainer = document.getElementById('qImageContainer');
+    imgContainer.innerHTML = q.image ? `<img src="${q.image}" class="q-image">` : '';
+    
+    document.getElementById('qOptions').innerHTML = q.options.map(o => `
+      <label class="option-label ${userAns[currentIdx] === o ? 'selected' : ''}" onclick="saveAns('${o}', this)">
+        <span>${o}</span>
+      </label>`).join('');
     
     document.getElementById('prevBtn').disabled = currentIdx === 0;
     document.getElementById('nextBtn').innerText = currentIdx === questions.length - 1 ? 'Finish' : 'Next';
-    document.getElementById('progressBar').firstElementChild.style.width = `${((currentIdx+1)/questions.length)*100}%`;
+    
+    document.getElementById('progressFill').style.width = `${((currentIdx+1)/questions.length)*100}%`;
     renderPalette();
     saveToLocal();
   }
@@ -215,36 +438,50 @@
     saveToLocal();
   }
 
-  function markReview() { reviewList[currentIdx] = true; saveToLocal(); handleNext(); }
+  function markReview() { 
+    reviewList[currentIdx] = true; 
+    userAns[currentIdx] = null; 
+    saveToLocal(); 
+    handleNext(); 
+  }
+  
   function togglePalette() { document.getElementById('sidePalette').classList.toggle('open'); }
   
   function renderPalette() {
     const grid = document.getElementById('paletteGrid'); grid.innerHTML = "";
+    let solved = 0, reviewed = 0;
+
     questions.forEach((_, i) => {
       const btn = document.createElement('button');
       btn.innerText = i + 1;
       btn.className = 'palette-btn';
       if(i === currentIdx) btn.classList.add('current');
-      if(reviewList[i]) btn.classList.add('reviewed');
-      else if(userAns[i]) btn.classList.add('answered');
+      
+      if(reviewList[i]) { btn.classList.add('reviewed'); reviewed++; }
+      else if(userAns[i]) { btn.classList.add('answered'); solved++; }
+      
       btn.onclick = () => { 
         currentIdx = i; loadQuestion(); 
         if(window.innerWidth <= 1024) togglePalette(); 
       };
       grid.appendChild(btn);
     });
+
+    document.getElementById('statSolved').innerText = solved;
+    document.getElementById('statReview').innerText = reviewed;
+    document.getElementById('statLeft').innerText = questions.length - (solved + reviewed);
   }
 
   function previousQuestion() { if(currentIdx > 0) { currentIdx--; loadQuestion(); } }
   function handleNext() { if(currentIdx < questions.length - 1) { currentIdx++; loadQuestion(); } else { triggerManualSubmit(); } }
 
   function triggerManualSubmit() {
-    Swal.fire({ title: 'Submit Test?', text: 'Kya aap test khatam karna chahte hain?', icon: 'question', showCancelButton: true }).then(r => { if(r.isConfirmed) submitQuiz(); });
+    Swal.fire({ title: 'Finish Assessment?', text: 'Kya aap is online test ko submit karna chahte hain?', icon: 'question', showCancelButton: true, confirmButtonText: 'Yes, Submit' }).then(r => { if(r.isConfirmed) submitQuiz(); });
   }
 
   async function submitQuiz() {
     clearInterval(timerId);
-    localStorage.removeItem('quiz_session_v2');
+    localStorage.removeItem('quiz_session_elite');
     if (document.fullscreenElement) { document.exitFullscreen(); }
 
     let rawScore = 0, correctCount = 0, wrongCount = 0, summaryHtml = "";
@@ -256,31 +493,37 @@
           else { wrongCount++; rawScore -= NEGATIVE_MARK; }
       }
       summaryHtml += `<div class="sum-item ${statusClass}">
-        <b>Q${i+1}: ${q.question}</b><br>
-        Your Ans: ${userAns[i] || 'Skipped'} ${isCorrect ? '✅' : (userAns[i] ? '❌ (-' + NEGATIVE_MARK + ')' : '')}<br>
-        <span style="color:green; font-weight:600;">Correct: ${q.answer}</span>
+        <b>Q.${i+1}: ${q.question}</b><br>
+        Your Ans: <span style="font-weight:600">${userAns[i] || 'Skipped'}</span> ${isCorrect ? '✅' : (userAns[i] ? '❌ (-' + NEGATIVE_MARK + ')' : '')}<br>
+        <span style="color:var(--success-color); font-weight:600;">Correct Answer: ${q.answer}</span>
       </div>`;
     });
 
     let finalScore = rawScore.toFixed(2);
     let totalQ = questions.length;
     let percent = ((rawScore / totalQ) * 100).toFixed(1);
-    if(percent < 0) percent = 0; // Negative percent handle
+    if(percent < 0) percent = 0; 
+    let skippedCount = totalQ - (correctCount + wrongCount);
 
-    await Swal.fire({ title: 'Submitted!', text: 'Result loading...', icon: 'success', timer: 1500, showConfirmButton: false });
+    await Swal.fire({ title: 'Processing Results...', text: 'Report card generate ho rahi hai.', icon: 'success', timer: 1500, showConfirmButton: false });
 
     Swal.fire({
-      title: 'Performance Report', width: '98%',
+      title: 'Performance Evaluation', width: '98%',
       html: `
         <div class="summary-header">
-           <h3 style="margin:0; color:#5c67f2;">${sName}</h3>
-           <p style="font-size:18px; margin:5px 0 0 0;">Score: <b>${finalScore}/${totalQ}</b></p>
-           <p style="font-size:15px; margin:5px 0 0 0;">Result: <b>${percent}%</b></p>
-           <p style="font-size:12px; color:#666;">Correct: ${correctCount} | Wrong: ${wrongCount}</p>
+           <h3>Assessment Report: ${sName}</h3>
+           <div class="score-display">${finalScore} / ${totalQ}</div>
+           
+           <div class="metrics-grid">
+              <div class="m-card">Accuracy<b>${percent}%</b></div>
+              <div class="m-card">Correct<b style="color:#4ade80">${correctCount}</b></div>
+              <div class="m-card">Wrong<b style="color:#f87171">${wrongCount}</b></div>
+              <div class="m-card">Skipped<b style="color:#94a3b8">${skippedCount}</b></div>
+           </div>
         </div>
         <div class="summary-box">${summaryHtml}</div>
       `,
-      confirmButtonText: 'Restart', allowOutsideClick: false
+      confirmButtonText: 'Restart Portal', allowOutsideClick: false
     }).then(() => location.reload());
   }
 </script>
