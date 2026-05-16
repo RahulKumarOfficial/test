@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Dream Success Classes - Elite Assessment Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <style>
+    :root { 
+       --primary-color: #2563eb; 
+       --primary-light: #eff6ff;
+       --primary-hover: #1d4ed8;
+       --accent-color: #e11d48; 
+       --bg-color: #f8fafc; 
+       --white: #ffffff; 
+       --success-color: #16a34a; 
+       --success-light: #f0fdf4;
+       --error-color: #dc2626;
+       --error-light: #fef2f2;
+       --text-main: #0f172a;
+       --text-muted: #475569;
+       --border-color: #e2e8f0;
+       
+       --result-bg: #1e293b; 
+       --result-card-bg: rgba(255, 255, 255, 0.07);
+    }
+    
+    body { 
+       font-family: 'Inter', sans-serif; 
+       background-color: var(--bg-color);
+       background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+       background-size: 24px 24px;
+       margin: 0; padding: 0; 
+       display: flex; justify-content: center; 
+       color: var(--text-main);
+       -webkit-font-smoothing: antialiased;
+    }
+    
+    /* PC Mode me Perfect Balanced Size ke liye Max-Width set kiya hai */
+    .container { 
+       width: 100%; 
+       max-width: 800px; 
+       background: var(--white); 
+       min-height: 100vh; 
+       padding: 24px; 
+       box-sizing: border-box; 
+       position: relative;
+       box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+       border-left: 1px solid var(--border-color);
+       border-right: 1px solid var(--border-color);
+    }
+
+    .future-ad-banner {
+      display: none; 
+      width: 100%;
+      height: 60px;
+      background: #f1f5f9;
+      border: 2px dashed #cbd5e1;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      align-items: center;
+      justify-content: center;
+      color: #94a3b8;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      box-sizing: border-box;
+    }
+
+    #nameInput { 
+       text-align: center; padding: 50px 40px; 
+       display: flex; flex-direction: column; align-items: center; 
+       max-width: 460px; margin: 40px auto;
+       border: 1px solid var(--border-color); border-radius: 16px;
+       box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.05);
+    }
+    .category-tag { 
+       font-size: 11px; font-weight: 700; color: var(--primary-color); 
+       margin-bottom: 20px; background: var(--primary-light);
+       padding: 6px 14px; border-radius: 20px; text-transform: uppercase;
+    }
+    h2 { margin: 0 0 30px 0; font-size: 26px; font-weight: 700; }
+    #studentName { 
+       width: 100%; padding: 14px 16px; font-size: 15px; 
+       border: 1px solid #cbd5e1; border-radius: 8px; outline: none; 
+       margin-bottom: 20px; text-align: center; box-sizing: border-box;
+    }
+    
+    .start-btn { 
+       width: 100%; padding: 16px; background: var(--primary-color); 
+       color: white; border: none; border-radius: 8px; 
+       font-size: 15px; font-weight: 600; cursor: pointer;
+    }
+
+    #testContainer { display: none; width: 100%; }
+    
+    .top-bar { 
+       display: flex; justify-content: space-between; align-items: center; 
+       margin-bottom: 14px; padding: 12px 20px; 
+       background: #f8fafc; border-radius: 12px; border: 1px solid var(--border-color);
+    }
+    #timer { 
+       font-size: 15px; font-weight: 700; color: var(--accent-color); 
+       background: #fef2f2; padding: 8px 16px; border-radius: 8px; 
+    }
+
+    .progress-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      background: #f8fafc;
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+    .q-counter-badge {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary-color);
+      background: var(--primary-light);
+      padding: 6px 12px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .progress-bar-container {
+      flex-grow: 1;
+      background: #e2e8f0;
+      height: 8px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--primary-color);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .question-box {
+      margin-bottom: 24px;
+    }
+    .question { 
+       font-size: 19px; 
+       font-weight: 600; 
+       color: var(--text-main); 
+       line-height: 1.6; 
+       margin: 0 0 16px 0;
+    }
+    .q-image { max-width: 100%; height: auto; border-radius: 12px; margin-bottom: 24px; border: 1px solid var(--border-color); }
+    
+    .options { display: flex; flex-direction: column; gap: 12px; width: 100%; counter-reset: option-counter; }
+    .option-label { 
+       display: flex; align-items: center; padding: 16px 20px; 
+       border: 1px solid var(--border-color); border-radius: 8px; 
+       cursor: pointer; font-size: 15px; box-sizing: border-box; 
+       background: #fff; transition: all 0.15s ease;
+       position: relative;
+    }
+    .option-label::before {
+      counter-increment: option-counter;
+      content: counter(option-counter, uppercase);
+      display: flex; align-items: center; justify-content: center;
+      width: 26px; height: 26px; background: #f1f5f9;
+      border: 1px solid var(--border-color); border-radius: 6px;
+      margin-right: 14px; font-size: 12px; font-weight: 600; color: var(--text-muted);
+    }
+    .option-label:hover { border-color: #cbd5e1; background: #f8fafc; }
+    
+    .options.disabled .option-label {
+      pointer-events: none;
+    }
+
+    .option-label.instant-correct {
+      border-color: var(--success-color) !important;
+      background-color: var(--success-light) !important;
+      color: var(--success-color) !important;
+      font-weight: 600;
+    }
+    .option-label.instant-correct::before {
+      background: var(--success-color) !important;
+      border-color: var(--success-color) !important;
+      color: white !important;
+      content: "✓" !important;
+    }
+
+    .option-label.instant-wrong {
+      border-color: var(--error-color) !important;
+      background-color: var(--error-light) !important;
+      color: var(--error-color) !important;
+      font-weight: 600;
+    }
+    .option-label.instant-wrong::before {
+      background: var(--error-color) !important;
+      border-color: var(--error-color) !important;
+      color: white !important;
+      content: "✕" !important;
+    }
+
+    /* Buttons console layout perfectly updated */
+    .buttons { 
+       display: flex; 
+       gap: 12px; 
+       margin-top: 40px; 
+       padding-bottom: 20px; 
+       width: 100%; 
+       box-sizing: border-box; 
+    }
+    .nav-btn { 
+       flex: 1; 
+       padding: 14px 4px; 
+       border-radius: 8px; 
+       border: 1px solid transparent; 
+       font-weight: 600; 
+       cursor: pointer; 
+       font-size: 14px; 
+       text-align: center;
+       box-sizing: border-box;
+       transition: all 0.15s ease; 
+       box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+       white-space: nowrap; 
+    }
+    
+    .prev { background: #ffffff; color: var(--text-muted); border-color: var(--border-color); }
+    .prev:disabled { opacity: 0.4; cursor: not-allowed; box-shadow: none; }
+    .submit-mid { background: var(--accent-color); color: white; }
+    .next { background: var(--primary-color); color: white; font-weight: 700; }
+    .next:hover { background: #1d4ed8; }
+
+    @media (max-width: 767px) { 
+       .container { padding: 12px 16px; border: none; }
+       .buttons { 
+         position: fixed; 
+         bottom: 0; 
+         left: 0; 
+         background: white; 
+         padding: 10px 12px; 
+         box-shadow: 0 -6px 20px rgba(0,0,0,0.06); 
+         z-index: 999; 
+         gap: 8px;
+         margin-top: 0;
+       } 
+       #testContainer { padding-bottom: 90px; } 
+    }
+
+    .summary-header { 
+       background: var(--result-bg); 
+       padding: 24px; border-radius: 12px; margin-bottom: 20px; color: white; text-align: center; 
+    }
+    .summary-header h3 { margin: 0 0 6px 0; font-size: 16px; font-weight: 500; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; }
+    .score-display { font-size: 32px; font-weight: 800; color: #ffffff; margin: 6px 0; letter-spacing: -0.02em; }
+    
+    .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 18px; }
+    .m-card { background: var(--result-card-bg); padding: 12px 4px; border-radius: 8px; font-size: 11px; font-weight: 500; color: #94a3b8; }
+    .m-card b { display: block; font-size: 16px; font-weight: 700; color: #ffffff; margin-top: 2px; }
+
+    .summary-box { max-height: 320px; overflow-y: auto; text-align: left; }
+    .sum-item { padding: 14px 16px; margin-bottom: 10px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 13.5px; line-height: 1.5; }
+    .sum-item b { font-size: 14px; color: var(--text-main); display: inline-block; margin-bottom: 4px; }
+    .sum-correct { border-left: 4px solid var(--success-color); background: #f0fdf4; }
+    .sum-wrong { border-left: 4px solid var(--accent-color); background: #fef2f2; }
+    .sum-skipped { border-left: 4px solid var(--unvisited-color); background: #f8fafc; }
+    
+    .summary-box::-webkit-scrollbar { width: 5px; }
+    .summary-box::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 10px; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="future-ad-banner" id="topAdBanner">Banner Advertisement Space</div>
+
+    <div id="nameInput">
+      <span class="category-tag">📖 Lucent Online Assessment</span>
+      <h2>Quiz Management Portal</h2>
+      <input type="text" id="studentName" placeholder="Enter Student Full Name" autocomplete="off">
+      <button class="start-btn" onclick="startTest()">Start Online Test</button>
+    </div>
+
+    <div id="testContainer">
+      <div class="top-bar">
+        <span id="testTitle" style="font-weight:600; color: var(--text-main);">Loading User...</span>
+        <div id="timer">🕒 50:00</div>
+      </div>
+      
+      <div class="progress-row"> 
+         <span class="q-counter-badge" id="qCounter">00/00</span>
+         <div class="progress-bar-container">
+            <div class="progress-fill" id="progressFill"></div>
+         </div>
+      </div>
+      
+      <div id="quizBox">
+         <div class="question-box">
+            <div class="question" id="qText">Loading Question Content...</div>
+         </div>
+         <div id="qImageContainer"></div>
+         <div class="options" id="qOptions"></div>
+      </div>
+      
+      <div class="buttons">
+        <button class="nav-btn prev" id="prevBtn" onclick="previousQuestion()">Previous</button>
+        <button class="nav-btn submit-mid" onclick="triggerManualSubmit()">Submit</button>
+        <button class="nav-btn next" id="nextBtn" onclick="handleNext()">Next</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+  const JSON_LINK = "https://rahulkumarofficial.github.io/test/history-10.json"; 
+  let timeLeft = 3000; 
+  const NEGATIVE_MARK = 0.25; 
+
+  let questions = [], currentIdx = 0, userAns = [], timerId = null, sName = "";
+
+  function saveToLocal() {
+    const data = { sName, questions, currentIdx, userAns, timeLeft, isActive: true };
+    localStorage.setItem('quiz_session_elite', JSON.stringify(data));
+  }
+
+  window.onload = function() {
+    const savedData = localStorage.getItem('quiz_session_elite');
+    if (savedData) {
+      const data = JSON.parse(savedData);
+      if (data.isActive) {
+        Swal.fire({
+          title: 'Resume Assessment?', text: "Pichla session mila hai. Kya aap wahan se jari rakhna chahte hain?", icon: 'info',
+          showCancelButton: true, confirmButtonText: 'Yes, Resume', cancelButtonText: 'No, Start Fresh'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            sName = data.sName; questions = data.questions; currentIdx = data.currentIdx;
+            userAns = data.userAns; timeLeft = data.timeLeft;
+            launchTest();
+          } else { localStorage.removeItem('quiz_session_elite'); }
+        });
+      }
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (document.getElementById('testContainer').style.display === 'block') {
+        if (e.key === 'ArrowRight' || e.key.toLowerCase() === 'n') { handleNext(); }
+        else if (e.key === 'ArrowLeft' || e.key.toLowerCase() === 'p') { previousQuestion(); }
+      }
+    });
+  };
+
+  async function startTest() {
+    sName = document.getElementById('studentName').value.trim();
+    if(!sName) return Swal.fire('Attention Required', 'Kripya apna poora naam darj karein.', 'warning');
+    
+    Swal.fire({title: 'Initializing Portal...', didOpen: () => Swal.showLoading()});
+    
+    try {
+      const response = await fetch(JSON_LINK);
+      const data = await response.json();
+      questions = [...data].sort(() => Math.random() - 0.5); 
+      userAns = new Array(questions.length).fill(null);
+      Swal.close();
+      
+      let elem = document.documentElement;
+      if (elem.requestFullscreen) { elem.requestFullscreen(); }
+      launchTest();
+    } catch (e) {
+      Swal.fire('Connection Error', 'Questions load karne me samasya hui.', 'error');
+    }
+  }
+
+  function launchTest() {
+    document.getElementById('nameInput').style.display = 'none';
+    document.getElementById('testContainer').style.display = 'block';
+    loadQuestion();
+    timerId = setInterval(() => {
+      timeLeft--; saveToLocal();
+      let m = Math.floor(timeLeft/60), s = timeLeft%60;
+      document.getElementById('timer').innerText = `🕒 ${m}:${s<10?'0':''}${s}`;
+      if(timeLeft <= 0) submitQuiz();
+    }, 1000);
+  }
+
+  function loadQuestion() {
+    const q = questions[currentIdx];
+    document.getElementById('testTitle').innerText = `${sName}`;
+    
+    let currentNum = (currentIdx + 1) < 10 ? `0${currentIdx + 1}` : (currentIdx + 1);
+    let totalNum = questions.length < 10 ? `0${questions.length}` : questions.length;
+    
+    document.getElementById('qCounter').innerText = `(${currentNum}/${totalNum})`;
+    document.getElementById('qText').innerText = q.question;
+    
+    let imgContainer = document.getElementById('qImageContainer');
+    imgContainer.innerHTML = q.image ? `<img src="${q.image}" class="q-image">` : '';
+    
+    const optionsContainer = document.getElementById('qOptions');
+    optionsContainer.innerHTML = q.options.map(o => `
+      <label class="option-label" data-option="${o}" onclick="checkAnswer('${o}', this)">
+        <span>${o}</span>
+      </label>`).join('');
+    
+    if (userAns[currentIdx] !== null) {
+      optionsContainer.classList.add('disabled');
+      const selectedValue = userAns[currentIdx];
+      const correctValue = q.answer;
+      
+      document.querySelectorAll('.option-label').forEach(label => {
+        const optVal = label.getAttribute('data-option');
+        if (optVal === correctValue) {
+          label.classList.add('instant-correct');
+        } else if (optVal === selectedValue && selectedValue !== correctValue) {
+          label.classList.add('instant-wrong');
+        }
+      });
+    } else {
+      optionsContainer.classList.remove('disabled');
+    }
+
+    document.getElementById('prevBtn').disabled = currentIdx === 0;
+    document.getElementById('nextBtn').innerText = currentIdx === questions.length - 1 ? 'Finish' : 'Next';
+    
+    document.getElementById('progressFill').style.width = `${((currentIdx+1)/questions.length)*100}%`;
+    saveToLocal();
+  }
+
+  function checkAnswer(selectedVal, el) {
+    const q = questions[currentIdx];
+    const optionsContainer = document.getElementById('qOptions');
+    
+    if (optionsContainer.classList.contains('disabled')) return;
+    optionsContainer.classList.add('disabled');
+    
+    userAns[currentIdx] = selectedVal;
+    
+    if (selectedVal === q.answer) {
+      el.classList.add('instant-correct');
+    } else {
+      el.classList.add('instant-wrong');
+      document.querySelectorAll('.option-label').forEach(label => {
+        if (label.getAttribute('data-option') === q.answer) {
+          label.classList.add('instant-correct');
+        }
+      });
+    }
+    saveToLocal();
+  }
+
+  function previousQuestion() { if(currentIdx > 0) { currentIdx--; loadQuestion(); } }
+  function handleNext() { if(currentIdx < questions.length - 1) { currentIdx++; loadQuestion(); } else { triggerManualSubmit(); } }
+
+  function triggerManualSubmit() {
+    Swal.fire({ title: 'Finish Assessment?', text: 'Kya aap is online test ko submit karna chahte hain?', icon: 'question', showCancelButton: true, confirmButtonText: 'Yes, Submit' }).then(r => { if(r.isConfirmed) submitQuiz(); });
+  }
+
+  async function submitQuiz() {
+    clearInterval(timerId);
+    localStorage.removeItem('quiz_session_elite');
+    if (document.fullscreenElement) { document.exitFullscreen(); }
+
+    let rawScore = 0, correctCount = 0, wrongCount = 0, summaryHtml = "";
+    questions.forEach((q, i) => {
+      let isCorrect = userAns[i] === q.answer;
+      let statusClass = isCorrect ? 'sum-correct' : (userAns[i] ? 'sum-wrong' : 'sum-skipped');
+      if(userAns[i]) {
+          if(isCorrect) { correctCount++; rawScore += 1; }
+          else { wrongCount++; rawScore -= NEGATIVE_MARK; }
+      }
+      summaryHtml += `<div class="sum-item ${statusClass}">
+        <b>Q.${i+1}: ${q.question}</b><br>
+        Your Ans: <span style="font-weight:600">${userAns[i] || 'Skipped'}</span> ${isCorrect ? '✅' : (userAns[i] ? '❌ (-' + NEGATIVE_MARK + ')' : '')}<br>
+        <span style="color:var(--success-color); font-weight:600;">Correct Answer: ${q.answer}</span>
+      </div>`;
+    });
+
+    let finalScore = rawScore.toFixed(2);
+    let totalQ = questions.length;
+    let percent = ((rawScore / totalQ) * 100).toFixed(1);
+    if(percent < 0) percent = 0; 
+    let skippedCount = totalQ - (correctCount + wrongCount);
+
+    await Swal.fire({ title: 'Processing Results...', text: 'Report card generate ho rahi hai.', icon: 'success', timer: 1500, showConfirmButton: false });
+
+    Swal.fire({
+      title: 'Performance Evaluation', width: '98%',
+      html: `
+        <div class="summary-header">
+           <h3>Assessment Report: ${sName}</h3>
+           <div class="score-display">${finalScore} / ${totalQ}</div>
+           
+           <div class="metrics-grid">
+              <div class="m-card">Accuracy<b>${percent}%</b></div>
+              <div class="m-card">Correct<b style="color:#4ade80">${correctCount}</b></div>
+              <div class="m-card">Wrong<b style="color:#f87171">${wrongCount}</b></div>
+              <div class="m-card">Skipped<b style="color:#94a3b8">${skippedCount}</b></div>
+           </div>
+        </div>
+        <div class="summary-box">${summaryHtml}</div>
+      `,
+      confirmButtonText: 'Restart Portal', allowOutsideClick: false
+    }).then(() => location.reload());
+  }
+</script>
+</body>
+</html>
