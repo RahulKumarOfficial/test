@@ -1,0 +1,26 @@
+[
+  {
+    "question": "इटली एवं जर्मनी वर्तमान में किस महादेश के अंतर्गत आते हैं",
+    "image": "", 
+    "options": ["एशिया", "यूरोप", "अफ्रीका", "ऑस्ट्रेलिया"],
+    "answer": "यूरोप"
+  },
+  {
+    "question": "फ्रांस में किस शासक वंश की पुनर्स्थापना वियना कांग्रेस द्वारा की गई थी",
+    "image": "https://tinyurl.com/githubtest12",
+    "options": ["हैब्सबर्ग", "आलिया वंश", "बूर्बो वंश", "जार शाही"],
+    "answer": "बूर्बो वंश"
+  },
+  {
+    "question": "मेजिनी का संबंध किस संगठन से था",
+    "image": "https://rahulkumarofficial.github.io/test/images/mazzini.jpg",
+    "options": ["लाल सेना", "कार्बोनरी", "फ़िलिक हेटारिया", "डाइट"],
+    "answer": "कार्बोनरी"
+  },
+  {
+    "question": "दिए गए चित्र में पहचानिए कि यह कौन सा यंत्र है?",
+    "image": "https://rahulkumarofficial.github.io/test/images/monalisa.jpg",
+    "options": ["ऑप्शन ए", "ऑप्शन बी", "ऑप्शन सी", "ऑप्शन डी"],
+    "answer": "ऑप्शन ए"
+  }
+]
