@@ -1,1 +1,792 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Dream Success Classes - Elite Assessment Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <style>
+    /* GLOBAL RESET SAFE FOR INTEGRATION */
+    body { 
+      font-family: 'Inter', sans-serif; 
+      background-color: #f8fafc;
+      background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+      background-size: 24px 24px;
+      margin: 0; padding: 0; 
+      display: flex; justify-content: center; 
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* LOCALIZED VARIABLES FOR THE APPS - PROTECTS YOUR MAIN WEBSITE DESIGN */
+    .quiz-wrapper, .swal2-container {
+      --primary-color: #2563eb; 
+      --primary-light: #eff6ff;
+      --primary-hover: #1d4ed8;
+      --accent-color: #e11d48; 
+      --bg-color: #f8fafc; 
+      --white: #ffffff; 
+      --success-color: #16a34a; 
+      --review-color: #ea580c; 
+      --unvisited-color: #64748b;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border-color: #e2e8f0;
+      --result-bg: #1e293b; 
+      --result-card-bg: rgba(255, 255, 255, 0.12);
+    }
+
+    .quiz-wrapper {
+      color: var(--text-main);
+      width: 100%;
+    }
+    
+    .container { 
+      width: 100%; max-width: 1200px; 
+      background: var(--white); min-height: 100vh; 
+      padding: 8px 16px; box-sizing: border-box; 
+      position: relative; transition: margin-right 0.3s ease; 
+    }
+
+    /* FUTURE AD BANNER - COMPACT HEIGHT FOR MOBILE */
+    .future-ad-banner {
+      display: none; 
+      width: 100%;
+      height: 50px;
+      background: #f1f5f9;
+      border: 1px dashed #cbd5e1;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      align-items: center;
+      justify-content: center;
+      color: #94a3b8;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      box-sizing: border-box;
+    }
+
+    #nameInput { 
+      text-align: center; padding: 40px 24px; 
+      display: flex; flex-direction: column; align-items: center; 
+      max-width: 400px; margin: 40px auto;
+      border: 1px solid var(--border-color); border-radius: 12px;
+      box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.05);
+    }
+    .category-tag { 
+      font-size: 11px; font-weight: 700; color: var(--primary-color); 
+      margin-bottom: 16px; background: var(--primary-light);
+      padding: 4px 12px; border-radius: 20px; text-transform: uppercase;
+    }
+    h2 { margin: 0 0 20px 0; font-size: 22px; font-weight: 700; color: var(--text-main); }
+    #studentName { 
+      width: 100%; padding: 12px 14px; font-size: 14px; 
+      border: 1px solid #cbd5e1; border-radius: 6px; outline: none; 
+      margin-bottom: 16px; text-align: center; box-sizing: border-box;
+    }
+    
+    .start-btn { 
+      width: 100%; padding: 14px; background: var(--primary-color); 
+      color: white; border: none; border-radius: 6px; 
+      font-size: 14px; font-weight: 600; cursor: pointer;
+    }
+
+    #testContainer { display: none; width: 100%; }
+    
+    /* COMPACT TOP BAR */
+    .top-bar { 
+      display: flex; justify-content: space-between; align-items: center; 
+      margin-bottom: 8px; padding: 8px 14px; 
+      background: #f8fafc; border-radius: 8px; border: 1px solid var(--border-color);
+    }
+    .header-right { display: flex; align-items: center; gap: 8px; }
+    #timer { 
+      font-size: 14px; font-weight: 700; color: var(--accent-color); 
+      background: #fef2f2; padding: 6px 12px; border-radius: 6px; 
+    }
+    #paletteToggle { 
+      background: #ffffff; border: 1px solid var(--border-color); 
+      width: 34px; height: 34px; border-radius: 6px; cursor: pointer;
+      color: var(--text-main);
+    }
+
+    /* COMPACT SUBJECT NAV TABS */
+    .subject-tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 8px;
+      overflow-x: auto;
+      padding: 2px 0;
+      border-bottom: 1px solid var(--border-color);
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .subject-tabs::-webkit-scrollbar { display: none; }
+    
+    .subject-tab {
+      padding: 6px 12px;
+      background: #f1f5f9;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .subject-tab .q-count-dot {
+      font-size: 10px;
+      font-weight: 500;
+      color: #64748b;
+      background: #e2e8f0;
+      padding: 1px 4px;
+      border-radius: 4px;
+    }
+    .subject-tab.active {
+      background: var(--primary-color);
+      color: var(--white);
+      border-color: var(--primary-color);
+    }
+    .subject-tab.active .q-count-dot {
+      background: rgba(255, 255, 255, 0.2);
+      color: var(--white);
+    }
+
+    /* ULTRA COMPACT PROGRESS ROW */
+    .progress-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      background: #f8fafc;
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+    }
+    .q-counter-badge {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary-color);
+      background: var(--primary-light);
+      padding: 4px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .progress-bar-container {
+      flex-grow: 1;
+      background: #e2e8f0;
+      height: 6px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--primary-color);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    /* OPTIMIZED QUESTION BOX HEIGHT AND RESPONSIVE IMAGES */
+    .question-box { margin-bottom: 12px; }
+    .question { 
+      font-size: 17px; 
+      font-weight: 600; 
+      color: var(--text-main); 
+      line-height: 1.5; 
+      margin: 0;
+    }
+    
+    /* MAIN EXAM CONTAINER IMAGES STYLING FROM JSON */
+    .q-image { 
+      display: block;
+      max-width: 100%; 
+      max-height: 250px; 
+      object-fit: contain;
+      border-radius: 8px; 
+      margin: 12px 0; 
+      border: 1px solid var(--border-color); 
+      background: #fff;
+    }
+    
+    /* COMPACT OPTIONS HEIGHT AND GAPS */
+    .options { display: flex; flex-direction: column; gap: 8px; width: 100%; counter-reset: option-counter; }
+    .option-label { 
+      display: flex; align-items: center; padding: 11px 14px; 
+      border: 1px solid var(--border-color); border-radius: 8px; 
+      cursor: pointer; font-size: 14px; box-sizing: border-box; 
+      background: #fff; transition: all 0.15s ease;
+      color: var(--text-main);
+    }
+    .option-label::before {
+      counter-increment: option-counter;
+      content: counter(option-counter, uppercase);
+      display: flex; align-items: center; justify-content: center;
+      width: 22px; height: 22px; background: #f1f5f9;
+      border: 1px solid var(--border-color); border-radius: 4px;
+      margin-right: 12px; font-size: 11px; font-weight: 600; color: var(--text-muted);
+      flex-shrink: 0;
+    }
+    .option-label:hover { border-color: #cbd5e1; background: #f8fafc; }
+    .option-label.selected { border-color: var(--primary-color); background: var(--primary-light); font-weight: 500; color: var(--primary-color); }
+    .option-label.selected::before { background: var(--primary-color); border-color: var(--primary-color); color: white; }
+
+    /* BUTTONS CONSOLE MARGIN ADJUSTMENTS */
+    .buttons { 
+      display: flex; 
+      gap: 6px; 
+      margin-top: 24px; 
+      padding-bottom: 12px; 
+      width: 100%; 
+      box-sizing: border-box;
+    }
+    .nav-btn { 
+      flex: 1; 
+      padding: 12px 2px; 
+      border-radius: 6px; 
+      border: 1px solid transparent; 
+      font-weight: 600; 
+      cursor: pointer; 
+      font-size: 13px; 
+      text-align: center;
+      box-sizing: border-box;
+      transition: all 0.15s ease; 
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      white-space: nowrap; 
+    }
+    
+    .prev { background: #ffffff; color: var(--text-muted); border-color: var(--border-color); }
+    .prev:disabled { opacity: 0.4; cursor: not-allowed; box-shadow: none; }
+    .review-btn { background: #fffbeb; color: #b45309; border-color: #fef3c7; }
+    .submit-mid { background: var(--accent-color); color: white; }
+    .next { background: var(--primary-color); color: white; font-weight: 700; }
+    .next:hover { background: #1d4ed8; }
+
+    /* Side Palette Hub */
+    #sidePalette { position: fixed; right: -340px; top: 0; width: 320px; height: 100%; background: white; box-shadow: -10px 0 20px rgba(0,0,0,0.03); transition: transform 0.2s ease; z-index: 1001; padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; }
+    #sidePalette.open { transform: translateX(-340px); }
+    
+    .stats-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin: 12px 0; background: #f8fafc; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); text-align: center; }
+    .stat-box { font-size: 11px; font-weight: 500; color: var(--text-muted); }
+    .stat-box data { display: block; font-size: 15px; font-weight: 700; color: var(--text-main); margin-top: 2px; }
+
+    .palette-legend { display: flex; justify-content: space-between; padding-top: 8px; border-top: 1px solid var(--border-color); font-size: 11px; color: var(--text-muted); text-align: center; }
+    .leg-item span { display: block; width: 14px; height: 14px; border-radius: 3px; margin: 0 auto 4px auto; }
+
+    .palette-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 16px; overflow-y: auto; flex-grow: 1; }
+    .palette-btn { width: 100%; aspect-ratio: 1; border-radius: 6px; border: 1px solid var(--border-color); background: #f8fafc; cursor: pointer; font-weight: 600; font-size: 13px; color: var(--text-muted); }
+    .palette-btn.answered { background: var(--success-color); color: white; border-color: var(--success-color); }
+    .palette-btn.reviewed { background: var(--review-color); color: white; border-color: var(--review-color); }
+    .palette-btn.current { border: 2px solid var(--primary-color); color: var(--primary-color); background: var(--primary-light); font-weight: 700; }
+
+    @media (min-width: 1025px) {
+      .container { margin-right: 320px; width: calc(100% - 320px); max-width: 100%; border-right: 1px solid var(--border-color); padding-top: 12px; }
+      #sidePalette { right: 0 !important; border-left: 1px solid var(--border-color); box-shadow: none; transform: none !important; }
+      #sidePalette button[onclick="togglePalette()"] { display: none; }
+      #paletteToggle { display: none; }
+    }
+
+    @media (max-width: 767px) { 
+      .container { padding: 8px 12px; }
+      .buttons { 
+        position: fixed; 
+        bottom: 0; 
+        left: 0; 
+        background: white; 
+        padding: 8px 12px; 
+        box-shadow: 0 -6px 20px rgba(0,0,0,0.06); 
+        z-index: 999; 
+        gap: 6px;
+        margin-top: 0;
+      } 
+      #testContainer { padding-bottom: 75px; } 
+    }
+
+    /* =========================================================
+       COLOURFUL EVALUATION REPORT CARD STYLES (SWEETALERT FIX)
+       ========================================================= */
+    .swal2-html-container {
+      text-align: left !important;
+      color: var(--text-main) !important;
+    }
+    
+    .summary-header { 
+      background: var(--result-bg) !important; 
+      padding: 16px; border-radius: 10px; margin-bottom: 12px; color: white !important; text-align: center; 
+    }
+    .summary-header h3 { margin: 0 0 4px 0; font-size: 13px; font-weight: 500; color: #94a3b8 !important; text-transform: uppercase; letter-spacing: 0.05em; }
+    .score-display { font-size: 28px; font-weight: 800; color: #ffffff !important; margin: 2px 0; letter-spacing: -0.02em; }
+    
+    .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 10px; }
+    .m-card { background: var(--result-card-bg) !important; padding: 8px 2px; border-radius: 6px; font-size: 10px; font-weight: 500; color: #cbd5e1 !important; text-align: center; }
+    .m-card b { display: block; font-size: 14px; font-weight: 700; color: #ffffff !important; margin-top: 2px; }
+
+    .section-result-title { 
+      font-size: 13px; font-weight: 700; color: var(--text-main) !important; text-align: left; 
+      margin: 12px 0 6px 0; padding-left: 6px; border-left: 3px solid var(--primary-color); 
+    }
+    .subject-result-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-bottom: 8px; }
+    
+    .sub-report-card { background: #f8fafc !important; border: 1px solid var(--border-color) !important; border-radius: 6px; padding: 8px 10px; text-align: left; cursor: pointer; transition: all 0.15s ease; }
+    .sub-report-card:hover { border-color: #cbd5e1 !important; background: #f1f5f9 !important; }
+    
+    .sub-report-card.selected-sub-card { 
+      border-color: var(--primary-color) !important; 
+      background: var(--primary-light) !important; 
+      box-shadow: 0 0 0 1px var(--primary-color) !important; 
+    }
+    .sub-report-card h4 { margin: 0 0 2px 0; font-size: 12px; font-weight: 700; color: var(--text-main) !important; text-transform: uppercase;}
+    .sub-report-card.selected-sub-card h4 { color: var(--primary-color) !important; }
+    .sub-report-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; font-size: 10.5px; color: var(--text-muted) !important; }
+    .sub-report-stats span b { color: var(--text-main) !important; }
+
+    .summary-box { max-height: 240px; overflow-y: auto; text-align: left; margin-top: 8px; padding-right: 4px; }
+    
+    /* VIBRANT BACKGROUNDS FOR ANSWERS ANALYSIS */
+    .sum-item { padding: 10px 12px; margin-bottom: 6px; border-radius: 6px; border: 1px solid var(--border-color) !important; font-size: 12.5px; line-height: 1.4; display: none; }
+    .sum-item b { font-size: 13px; color: var(--text-main) !important; display: inline-block; margin-bottom: 2px; }
+    
+    .sum-correct { border-left: 5px solid var(--success-color) !important; background: #f0fdf4 !important; color: #166534 !important; }
+    .sum-correct b { color: #14532d !important; }
+    .sum-wrong { border-left: 5px solid var(--accent-color) !important; background: #fef2f2 !important; color: #991b1b !important; }
+    .sum-wrong b { color: #7f1d1d !important; }
+    .sum-skipped { border-left: 5px solid var(--unvisited-color) !important; background: #f8fafc !important; color: #475569 !important; }
+    .sum-skipped b { color: #1e293b !important; }
+    
+    /* RESULT CARD IMAGES STYLING FROM JSON URLs */
+    .result-q-image {
+      display: block;
+      max-width: 180px;
+      max-height: 110px;
+      object-fit: contain;
+      border-radius: 6px;
+      margin: 8px 0;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      background: #fff;
+    }
+
+    /* RESTART PORTAL PRESTIGE BUTTON */
+    .swal2-styled.swal2-confirm {
+      background-color: var(--primary-color) !important;
+      font-size: 14px !important;
+      font-weight: 600 !important;
+      padding: 12px 32px !important;
+      border-radius: 6px !important;
+    }
+
+    .palette-grid::-webkit-scrollbar, .summary-box::-webkit-scrollbar { width: 4px; }
+    .palette-grid::-webkit-scrollbar-thumb, .summary-box::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 10px; }
+  </style>
+</head>
+<body>
+
+<div class="quiz-wrapper">
+  <div class="container">
+    
+    <div class="future-ad-banner" id="topAdBanner">
+       Banner Advertisement Space
+    </div>
+
+    <div id="nameInput">
+      <span class="category-tag">📖 Lucent Online Assessment</span>
+      <h2>Quiz Management Portal</h2>
+      <input type="text" id="studentName" placeholder="Enter Student Full Name" autocomplete="off">
+      <button class="start-btn" onclick="startTest()">Start Online Test</button>
+    </div>
+
+    <div id="testContainer">
+      <div class="top-bar">
+        <span id="testTitle" style="font-weight:600;">Loading User...</span>
+        <div class="header-right">
+          <div id="timer">🕒 50:00</div>
+          <button id="paletteToggle" onclick="togglePalette()">☰</button>
+        </div>
+      </div>
+      
+      <div class="subject-tabs" id="subjectTabsContainer"></div>
+      
+      <div class="progress-row">
+         <span class="q-counter-badge" id="qCounter">00/00</span>
+         <div class="progress-bar-container">
+            <div class="progress-fill" id="progressFill"></div>
+         </div>
+      </div>
+      
+      <div id="quizBox">
+         <div class="question-box">
+            <div class="question" id="qText">Loading Question Content...</div>
+         </div>
+         <div id="qImageContainer"></div>
+         <div class="options" id="qOptions"></div>
+      </div>
+      
+      <div class="buttons">
+        <button class="nav-btn prev" id="prevBtn" onclick="previousQuestion()">Previous</button>
+        <button class="nav-btn review-btn" onclick="markReview()">Review</button>
+        <button class="nav-btn submit-mid" onclick="triggerManualSubmit()">Submit</button>
+        <button class="nav-btn next" id="nextBtn" onclick="handleNext()">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="sidePalette">
+    <button style="width:100%; padding:10px; border:1px solid var(--border-color); background:#f1f5f9; border-radius:6px; cursor:pointer; font-weight:500; font-size:13px; color:var(--text-main);" onclick="togglePalette()">✕ Close Panel</button>
+    <div class="stats-summary">
+      <div class="stat-box">Solved<data id="statSolved" style="color:var(--success-color)">0</data></div>
+      <div class="stat-box">Review<data id="statReview" style="color:var(--review-color)">0</data></div>
+      <div class="stat-box">Remaining<data id="statLeft">0</data></div>
+    </div>
+    <div class="palette-legend">
+      <div class="leg-item"><span style="background:var(--success-color)"></span>Solved</div>
+      <div class="leg-item"><span style="background:var(--review-color)"></span>Review</div>
+      <div class="leg-item"><span style="background:#f8fafc; border:1px solid var(--border-color)"></span>Unsaved</div>
+    </div>
+    <div class="palette-grid" id="paletteGrid"></div>
+  </div>
+</div>
+
+<script>
+  const SUBJECT_CONFIG = {
+    "Reasoning": "https://rahulkumarofficial.github.io/test/history-10.json",
+    "Mathematics": "https://rahulkumarofficial.github.io/test/history-10.json", 
+    "G.K / G.S": "https://rahulkumarofficial.github.io/test/history-10.json",   
+    "Hindi / English": "https://rahulkumarofficial.github.io/test/history-10.json" 
+  };
+
+  let timeLeft = 3000; 
+  const NEGATIVE_MARK = 0.25; 
+
+  let questions = [], currentIdx = 0, userAns = [], reviewList = [], timerId = null, sName = "";
+  let subjectOrder = Object.keys(SUBJECT_CONFIG);
+  let subjectCounts = {}; 
+
+  function saveToLocal() {
+    const data = { sName, questions, currentIdx, userAns, reviewList, timeLeft, isActive: true };
+    localStorage.setItem('quiz_session_elite', JSON.stringify(data));
+  }
+
+  window.onload = function() {
+    const savedData = localStorage.getItem('quiz_session_elite');
+    if (savedData) {
+      const data = JSON.parse(savedData);
+      if (data.isActive) {
+        Swal.fire({
+          title: 'Resume Assessment?', text: "Pichla session mila hai. Kya aap wahan se jari rakhna chahte hain?", icon: 'info',
+          showCancelButton: true, confirmButtonText: 'Yes, Resume', cancelButtonText: 'No, Start Fresh'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            sName = data.sName; questions = data.questions; currentIdx = data.currentIdx;
+            userAns = data.userAns; reviewList = data.reviewList; timeLeft = data.timeLeft;
+            calculateCounts();
+            launchTest();
+          } else { localStorage.removeItem('quiz_session_elite'); }
+        });
+      }
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (document.getElementById('testContainer').style.display === 'block') {
+        if (e.key === 'ArrowRight' || e.key.toLowerCase() === 'n') { handleNext(); }
+        else if (e.key === 'ArrowLeft' || e.key.toLowerCase() === 'p') { previousQuestion(); }
+        else if (e.key.toLowerCase() === 'r') { markReview(); }
+      }
+    });
+  };
+
+  function calculateCounts() {
+    subjectCounts = {};
+    questions.forEach(q => {
+      subjectCounts[q.associatedSubject] = (subjectCounts[q.associatedSubject] || 0) + 1;
+    });
+  }
+
+  function jumpToSubjectTab(subName) {
+    let targetIdx = questions.findIndex(q => q.associatedSubject === subName);
+    if(targetIdx !== -1) {
+      currentIdx = targetIdx;
+      loadQuestion();
+    }
+  }
+
+  function renderSubjectTabs() {
+    const container = document.getElementById('subjectTabsContainer');
+    let currentSub = questions[currentIdx]?.associatedSubject;
+    
+    container.innerHTML = subjectOrder.map(sub => {
+      let totalQ = subjectCounts[sub] || 0;
+      return `
+        <div class="subject-tab ${sub === currentSub ? 'active' : ''}" onclick="jumpToSubjectTab('${sub}')">
+          <span>${sub}</span>
+          <span class="q-count-dot">${totalQ} Q</span>
+        </div>
+      `;
+    }).join('');
+
+    const activeTab = container.querySelector('.subject-tab.active');
+    if (activeTab) {
+      container.scrollTo({
+        left: activeTab.offsetLeft - container.offsetWidth / 2 + activeTab.offsetWidth / 2,
+        behavior: 'smooth'
+      });
+    }
+  }
+
+  async function startTest() {
+    sName = document.getElementById('studentName').value.trim();
+    if(!sName) return Swal.fire('Attention Required', 'Kripya apna poora naam darj karein.', 'warning');
+    
+    Swal.fire({title: 'Loading Exam Papers...', text: 'Sabhi subjects ke questions fetch ho rahe hain.', didOpen: () => Swal.showLoading()});
+    
+    try {
+      questions = []; 
+      for(let subName of subjectOrder) {
+        let url = SUBJECT_CONFIG[subName];
+        let response = await fetch(url);
+        let data = await response.json();
+        let processedData = data.map(q => {
+          return { ...q, associatedSubject: subName };
+        });
+        questions = [...questions, ...processedData];
+      }
+
+      if(questions.length === 0) throw new Error("No questions found");
+
+      calculateCounts();
+      userAns = new Array(questions.length).fill(null);
+      reviewList = new Array(questions.length).fill(false);
+      Swal.close();
+      
+      let elem = document.documentElement;
+      if (elem.requestFullscreen) { elem.requestFullscreen(); }
+      launchTest();
+    } catch (e) {
+      Swal.fire('Connection Error', 'Questions load karne me samasya hui. Kripya URL check karein.', 'error');
+    }
+  }
+
+  function launchTest() {
+    document.getElementById('nameInput').style.display = 'none';
+    document.getElementById('testContainer').style.display = 'block';
+    loadQuestion();
+    timerId = setInterval(() => {
+      timeLeft--; saveToLocal();
+      let m = Math.floor(timeLeft/60), s = timeLeft%60;
+      document.getElementById('timer').innerText = `🕒 ${m}:${s<10?'0':''}${s}`;
+      if(timeLeft <= 0) submitQuiz();
+    }, 1000);
+  }
+
+  function loadQuestion() {
+    const q = questions[currentIdx];
+    document.getElementById('testTitle').innerText = `${sName}`;
+    
+    let currentNum = (currentIdx + 1) < 10 ? `0${currentIdx + 1}` : (currentIdx + 1);
+    let totalNum = questions.length < 10 ? `0${questions.length}` : questions.length;
+    
+    document.getElementById('qCounter').innerText = `(${currentNum}/${totalNum})`;
+    
+    let subIndicator = `<span style="color:var(--primary-color); font-size:11px; font-weight:700; display:block; margin-bottom:2px; text-transform:uppercase; letter-spacing:0.03em;">SECTION: ${q.associatedSubject}</span>`;
+    document.getElementById('qText').innerHTML = subIndicator + q.question;
+    
+    // SAFE DYNAMIC IMAGE LOGIC FROM JSON FIELD
+    let imgContainer = document.getElementById('qImageContainer');
+    if (q.image && q.image.trim() !== "") {
+      imgContainer.innerHTML = `<img src="${q.image}" class="q-image" alt="Question Image">`;
+    } else {
+      imgContainer.innerHTML = ''; // Clear if JSON doesn't contain image url
+    }
+    
+    document.getElementById('qOptions').innerHTML = q.options.map(o => `
+      <label class="option-label ${userAns[currentIdx] === o ? 'selected' : ''}" onclick="saveAns('${o}', this)">
+        <span>${o}</span>
+      </label>`).join('');
+    
+    document.getElementById('prevBtn').disabled = currentIdx === 0;
+    document.getElementById('nextBtn').innerText = currentIdx === questions.length - 1 ? 'Finish' : 'Next';
+    
+    document.getElementById('progressFill').style.width = `${((currentIdx+1)/questions.length)*100}%`;
+    renderPalette();
+    renderSubjectTabs(); 
+    saveToLocal();
+  }
+
+  function saveAns(val, el) {
+    userAns[currentIdx] = val;
+    reviewList[currentIdx] = false;
+    document.querySelectorAll('.option-label').forEach(l => l.classList.remove('selected'));
+    el.classList.add('selected');
+    renderPalette();
+    saveToLocal();
+  }
+
+  function markReview() { 
+    reviewList[currentIdx] = true; 
+    userAns[currentIdx] = null; 
+    saveToLocal(); 
+    handleNext(); 
+  }
+  
+  function togglePalette() { document.getElementById('sidePalette').classList.toggle('open'); }
+  
+  function renderPalette() {
+    const grid = document.getElementById('paletteGrid'); grid.innerHTML = "";
+    let solved = 0, reviewed = 0;
+
+    questions.forEach((_, i) => {
+      const btn = document.createElement('button');
+      btn.innerText = i + 1;
+      btn.className = 'palette-btn';
+      if(i === currentIdx) btn.classList.add('current');
+      
+      if(reviewList[i]) { btn.classList.add('reviewed'); reviewed++; }
+      else if(userAns[i]) { btn.classList.add('answered'); solved++; }
+      
+      btn.onclick = () => { 
+        currentIdx = i; loadQuestion(); 
+        if(window.innerWidth <= 1024) togglePalette(); 
+      };
+      grid.appendChild(btn);
+    });
+
+    document.getElementById('statSolved').innerText = solved;
+    document.getElementById('statReview').innerText = reviewed;
+    document.getElementById('statLeft').innerText = questions.length - (solved + reviewed);
+  }
+
+  function previousQuestion() { if(currentIdx > 0) { currentIdx--; loadQuestion(); } }
+  function handleNext() { if(currentIdx < questions.length - 1) { currentIdx++; loadQuestion(); } else { triggerManualSubmit(); } }
+
+  function triggerManualSubmit() {
+    Swal.fire({ title: 'Finish Assessment?', text: 'Kya aap is online test ko submit karna chahte hain?', icon: 'question', showCancelButton: true, confirmButtonText: 'Yes, Submit' }).then(r => { if(r.isConfirmed) submitQuiz(); });
+  }
+
+  function filterSubjectReview(subjectName, cardElement) {
+    document.querySelectorAll('.sub-report-card').forEach(card => card.classList.remove('selected-sub-card'));
+    cardElement.classList.add('selected-sub-card');
+
+    document.querySelectorAll('.sum-item').forEach(item => {
+      if(item.getAttribute('data-subject') === subjectName) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+
+  async function submitQuiz() {
+    clearInterval(timerId);
+    localStorage.removeItem('quiz_session_elite');
+    if (document.fullscreenElement) { document.exitFullscreen(); }
+
+    let rawScore = 0, correctCount = 0, wrongCount = 0, summaryHtml = "";
+    
+    let subjectReports = {};
+    subjectOrder.forEach(sub => {
+      subjectReports[sub] = { total: 0, correct: 0, wrong: 0, skipped: 0, score: 0 };
+    });
+
+    questions.forEach((q, i) => {
+      let sub = q.associatedSubject;
+      let isCorrect = userAns[i] === q.answer;
+      let statusClass = isCorrect ? 'sum-correct' : (userAns[i] ? 'sum-wrong' : 'sum-skipped');
+      
+      subjectReports[sub].total++;
+
+      if(userAns[i]) {
+          if(isCorrect) { 
+            correctCount++; 
+            rawScore += 1; 
+            subjectReports[sub].correct++;
+            subjectReports[sub].score += 1;
+          } else { 
+            wrongCount++; 
+            rawScore -= NEGATIVE_MARK; 
+            subjectReports[sub].wrong++;
+            subjectReports[sub].score -= NEGATIVE_MARK;
+          }
+      } else {
+         subjectReports[sub].skipped++;
+      }
+
+      // DYNAMIC IMAGE CHECK FOR JSON URL STRINGS WITHIN RESULTS WINDOW
+      let resultImageHtml = (q.image && q.image.trim() !== "") ? `<img src="${q.image}" class="result-q-image" alt="Review Image">` : '';
+
+      summaryHtml += `<div class="sum-item ${statusClass}" data-subject="${sub}">
+        <span style="font-size:10px; font-weight:700; opacity: 0.8; display:block; margin-bottom:2px;">[${q.associatedSubject}]</span>
+        <b>Q.${i+1}: ${q.question}</b><br>
+        ${resultImageHtml}
+        Your Ans: <span style="font-weight:700">${userAns[i] || 'Skipped'}</span> ${isCorrect ? '✅' : (userAns[i] ? '❌ (-' + NEGATIVE_MARK + ')' : '')}<br>
+        <span style="font-weight:700;">Correct Answer: ${q.answer}</span>
+      </div>`;
+    });
+
+    let finalScore = rawScore.toFixed(2);
+    let totalQ = questions.length;
+    let percent = ((rawScore / totalQ) * 100).toFixed(1);
+    if(percent < 0) percent = 0; 
+    let skippedCount = totalQ - (correctCount + wrongCount);
+
+    let subjectCardsHtml = "";
+    let firstActiveSubject = "";
+
+    subjectOrder.forEach((sub, index) => {
+       let rep = subjectReports[sub];
+       if(rep.total > 0) {
+         if(!firstActiveSubject) firstActiveSubject = sub;
+         let activeCardClass = index === 0 ? "selected-sub-card" : "";
+         subjectCardsHtml += `
+           <div class="sub-report-card ${activeCardClass}" onclick="filterSubjectReview('${sub}', this)">
+              <h4>${sub}</h4>
+              <div class="sub-report-stats">
+                 <span>Total Q: <b>${rep.total}</b></span>
+                 <span>Score: <b>${rep.score.toFixed(2)}</b></span>
+                 <span style="color:var(--success-color)">Right: <b>${rep.correct}</b></span>
+                 <span style="color:var(--accent-color)">Wrong: <b>${rep.wrong}</b></span>
+              </div>
+           </div>
+         `;
+       }
+    });
+
+    await Swal.fire({ title: 'Processing Results...', text: 'Report card generate ho rahi hai.', icon: 'success', timer: 1500, showConfirmButton: false });
+
+    Swal.fire({
+      title: '', width: '98%',
+      html: `
+        <div class="summary-header">
+           <h3>Assessment Report: ${sName}</h3>
+           <div class="score-display">${finalScore} / ${totalQ}</div>
+           
+           <div class="metrics-grid">
+              <div class="m-card">Accuracy<b>${percent}%</b></div>
+              <div class="m-card">Correct<b style="color:#4ade80">${correctCount}</b></div>
+              <div class="m-card">Wrong<b style="color:#f87171">${wrongCount}</b></div>
+              <div class="m-card">Skipped<b style="color:#94a3b8">${skippedCount}</b></div>
+           </div>
+        </div>
+
+        <div class="section-result-title">📊 Section Performance (Click Card to View Qs)</div>
+        <div class="subject-result-grid">${subjectCardsHtml}</div>
+
+        <div class="section-result-title">📝 Question Analysis Summary</div>
+        <div class="summary-box" id="reviewSummaryBox">${summaryHtml}</div>
+      `,
+      confirmButtonText: 'Restart Portal', 
+      allowOutsideClick: false,
+      didOpen: () => {
+        if(firstActiveSubject) {
+          document.querySelectorAll('.sum-item').forEach(item => {
+            if(item.getAttribute('data-subject') === firstActiveSubject) item.style.display = "block";
+          });
+        }
+      }
+    }).then(() => location.reload());
+  }
+</script>
+</body>
+</html>
 
