@@ -1,0 +1,47 @@
+[
+  {
+    "question": {
+      "hi": "इटली एवं जर्मनी वर्तमान में किस महादेश के अंतर्गत आते हैं",
+      "en": "Under which continent do Italy and Germany currently fall?"
+    },
+    "image": "", 
+    "options": {
+      "hi": ["एशिया", "यूरोप", "अफ्रीका", "ऑस्ट्रेलिया"],
+      "en": ["Asia", "Europe", "Africa", "Australia"]
+    },
+    "answer": {
+      "hi": "यूरोप",
+      "en": "Europe"
+    }
+  },
+  {
+    "question": {
+      "hi": "फ्रांस में किस शासक वंश की पुनर्स्थापना वियना कांग्रेस द्वारा की गई थी?",
+      "en": "Which ruling dynasty was re-established in France by the Congress of Vienna?"
+    },
+    "image": "https://tinyurl.com/githubtest12",
+    "options": {
+      "hi": ["हैब्सबर्ग", "आलिया वंश", "बूर्बो वंश", "जार शाही"],
+      "en": ["Habsburg", "Bourbon Dynasty", "Orleans Dynasty", "Tsarist Rule"]
+    },
+    "answer": {
+      "hi": "बूर्बो वंश",
+      "en": "Bourbon Dynasty"
+    }
+  },
+  {
+    "question": {
+      "hi": "दिए गए चित्र में पहचानिए कि यह कौन सा यंत्र है?",
+      "en": "Identify which instrument is shown in the given picture?"
+    },
+    "image": "https://rahulkumarofficial.github.io/test/images/monalisa.jpg",
+    "options": {
+      "hi": ["ऑप्शन ए", "ऑप्शन बी", "ऑप्शन सी", "ऑप्शन डी"],
+      "en": ["Option A", "Option B", "Option C", "Option D"]
+    },
+    "answer": {
+      "hi": "ऑप्शन ए",
+      "en": "Option A"
+    }
+  }
+]
