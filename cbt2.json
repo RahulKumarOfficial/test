@@ -1,47 +1,152 @@
 [
   {
     "question": {
-      "hi": "अंग महाजनपद की राजधानी कहाँ थी ?",
-      "en": "What was the capital of Anga Mahajanapada?"
+      "hi": "पूर्वी घाट किस प्रकार के पर्वत हैं?",
+      "en": "Eastern Ghats belong to which type of mountains?"
     },
     "image": "",
     "options": {
-      "hi": ["वैशाली", "कौशाम्बी", "श्रावस्ती", "चम्पा"],
-      "en": ["Vaishali", "Kaushambi", "Shravasti", "Champa"]
+      "hi": ["सतत पर्वत", "ज्वालामुखीय", "खंडित पर्वत", "नवीन पर्वत"],
+      "en": ["Continuous Mountains", "Volcanic", "Dissected Mountains", "Young Mountains"]
     },
     "answer": {
-      "hi": "चम्पा",
-      "en": "Champa" 
+      "hi": "खंडित पर्वत",
+      "en": "Dissected Mountains"
     }
   },
   {
     "question": {
-      "hi": "शांत घाटी किस राज्य में स्थित है ?",
-      "en": "In which state is Silent Valley located?"
+      "hi": "गंगा नदी का उद्गम स्थल कौन-सा है?",
+      "en": "What is the source of the Ganga River?"
     },
     "image": "",
     "options": {
-      "hi": ["असम", "केरल", "अरुणाचल प्रदेश", "तमिलनाडु"],
-      "en": ["Assam", "Kerala", "Arunachal Pradesh", "Tamil Nadu"]
+      "hi": ["गंगोत्री", "यमुनोत्री", "बद्रीनाथ", "केदारनाथ"],
+      "en": ["Gangotri", "Yamunotri", "Badrinath", "Kedarnath"]
     },
     "answer": {
-      "hi": "केरल",
-      "en": "Kerala"
+      "hi": "गंगोत्री",
+      "en": "Gangotri"
     }
   },
   {
     "question": {
-      "hi": "सुनामी का मुख्य कारण क्या है ?",
-      "en": "What is the main cause of a tsunami?"
+      "hi": "भारत का सबसे लंबा तटरेखा वाला राज्य कौन-सा है?",
+      "en": "Which state has the longest coastline in India?"
     },
     "image": "",
     "options": {
-      "hi": ["चक्रवात", "ज्वालामुखी", "चन्द्रमा का आकर्षण", "समुद्री सतह पर भूकम्प"],
-      "en": ["Cyclone", "Volcano", "Moon's attraction", "Earthquake under the sea surface"]
+      "hi": ["तमिलनाडु", "आंध्र प्रदेश", "महाराष्ट्र", "गुजरात"],
+      "en": ["Tamil Nadu", "Andhra Pradesh", "Maharashtra", "Gujarat"]
     },
     "answer": {
-      "hi": "समुद्री सतह पर भूकम्प",
-      "en": "Earthquake under the sea surface"
+      "hi": "गुजरात",
+      "en": "Gujarat"
+    }
+  },
+  {
+    "question": {
+      "hi": "चिल्का झील किस राज्य में स्थित है?",
+      "en": "In which state is Chilika Lake located?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["पश्चिम बंगाल", "आंध्र प्रदेश", "ओडिशा", "केरल"],
+      "en": ["West Bengal", "Andhra Pradesh", "Odisha", "Kerala"]
+    },
+    "answer": {
+      "hi": "ओडिशा",
+      "en": "Odisha"
+    }
+  },
+  {
+    "question": {
+      "hi": "अरावली पर्वतमाला की प्रमुख विशेषता क्या है?",
+      "en": "What is the main feature of the Aravalli Range?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["नवीन पर्वत", "ज्वालामुखीय", "विश्व की नवीनतम", "विश्व की प्राचीनतम"],
+      "en": ["Young Mountains", "Volcanic", "Newest in the World", "Oldest in the World"]
+    },
+    "answer": {
+      "hi": "विश्व की प्राचीनतम",
+      "en": "Oldest in the World"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत में मानसून की वापसी सामान्यतः कब शुरू होती है?",
+      "en": "When does the withdrawal of monsoon generally start in India?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["अगस्त", "सितंबर", "अक्टूबर", "नवंबर"],
+      "en": ["August", "September", "October", "November"]
+    },
+    "answer": {
+      "hi": "सितंबर",
+      "en": "September"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत का सबसे ऊँचा पठार कौन-सा है?",
+      "en": "Which is the highest plateau in India?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["छोटानागपुर", "दक्कन", "मालवा", "मेघालय"],
+      "en": ["Chotanagpur", "Deccan", "Malwa", "Meghalaya"]
+    },
+    "answer": {
+      "hi": "दक्कन",
+      "en": "Deccan"
+    }
+  },
+  {
+    "question": {
+      "hi": "ब्रह्मपुत्र नदी भारत में किस राज्य से होकर बहती है?",
+      "en": "Through which state does the Brahmaputra River flow in India?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["अरुणाचल प्रदेश", "सिक्किम", "असम", "मणिपुर"],
+      "en": ["Arunachal Pradesh", "Sikkim", "Assam", "Manipur"]
+    },
+    "answer": {
+      "hi": "असम",
+      "en": "Assam"
+    }
+  },
+  {
+    "question": {
+      "hi": "निम्न में से कौन-सी नदी डेल्टा नहीं बनाती?",
+      "en": "Which of the following rivers does not form a delta?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["महानदी", "गोदावरी", "नर्मदा", "गंगा"],
+      "en": ["Mahanadi", "Godavari", "Narmada", "Ganga"]
+    },
+    "answer": {
+      "hi": "नर्मदा",
+      "en": "Narmada"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत की सबसे बड़ी मीठे पानी की झील कौन-सी है?",
+      "en": "Which is the largest freshwater lake in India?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["चिल्का", "वूलर", "लोकटक", "सांभर"],
+      "en": ["Chilika", "Wular", "Loktak", "Sambhar"]
+    },
+    "answer": {
+      "hi": "वूलर",
+      "en": "Wular"
     }
   }
 ]
