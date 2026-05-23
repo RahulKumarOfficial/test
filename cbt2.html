@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -189,8 +190,30 @@
     .palette-legend { display: flex; justify-content: space-between; padding-top: 8px; border-top: 1px solid var(--border-color); font-size: 11px; color: var(--text-muted); text-align: center; }
     .leg-item span { display: block; width: 14px; height: 14px; border-radius: 3px; margin: 0 auto 4px auto; }
 
-    .palette-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 16px; overflow-y: auto; flex-grow: 1; }
-    .palette-btn { width: 100%; aspect-ratio: 1; border-radius: 6px; border: 1px solid var(--border-color); background: #f8fafc; cursor: pointer; font-weight: 600; font-size: 13px; color: var(--text-muted); }
+    /* FIXED & MODIFIED FOR SMALLER/COMPACT PALETTE BUTTONS */
+    .palette-grid { 
+      display: grid; 
+      grid-template-columns: repeat(5, 1fr); /* 4 se badha kar 5 kiya taaki row compact lage */
+      gap: 6px; 
+      margin-top: 16px; 
+      overflow-y: auto; 
+      flex-grow: 1; 
+    }
+    .palette-btn { 
+      width: 100%; 
+      height: 38px; /* Fixed small height taaki vertical space kam lage */
+      border-radius: 5px; 
+      border: 1px solid var(--border-color); 
+      background: #f8fafc; 
+      cursor: pointer; 
+      font-weight: 600; 
+      font-size: 12px; /* Thoda chota font */
+      color: var(--text-muted); 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
     .palette-btn.answered { background: var(--success-color); color: white; border-color: var(--success-color); }
     .palette-btn.reviewed { background: var(--review-color); color: white; border-color: var(--review-color); }
     .palette-btn.current { border: 2px solid var(--primary-color); color: var(--primary-color); background: var(--primary-light); font-weight: 700; }
@@ -321,16 +344,14 @@
 
 <script>
   const SUBJECT_CONFIG = {
-    "Reasoning": "https://rahulkumarofficial.github.io/test/cbt2.json",
-    "Mathematics": "https://rahulkumarofficial.github.io/test/cbt2.json", 
-    "G.K / G.S": "https://rahulkumarofficial.github.io/test/cbt2.json",   
-    "Hindi / English": "https://rahulkumarofficial.github.io/test/cbt2.json" 
+    "SSC": "https://rahulkumarofficial.github.io/test/cbt2.json",
+    "SSCPYQ": "https://rahulkumarofficial.github.io/test/cbt2.json",  
+    "INDIAN": "https://rahulkumarofficial.github.io/test/cbt2.json" 
   };
 
   let timeLeft = 3000; 
   const NEGATIVE_MARK = 0.25; 
 
-  // ADDED CURRENT LANG VARIABLE
   let questions = [], currentIdx = 0, userAns = [], reviewList = [], timerId = null, sName = "", currentLang = "hi";
   let subjectOrder = Object.keys(SUBJECT_CONFIG);
   let subjectCounts = {}; 
@@ -416,7 +437,7 @@
 
   async function startTest() {
     sName = document.getElementById('studentName').value.trim();
-    currentLang = document.getElementById('testLanguage').value; // DETECT SELECTED LANGUAGE
+    currentLang = document.getElementById('testLanguage').value;
     if(!sName) return Swal.fire('Attention Required', 'Kripya apna poora naam darj karein.', 'warning');
     
     Swal.fire({title: 'Loading Exam Papers...', text: 'Sabhi subjects ke questions fetch ho rahe hain.', didOpen: () => Swal.showLoading()});
@@ -475,7 +496,6 @@
     
     let subIndicator = `<span style="color:var(--primary-color); font-size:11px; font-weight:700; display:block; margin-bottom:2px; text-transform:uppercase; letter-spacing:0.03em;">SECTION: ${q.associatedSubject}</span>`;
     
-    // EXTRACT CORRESPONDING LANGUAGE TEXT FROM JSON OBJECT
     let activeQuestionText = (typeof q.question === 'object') ? q.question[currentLang] : q.question;
     document.getElementById('qText').innerHTML = subIndicator + activeQuestionText;
     
@@ -486,7 +506,6 @@
       imgContainer.innerHTML = ''; 
     }
     
-    // EXTRACT CORRESPONDING OPTIONS FROM JSON BASED ON LANGUAGE
     let activeOptions = (typeof q.options === 'object' && !Array.isArray(q.options)) ? q.options[currentLang] : q.options;
     
     document.getElementById('qOptions').innerHTML = activeOptions.map(o => `
@@ -581,7 +600,6 @@
     questions.forEach((q, i) => {
       let sub = q.associatedSubject;
       
-      // MULTI LANGUAGE PARSING FOR ANSWERS EVALUATION
       let correctAnsText = (typeof q.answer === 'object') ? q.answer[currentLang] : q.answer;
       let activeQuestionText = (typeof q.question === 'object') ? q.question[currentLang] : q.question;
       
