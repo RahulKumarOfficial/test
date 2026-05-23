@@ -1,47 +1,47 @@
 [
   {
     "question": {
-      "hi": "इटली एवं जर्मनी वर्तमान में किस महादेश के अंतर्गत आते हैं",
-      "en": "Under which continent do Italy and Germany currently fall?"
+      "hi": "अंग महाजनपद की राजधानी कहाँ थी ?",
+      "en": "What was the capital of Anga Mahajanapada?"
     },
-    "image": "", 
+    "image": "",
     "options": {
-      "hi": ["एशिया", "यूरोप", "अफ्रीका", "ऑस्ट्रेलिया"],
-      "en": ["Asia", "Europe", "Africa", "Australia"]
+      "hi": ["वैशाली", "कौशाम्बी", "श्रावस्ती", "चम्पा"],
+      "en": ["Vaishali", "Kaushambi", "Shravasti", "Champa"]
     },
     "answer": {
-      "hi": "यूरोप",
-      "en": "Europe"
+      "hi": "चम्पा",
+      "en": "Champa"
     }
   },
   {
     "question": {
-      "hi": "फ्रांस में किस शासक वंश की पुनर्स्थापना वियना कांग्रेस द्वारा की गई थी?",
-      "en": "Which ruling dynasty was re-established in France by the Congress of Vienna?"
+      "hi": "शांत घाटी किस राज्य में स्थित है ?",
+      "en": "In which state is Silent Valley located?"
     },
-    "image": "https://tinyurl.com/githubtest12",
+    "image": "",
     "options": {
-      "hi": ["हैब्सबर्ग", "आलिया वंश", "बूर्बो वंश", "जार शाही"],
-      "en": ["Habsburg", "Bourbon Dynasty", "Orleans Dynasty", "Tsarist Rule"]
+      "hi": ["असम", "केरल", "अरुणाचल प्रदेश", "तमिलनाडु"],
+      "en": ["Assam", "Kerala", "Arunachal Pradesh", "Tamil Nadu"]
     },
     "answer": {
-      "hi": "बूर्बो वंश",
-      "en": "Bourbon Dynasty"
+      "hi": "केरल",
+      "en": "Kerala"
     }
   },
   {
     "question": {
-      "hi": "दिए गए चित्र में पहचानिए कि यह कौन सा यंत्र है?",
-      "en": "Identify which instrument is shown in the given picture?"
+      "hi": "सुनामी का मुख्य कारण क्या है ?",
+      "en": "What is the main cause of a tsunami?"
     },
-    "image": "https://rahulkumarofficial.github.io/test/images/monalisa.jpg",
+    "image": "",
     "options": {
-      "hi": ["ऑप्शन ए", "ऑप्शन बी", "ऑप्शन सी", "ऑप्शन डी"],
-      "en": ["Option A", "Option B", "Option C", "Option D"]
+      "hi": ["चक्रवात", "ज्वालामुखी", "चन्द्रमा का आकर्षण", "समुद्री सतह पर भूकम्प"],
+      "en": ["Cyclone", "Volcano", "Moon's attraction", "Earthquake under the sea surface"]
     },
     "answer": {
-      "hi": "ऑप्शन ए",
-      "en": "Option A"
+      "hi": "समुद्री सतह पर भूकम्प",
+      "en": "Earthquake under the sea surface"
     }
   }
 ]
