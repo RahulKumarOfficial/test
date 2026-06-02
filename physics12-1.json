@@ -1,0 +1,932 @@
+[
+  {
+    "question": {
+      "hi": "किसी वस्तु पर आवेश की न्यूनतम मात्रा कम नहीं हो सकती है",
+      "en": "The minimum amount of charge on any object cannot be less than"
+    },
+    "image": "",
+    "options": {
+      "hi": ["1.6 x 10^-19 कूलम्ब से", "3.2 x 10^-19 कूलम्ब से", "4.8 x 10^-19 कूलम्ब से", "1 कूलम्ब से"],
+      "en": ["1.6 x 10^-19 Coulomb", "3.2 x 10^-19 Coulomb", "4.8 x 10^-19 Coulomb", "1 Coulomb"]
+    },
+    "answer": {
+      "hi": "1.6 x 10^-19 कूलम्ब से",
+      "en": "1.6 x 10^-19 Coulomb"
+    }
+  },
+  {
+    "question": {
+      "hi": "p आघूर्ण वाला एक विद्युतीय द्विध्रुव विद्युतीय क्षेत्र E के साथ 90° का कोण बनाता है, तब इस पर लगा बल आघूर्ण होगा –",
+      "en": "An electric dipole of moment p makes an angle of 90° with the electric field E, then the torque acting on it will be –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["p/E", "zero", "pE", "p.E"],
+      "en": ["p/E", "zero", "pE", "p.E"]
+    },
+    "answer": {
+      "hi": "pE",
+      "en": "pE"
+    }
+  },
+  {
+    "question": {
+      "hi": "p आघूर्ण वाला एक विद्युतीय द्विध्रुव विद्युतीय क्षेत्र E के साथ 90° का कोण बनाता है, तब इस पर लगा बल आघूर्ण –",
+      "en": "An electric dipole of moment p makes an angle of 90° with the electric field E, then the torque acting on it –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["pE", "zero", "1/2pE", "2pE"],
+      "en": ["pE", "zero", "1/2pE", "2pE"]
+    },
+    "answer": {
+      "hi": "pE",
+      "en": "pE"
+    }
+  },
+  {
+    "question": {
+      "hi": "p आघूर्ण वाला द्विध्रुव अधिकतम बल आघूर्ण तब अनुभव करेगा जब p तथा E के बीच का कोण हो –",
+      "en": "A dipole of moment p will experience maximum torque when the angle between p and E is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["0°", "90°", "60°", "30°"],
+      "en": ["0°", "90°", "60°", "30°"]
+    },
+    "answer": {
+      "hi": "90°",
+      "en": "90°"
+    }
+  },
+  {
+    "question": {
+      "hi": "दो वैद्युत क्षेत्र रेखाएँ एक-दूसरे को किस कोण पर काटती हैं ?",
+      "en": "At what angle do two electric field lines intersect each other?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["90°", "45°", "30°", "नहीं काटती हैं"],
+      "en": ["90°", "45°", "30°", "Do not intersect"]
+    },
+    "answer": {
+      "hi": "नहीं काटती हैं",
+      "en": "Do not intersect"
+    }
+  },
+  {
+    "question": {
+      "hi": "विद्युत आवेश का क्वांटम e.s.u. मात्रक में होता है –",
+      "en": "The quantum of electric charge in e.s.u. unit is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["4.78 x 10^-10", "+1.6 x 10^-19", "2.99 x 10^9", "-1.6 x 10^-19"],
+      "en": ["4.78 x 10^-10", "+1.6 x 10^-19", "2.99 x 10^9", "-1.6 x 10^-19"]
+    },
+    "answer": {
+      "hi": "4.78 x 10^-10",
+      "en": "4.78 x 10^-10"
+    }
+  },
+  {
+    "question": {
+      "hi": "स्थिर विद्युतीय क्षेत्र होता है –",
+      "en": "Electrostatic field is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["संरक्षी", "असंरक्षी", "कहीं संरक्षी तथा कहीं असंरक्षी", "इनमें से कोई नहीं"],
+      "en": ["Conservative", "Non-conservative", "Conservative at some places and non-conservative at others", "None of these"]
+    },
+    "answer": {
+      "hi": "संरक्षी",
+      "en": "Conservative"
+    }
+  },
+  {
+    "question": {
+      "hi": "एक ही पदार्थ के धातु के दो गोले A तथा B दिये गये हैं। एक पर +Q आवेश तथा दूसरे पर -Q आवेश दिया गया है –",
+      "en": "Two metal spheres A and B of the same material are given. One is given +Q charge and the other is given -Q charge –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["A का द्रव्यमान बढ़ जाएगा", "B का द्रव्यमान बढ़ेगा", "द्रव्यमान पर कोई प्रभाव नहीं पड़ेगा", "इनमें से कोई नहीं"],
+      "en": ["Mass of A will increase", "Mass of B will increase", "There will be no effect on mass", "None of these"]
+    },
+    "answer": {
+      "hi": "B का द्रव्यमान बढ़ेगा",
+      "en": "Mass of B will increase"
+    }
+  },
+  {
+    "question": {
+      "hi": "इलेक्ट्रॉन का विशिष्ट आवेश होता है –",
+      "en": "The specific charge of an electron is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["1.8 x 10^11 C/kg", "1.8 x 10^-19 C/kg", "1.9 x 10^-19 C/kg", "Inme se koi nahi"],
+      "en": ["1.8 x 10^11 C/kg", "1.8 x 10^-19 C/kg", "1.9 x 10^-19 C/kg", "None of these"]
+    },
+    "answer": {
+      "hi": "1.8 x 10^11 C/kg",
+      "en": "1.8 x 10^11 C/kg"
+    }
+  },
+  {
+    "question": {
+      "hi": "डिबाई (Debye) मात्रक है –",
+      "en": "Debye is the unit of –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["आवेश का", "विभव का", "विद्युत द्विध्रुव आघूर्ण का", "कोई नहीं"],
+      "en": ["Charge", "Potential", "Electric dipole moment", "None"]
+    },
+    "answer": {
+      "hi": "विद्युत द्विध्रुव आघूर्ण का",
+      "en": "Electric dipole moment"
+    }
+  },
+  {
+    "question": {
+      "hi": "एक आवेशित चालक की सतह के किसी बिन्दु पर विद्युतीय क्षेत्र की तीव्रता –",
+      "en": "The intensity of the electric field at any point on the surface of a charged conductor is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["शून्य होती है", "सतह के लंबवत् होती है", "सतह के स्पर्शीय होती है", "सतह पर 45° पर होती है"],
+      "en": ["Zero", "Perpendicular to the surface", "Tangential to the surface", "At 45° to the surface"]
+    },
+    "answer": {
+      "hi": "सतह के लंबवत् होती है",
+      "en": "Perpendicular to the surface"
+    }
+  },
+  {
+    "question": {
+      "hi": "1 कूलॉम आवेश बराबर होता है –",
+      "en": "1 Coulomb charge is equal to –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["3 x 10^9 e.s.u.", "9 x 10^9 e.s.u.", "8.85 x 10^-12 e.s.u.", "इनमें से कोई नहीं"],
+      "en": ["3 x 10^9 e.s.u.", "9 x 10^9 e.s.u.", "8.85 x 10^-12 e.s.u.", "None of these"]
+    },
+    "answer": {
+      "hi": "3 x 10^9 e.s.u.",
+      "en": "3 x 10^9 e.s.u."
+    }
+  },
+  {
+    "question": {
+      "hi": "यदि गोले पर आवेश 10 μC हो, तो उसकी सतह पर विद्युतीय फ्लक्स है –",
+      "en": "If the charge on a sphere is 10 μC, then the electric flux on its surface is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["36π x 10^4 Nm^2/C", "36π x 10^-4 Nm^2/C", "36π x 10^6 Nm^2/C", "36π x 10^-6 Nm^2/C"],
+      "en": ["36π x 10^4 Nm^2/C", "36π x 10^-4 Nm^2/C", "36π x 10^6 Nm^2/C", "36π x 10^-6 Nm^2/C"]
+    },
+    "answer": {
+      "hi": "36π x 10^4 Nm^2/C",
+      "en": "36π x 10^4 Nm^2/C"
+    }
+  },
+  {
+    "question": {
+      "hi": "एक पिण्ड पर आवेश लिखा जाता है Q = ne, जहाँ e = 1.6 x 10^-19 C, जहाँ n के मान हैं –",
+      "en": "The charge on a body is written as Q = ne, where e = 1.6 x 10^-19 C, where values of n are –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["0, 2, 3, ...", "0, ± 1, ± 2, ± 3, ...", "0, -1, -2, -3, ...", "इनमें से कोई नहीं"],
+      "en": ["0, 2, 3, ...", "0, ± 1, ± 2, ± 3, ...", "0, -1, -2, -3, ...", "None of these"]
+    },
+    "answer": {
+      "hi": "0, ± 1, ± 2, ± 3, ...",
+      "en": "0, ± 1, ± 2, ± 3, ..."
+    }
+  },
+  {
+    "question": {
+      "hi": "किसी वस्तु पर आवेश की न्यूनतम मात्रा कम नहीं हो सकती –",
+      "en": "The minimum amount of charge on any object cannot be less than –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["1.6 x 10^-19 C", "3.2 x 10^-19 C", "4.8 x 10^-19 C", "1 C"],
+      "en": ["1.6 x 10^-19 C", "3.2 x 10^-19 C", "4.8 x 10^-19 C", "1 C"]
+    },
+    "answer": {
+      "hi": "1.6 x 10^-19 C",
+      "en": "1.6 x 10^-19 C"
+    }
+  },
+  {
+    "question": {
+      "hi": "जब कोई वस्तु ऋणावेशित हो जाती है तो इसका द्रव्यमान क्या होता है?",
+      "en": "When an object becomes negatively charged, what happens to its mass?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["घटता है", "बढ़ता है", "वही रहता है", "इनमें से कोई नहीं"],
+      "en": ["Decreases", "Increases", "Remains the same", "None of these"]
+    },
+    "answer": {
+      "hi": "बढ़ता है",
+      "en": "Increases"
+    }
+  },
+  {
+    "question": {
+      "hi": "किसी वस्तु पर आवेश का कारण है –",
+      "en": "The cause of charge on an object is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["न्यूट्रॉन का स्थानांतरण", "प्रोटॉन का स्थानांतरण", "इलेक्ट्रॉन का स्थानांतरण", "प्रोटॉन तथा न्यूट्रॉन दोनों का स्थानांतरण"],
+      "en": ["Transfer of neutrons", "Transfer of protons", "Transfer of electrons", "Transfer of both protons and neutrons"]
+    },
+    "answer": {
+      "hi": "इलेक्ट्रॉन का स्थानांतरण",
+      "en": "Transfer of electrons"
+    }
+  },
+  {
+    "question": {
+      "hi": "विद्युतीय क्षेत्र का विमीय सूत्र है –",
+      "en": "The dimensional formula of electric field is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["[MLT^-3 A^-1]", "[ML^2 TA^-1]", "[MLT^2 A^-1]", "[MLTA^2]"],
+      "en": ["[MLT^-3 A^-1]", "[ML^2 TA^-1]", "[MLT^2 A^-1]", "[MLTA^2]"]
+    },
+    "answer": {
+      "hi": "[MLT^-3 A^-1]",
+      "en": "[MLT^-3 A^-1]"
+    }
+  },
+  {
+    "question": {
+      "hi": "1 स्टैट कूलाम (statcoulomb) = ………. कूलाम (Coulomb)।",
+      "en": "1 statcoulomb = .......... Coulomb."
+    },
+    "image": "",
+    "options": {
+      "hi": ["3 x 10^9", "1/3 x 10^-9", "3 x 10^-9", "इनमें से कोई नहीं"],
+      "en": ["3 x 10^9", "1/3 x 10^-9", "3 x 10^-9", "None of these"]
+    },
+    "answer": {
+      "hi": "1/3 x 10^-9",
+      "en": "1/3 x 10^-9"
+    }
+  },
+  {
+    "question": {
+      "hi": "एक आवेशित चालक का क्षेत्र आवेश घनत्व σ है। इसके पास विद्युत क्षेत्र का मान होता है –",
+      "en": "The surface charge density of a charged conductor is σ. The value of electric field near it is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["σ/2ε_0", "σ/ε_0", "2σ/ε_0", "σ/3ε_0"],
+      "en": ["σ/2ε_0", "σ/ε_0", "2σ/ε_0", "σ/3ε_0"]
+    },
+    "answer": {
+      "hi": "σ/ε_0",
+      "en": "σ/ε_0"
+    }
+  },
+  {
+    "question": {
+      "hi": "1 कूलॉम आवेश बराबर होता है –",
+      "en": "1 Coulomb charge is equal to –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["3 x 10^9 e.s.u.", "9 x 10^9 e.s.u.", "8.85 x 10^-12 e.s.u.", "इनमें से कोई नहीं"],
+      "en": ["3 x 10^9 e.s.u.", "9 x 10^9 e.s.u.", "8.85 x 10^-12 e.s.u.", "None of these"]
+    },
+    "answer": {
+      "hi": "3 x 10^9 e.s.u.",
+      "en": "3 x 10^9 e.s.u."
+    }
+  },
+  {
+    "question": {
+      "hi": "किसी आवेशित खोखले गोलाकार चालक के भीतर विद्युतीय तीव्रता का मान होता है –",
+      "en": "The value of electric intensity inside a charged hollow spherical conductor is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["ε_0σ", "σ/ε_0", "zero", "ε_0/2"],
+      "en": ["ε_0σ", "σ/ε_0", "zero", "ε_0/2"]
+    },
+    "answer": {
+      "hi": "zero",
+      "en": "zero"
+    }
+  },
+  {
+    "question": {
+      "hi": "राशि 1/4πε_0 का विमीय सूत्र है –",
+      "en": "The dimensional formula of the quantity 1/4πε_0 is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["[ML^3 T^-4 A^-2]", "[ML^2 T^-3 A^-1]", "[M^0 L^0 T^0 A^0]", "[ML^0 T^0 A]"],
+      "en": ["[ML^3 T^-4 A^-2]", "[ML^2 T^-3 A^-1]", "[M^0 L^0 T^0 A^0]", "[ML^0 T^0 A]"]
+    },
+    "answer": {
+      "hi": "[ML^3 T^-4 A^-2]",
+      "en": "[ML^3 T^-4 A^-2]"
+    }
+  },
+  {
+    "question": {
+      "hi": "कूलम्ब बल है –",
+      "en": "Coulomb force is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["केन्द्रीय बल", "विद्युत बल", "दोनों (A) तथा (B)", "इनमें से कोई नहीं"],
+      "en": ["Central force", "Electric force", "Both (A) and (B)", "None of these"]
+    },
+    "answer": {
+      "hi": "दोनों (A) तथा (B)",
+      "en": "Both (A) and (B)"
+    }
+  },
+  {
+    "question": {
+      "hi": "p⃗ आघूर्ण वाला एक विद्युत द्विध्रुव E⃗ तीव्रता वाले विद्युतीय क्षेत्र में रखा जाए, तो उस पर लगने वाला टॉर्क (बल आघूर्ण) होगा –",
+      "en": "If an electric dipole of moment p⃗ is placed in an electric field of intensity E⃗, then the torque acting on it will be –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["p⃗ x E⃗", "p⃗ . E⃗", "pE", "E⃗ x p⃗"],
+      "en": ["p⃗ x E⃗", "p⃗ . E⃗", "pE", "E⃗ x p⃗"]
+    },
+    "answer": {
+      "hi": "p⃗ x E⃗",
+      "en": "p⃗ x E⃗"
+    }
+  },
+  {
+    "question": {
+      "hi": "किसी आवेशित बेलन के नजदीक किसी बिन्दु पर विद्युत् तीव्रता E का मान होता है –",
+      "en": "The value of electric intensity E near a charged cylinder at any point is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["λ/2πε_0r", "λ/4πε_0r", "λ/ε_0r", "शून्य"],
+      "en": ["λ/2πε_0r", "λ/4πε_0r", "λ/ε_0r", "Zero"]
+    },
+    "answer": {
+      "hi": "λ/2πε_0r",
+      "en": "λ/2πε_0r"
+    }
+  },
+  {
+    "question": {
+      "hi": "एक विद्युत् द्वि-ध्रुव एक पृष्ठ से घिरा हुआ है। पृष्ठ पर कुल फ्लक्स होगा –",
+      "en": "An electric dipole is enclosed by a surface. The total flux on the surface will be –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["अनंत", "शून्य", "आवेश पर निर्भर", "द्विध्रुव की स्थिति पर निर्भर"],
+      "en": ["Infinity", "Zero", "Depends on charge", "Depends on the position of the dipole"]
+    },
+    "answer": {
+      "hi": "शून्य",
+      "en": "Zero"
+    }
+  },
+  {
+    "question": {
+      "hi": "किसी वस्तु पर 1 कूलम्ब आवेश तब संभव है जब उससे निकाले गए इलेक्ट्रॉनों की संख्या होगी –",
+      "en": "A charge of 1 Coulomb on an object is possible only when the number of electrons removed from it is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["6.25 x 10^-19", "6.25 x 10^19", "6.25 x 10^18", "6.25 x 10^-10"],
+      "en": ["6.25 x 10^-19", "6.25 x 10^19", "6.25 x 10^18", "6.25 x 10^-10"]
+    },
+    "answer": {
+      "hi": "6.25 x 10^18",
+      "en": "6.25 x 10^18"
+    }
+  },
+  {
+    "question": {
+      "hi": "किसी अनावेशित वस्तु पर एक कूलम्ब आवेश होने के लिए उसमें से निकाले गये इलेक्ट्रॉनों की संख्या होगी –",
+      "en": "To have a charge of one Coulomb on an uncharged object, the number of electrons removed from it should be –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["6.25 x 10^18", "6.25 x 10^19", "6.023 x 10^23", "इनमें से कोई नहीं"],
+      "en": ["6.25 x 10^18", "6.25 x 10^19", "6.023 x 10^23", "None of these"]
+    },
+    "answer": {
+      "hi": "6.25 x 10^18",
+      "en": "6.25 x 10^18"
+    }
+  },
+  {
+    "question": {
+      "hi": "एक वैद्युत द्विध्रुव एक बन्द पृष्ठ से घिरा हुआ है। पृष्ठ पर कुल विद्युत फ्लक्स होगा –",
+      "en": "An electric dipole is enclosed by a closed surface. The total electric flux on the surface will be –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["अनंत", "शून्य", "q/ε_0", "इनमें से कोई नहीं"],
+      "en": ["Infinity", "Zero", "q/ε_0", "None of these"]
+    },
+    "answer": {
+      "hi": "शून्य",
+      "en": "Zero"
+    }
+  },
+  {
+    "question": {
+      "hi": "किसी आवेश से अनंत दूरी पर उस आवेश के कारण विद्युत क्षेत्र की तीव्रता होती है –",
+      "en": "The intensity of the electric field due to a charge at an infinite distance from that charge is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["अनंत", "शून्य", "9 x 10^9 Vm^-1", "इनमें से कोई नहीं"],
+      "en": ["Infinity", "Zero", "9 x 10^9 Vm^-1", "None of these"]
+    },
+    "answer": {
+      "hi": "शून्य",
+      "en": "Zero"
+    }
+  },
+  {
+    "question": {
+      "hi": "यदि दो समान आवेशों की दूरी बढ़ा दी जाये तो आवेशों के विद्युतीय स्थितिज ऊर्जा का मान –",
+      "en": "If the distance between two like charges is increased, then the value of electrostatic potential energy of the charges –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["बढ़ जाएगा", "घट जाएगा", "अपरिवर्तित रहेगा", "बढ़ भी सकता है घट भी सकता है"],
+      "en": ["Will increase", "Will decrease", "Will remain unchanged", "May increase or decrease"]
+    },
+    "answer": {
+      "hi": "घट जाएगा",
+      "en": "Will decrease"
+    }
+  },
+  {
+    "question": {
+      "hi": "किसी आवेशित गोलीय खोखले चालक के भीतर विद्युत तीव्रता होती है –",
+      "en": "The electric intensity inside a charged spherical hollow conductor is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["अनंत", "शून्य", "धनात्मक एवं 1 से अधिक", "इनमें से कोई नहीं"],
+      "en": ["Infinity", "Zero", "Positive and greater than 1", "None of these"]
+    },
+    "answer": {
+      "hi": "शून्य",
+      "en": "Zero"
+    }
+  },
+  {
+    "question": {
+      "hi": "फ्लक्स घनत्व का मात्रक होता है –",
+      "en": "The unit of flux density is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वेबर", "टेसला", "न्यूटन / मी", "मी^2/से"],
+      "en": ["Weber", "Tesla", "Newton / m", "m^2/s"]
+    },
+    "answer": {
+      "hi": "टेसला",
+      "en": "Tesla"
+    }
+  },
+  {
+    "question": {
+      "hi": "एक अनावेशित धातुकण को एक धनावेशित धातु प्लेट के नजदीक लाया जाता है। धातु कण पर विद्युतीय बल होगा –",
+      "en": "An uncharged metal particle is brought near a positively charged metal plate. The electric force on the metal particle will be –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["प्लेट की तरफ", "प्लेट से दूर", "प्लेट के समांतर", "इनमें से कोई नहीं"],
+      "en": ["Towards the plate", "Away from the plate", "Parallel to the plate", "None of these"]
+    },
+    "answer": {
+      "hi": "प्लेट की तरफ",
+      "en": "Towards the plate"
+    }
+  },
+  {
+    "question": {
+      "hi": "दो चालकों के बीच आवेश के वितरण से होने वाली ऊर्जा की हानि निर्भर करती है –",
+      "en": "The loss of energy due to distribution of charge between two conductors depends on –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["विभवांतर के", "विभवांतर के वर्ग पर", "धारिता पर", "इनमें से कोई नहीं"],
+      "en": ["Potential difference", "Square of potential difference", "Capacitance", "None of these"]
+    },
+    "answer": {
+      "hi": "विभवांतर के वर्ग पर",
+      "en": "Square of potential difference"
+    }
+  },
+  {
+    "question": {
+      "hi": "आवेश का S.I. मात्रक होता है –",
+      "en": "The S.I. unit of charge is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["एम्पीयर (A)", "फैराड (F)", "वोल्ट (V)", "कूलम्ब (C)"],
+      "en": ["Ampere (A)", "Farad (F)", "Volt (V)", "Coulomb (C)"]
+    },
+    "answer": {
+      "hi": "कूलम्ब (C)",
+      "en": "Coulomb (C)"
+    }
+  },
+  {
+    "question": {
+      "hi": "आवेश की विमा है –",
+      "en": "The dimension of charge is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["[AT]", "[LAT]", "[AT^-1]", "[AT^-2]"],
+      "en": ["[AT]", "[LAT]", "[AT^-1]", "[AT^-2]"]
+    },
+    "answer": {
+      "hi": "[AT]",
+      "en": "[AT]"
+    }
+  },
+  {
+    "question": {
+      "hi": "इलेक्ट्रॉन पर आवेश बराबर होता है –",
+      "en": "The charge on an electron is equal to –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["2 x 10^-21 C", "1.6 x 10^-19 C", "1.6 x 10^-20 C", "इनमें से कोई नहीं"],
+      "en": ["2 x 10^-21 C", "1.6 x 10^-19 C", "1.6 x 10^-20 C", "None of these"]
+    },
+    "answer": {
+      "hi": "1.6 x 10^-19 C",
+      "en": "1.6 x 10^-19 C"
+    }
+  },
+  {
+    "question": {
+      "hi": "निम्नलिखित में किसका अस्तित्व संभव नहीं है –",
+      "en": "Which of the following charge cannot exist –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["3.2 x 10^-19 C", "6.4 x 10^-19 C", "2.4 x 10^-19 C", "1.6 x 10^-19 C"],
+      "en": ["3.2 x 10^-19 C", "6.4 x 10^-19 C", "2.4 x 10^-19 C", "1.6 x 10^-19 C"]
+    },
+    "answer": {
+      "hi": "2.4 x 10^-19 C",
+      "en": "2.4 x 10^-19 C"
+    }
+  },
+  {
+    "question": {
+      "hi": "स्थिर विद्युत् आवेशों के बीच लगता बल किस नियम से दिया जाता है?",
+      "en": "The force acting between stationary electric charges is given by which law?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["गॉस का प्रमेय", "किरचॉफ के नियम", "कूलम्ब के नियम", "फैराडे के नियम"],
+      "en": ["Gauss's theorem", "Kirchhoff's laws", "Coulomb's law", "Faraday's laws"]
+    },
+    "answer": {
+      "hi": "कूलम्ब के नियम",
+      "en": "Coulomb's law"
+    }
+  },
+  {
+    "question": {
+      "hi": "दो आवेशों के बीच की दूरी दुगुनी करने पर उनके बीच का बल –",
+      "en": "On doubling the distance between two charges, the force between them –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["दुगुना हो जाता है", "आधा हो जाता है", "चार गुना हो जाता है", "चौथाई हो जाता है"],
+      "en": ["Becomes double", "Becomes half", "Becomes four times", "Becomes one-fourth"]
+    },
+    "answer": {
+      "hi": "चौथाई हो जाता है",
+      "en": "Becomes one-fourth"
+    }
+  },
+  {
+    "question": {
+      "hi": "मुक्त आकाश (Free space) की परावैद्युतता (ε_0) होती है –",
+      "en": "The permittivity (ε_0) of free space is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["9 x 10^9 mF^-1", "1.6 x 10^-19 C", "8.85 x 10^-12 Fm^-1", "इनमें से कोई नहीं"],
+      "en": ["9 x 10^9 mF^-1", "1.6 x 10^-19 C", "8.85 x 10^-12 Fm^-1", "None of these"]
+    },
+    "answer": {
+      "hi": "8.85 x 10^-12 Fm^-1",
+      "en": "8.85 x 10^-12 Fm^-1"
+    }
+  },
+  {
+    "question": {
+      "hi": "राशि 1/4πε_0 का मान होता है –",
+      "en": "The value of quantity 1/4πε_0 is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["9 x 10^9 Nm^2C^-2", "8.85 x 10^-12 Nm^2C^-2", "9 x 10^-9 Nm^2C^-2", "शून्य"],
+      "en": ["9 x 10^9 Nm^2C^-2", "8.85 x 10^-12 Nm^2C^-2", "9 x 10^-9 Nm^2C^-2", "Zero"]
+    },
+    "answer": {
+      "hi": "9 x 10^9 Nm^2C^-2",
+      "en": "9 x 10^9 Nm^2C^-2"
+    }
+  },
+  {
+    "question": {
+      "hi": "किसी माध्यम की आपेक्षिक परावैद्युतता (ε_r) बराबर होती है –",
+      "en": "The relative permittivity (ε_r) of a medium is equal to –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["ε/ε_0", "ε x ε_0", "ε + ε_0", "ε - ε_0"],
+      "en": ["ε/ε_0", "ε x ε_0", "ε + ε_0", "ε - ε_0"]
+    },
+    "answer": {
+      "hi": "ε/ε_0",
+      "en": "ε/ε_0"
+    }
+  },
+  {
+    "question": {
+      "hi": "विद्युतशीलता (ε) का मात्रक होता है –",
+      "en": "The unit of permittivity (ε) is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["न्यूटन/मी० Nm^-1", "फैराडे/मी० Fm^-1", "कूलम्ब/वोल्ट CV^-1", "इनमें से कोई नही"],
+      "en": ["Newton/m Nm^-1", "Farad/m Fm^-1", "Coulomb/Volt CV^-1", "None of these"]
+    },
+    "answer": {
+      "hi": "फैराडे/मी० Fm^-1",
+      "en": "Farad/m Fm^-1"
+    }
+  },
+  {
+    "question": {
+      "hi": "کسی विद्युतीय क्षेत्र में किसी बिन्दु पर परीक्षण आवेश (test charge) q_0 पर लगा विद्युत् बल F⃗ हो, तो उस बिन्दु पर विद्युत् तीव्रता (E⃗) होगी –",
+      "en": "If F⃗ is the electric force acting on a test charge q_0 at any point in an electric field, then the electric intensity (E⃗) at that point will be –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["E⃗ = F⃗/q_0", "E⃗ = q_0F⃗", "E⃗ = q_0/F⃗", "E⃗ = q_0^2F⃗"],
+      "en": ["E⃗ = F⃗/q_0", "E⃗ = q_0F⃗", "E⃗ = q_0/F⃗", "E⃗ = q_0^2F⃗"]
+    },
+    "answer": {
+      "hi": "E⃗ = F⃗/q_0",
+      "en": "E⃗ = F⃗/q_0"
+    }
+  },
+  {
+    "question": {
+      "hi": "विद्युत् क्षेत्र की तीव्रता (Electric field intensity) का मात्रक होता है –",
+      "en": "The unit of electric field intensity is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["न्यूटन/कूलम्ब (NC)", "न्यूटन/कूलम्ब (NC^-1)", "वोल्ट/मी० (Vm)", "कूलम्ब/न्यूटन (CN^-1)"],
+      "en": ["Newton/Coulomb (NC)", "Newton/Coulomb (NC^-1)", "Volt/m (Vm)", "Coulomb/Newton (CN^-1)"]
+    },
+    "answer": {
+      "hi": "न्यूटन/कूलम्ब (NC^-1)",
+      "en": "Newton/Coulomb (NC^-1)"
+    }
+  },
+  {
+    "question": {
+      "hi": "विद्युत् क्षेत्र की तीव्रता की विमा है –",
+      "en": "The dimension of electric field intensity is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["[MLT^-2 A^-1]", "[MLT^-3 A^-1]", "[ML^2 T^-3 A^-2]", "[ML^2 T^2 A^2]"],
+      "en": ["[MLT^-2 A^-1]", "[MLT^-3 A^-1]", "[ML^2 T^-3 A^-2]", "[ML^2 T^2 A^2]"]
+    },
+    "answer": {
+      "hi": "[MLT^-3 A^-1]",
+      "en": "[MLT^-3 A^-1]"
+    }
+  },
+  {
+    "question": {
+      "hi": "समरूप विद्युत् क्षेत्र की तीव्रता E⃗ हो, तब इसमें रखे गए +q आवेश पर लगा बल होगा –",
+      "en": "If E⃗ is the intensity of a uniform electric field, then the force acting on a +q charge placed in it will be –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["F⃗ = qE⃗", "F⃗ = E⃗/q", "F⃗ = q^2E⃗", "इनमें से कोई नहीं"],
+      "en": ["F⃗ = qE⃗", "F⃗ = E⃗/q", "F⃗ = q^2E⃗", "None of these"]
+    },
+    "answer": {
+      "hi": "F⃗ = qE⃗",
+      "en": "F⃗ = qE⃗"
+    }
+  },
+  {
+    "question": {
+      "hi": "एक बिन्दु-आवेश Q से r दूरी पर विद्युत्-क्षेत्र की तीव्रता का परिमाण होता है –",
+      "en": "The magnitude of the electric field intensity at a distance r from a point charge Q is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["1/4πε_0 . Q/r", "1/4πε_0 . Q/r^2", "1/4πε_0 . Qr^2", "1/4πε_0 . Q^2/r"],
+      "en": ["1/4πε_0 . Q/r", "1/4πε_0 . Q/r^2", "1/4πε_0 . Qr^2", "1/4πε_0 . Q^2/r"]
+    },
+    "answer": {
+      "hi": "1/4πε_0 . Q/r^2",
+      "en": "1/4πε_0 . Q/r^2"
+    }
+  },
+  {
+    "question": {
+      "hi": "निम्नलिखित में कौन सदिश राशि है ?",
+      "en": "Which of the following is a vector quantity?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["आवेश", "धारिता", "विद्युत्-तीव्रता", "इनमें से कोई नहीं"],
+      "en": ["Charge", "Capacitance", "Electric intensity", "None of these"]
+    },
+    "answer": {
+      "hi": "विद्युत्-तीव्रता",
+      "en": "Electric intensity"
+    }
+  },
+  {
+    "question": {
+      "hi": "विद्युत्-विभव का मात्रक वोल्ट है और यह तुल्य है –",
+      "en": "The unit of electric potential is Volt and it is equivalent to –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["जूल/कूलम्ब", "जूल x कूलम्ब", "कूलम्ब/जूल", "इनमें से कोई नहीं"],
+      "en": ["Joule/Coulomb", "Joule x Coulomb", "Coulomb/Joule", "None of these"]
+    },
+    "answer": {
+      "hi": "जूल/कूलम्ब",
+      "en": "Joule/Coulomb"
+    }
+  },
+  {
+    "question": {
+      "hi": "साबुन के एक बुलबुले को जब आवेशित किया जाता है तो उसकी त्रिज्या –",
+      "en": "When a soap bubble is charged, its radius –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["बढ़ती है", "घटती है", "अपरिवर्तित रहती है", "शून्य हो जाती है"],
+      "en": ["Increases", "Decreases", "Remains unchanged", "Becomes zero"]
+    },
+    "answer": {
+      "hi": "बढ़ती है",
+      "en": "Increases"
+    }
+  },
+  {
+    "question": {
+      "hi": "विद्युत् द्वि-ध्रुव आघूर्ण का S.I. मात्रक होता है –",
+      "en": "The S.I. unit of electric dipole moment is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["कूलम्ब x मी० (C x m)", "कूलम्ब / मीटर C/ m", "कूलम्ब-मी०-2 (C x m2)", "कूलम्ब2 x मीटर (C2 m)"],
+      "en": ["Coulomb x m (C x m)", "Coulomb / meter C/ m", "Coulomb-m^-2 (C x m2)", "Coulomb^2 x meter (C2 m)"]
+    },
+    "answer": {
+      "hi": "कूलम्ब x मी० (C x m)",
+      "en": "Coulomb x m (C x m)"
+    }
+  },
+  {
+    "question": {
+      "hi": "यदि किसी अल्प क्षेत्र dA पर विद्युतीय तीव्रता E⃗ अभिलम्ब हो, तब उस क्षेत्र पर विद्युत् फ्लक्स होगा –",
+      "en": "If the electric intensity E⃗ is normal to a small area dA, then the electric flux over that area will be –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["E . dA", "शून्य", "EdA cosθ", "EdA sinθ"],
+      "en": ["E . dA", "Zero", "EdA cosθ", "EdA sinθ"]
+    },
+    "answer": {
+      "hi": "E . dA",
+      "en": "E . dA"
+    }
+  },
+  {
+    "question": {
+      "hi": "किसी घिरे सतह पर कुल विद्युत् फ्लक्स पृष्ठ के भीतर स्थित कुल आवेश का होता है –",
+      "en": "The total electric flux over an enclosed surface is how many times the total charge inside the surface –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["1/ε_0 गुना", "1/4π गुना", "ε_0 गुणा", "शून्य होता है"],
+      "en": ["1/ε_0 times", "1/4π times", "ε_0 times", "Is zero"]
+    },
+    "answer": {
+      "hi": "1/ε_0 गुना",
+      "en": "1/ε_0 times"
+    }
+  },
+  {
+    "question": {
+      "hi": "किसी आवेशित समतल चादर के नजदीक विद्युत् तीव्रता E का मान होता है –",
+      "en": "The value of electric intensity E near a charged plane sheet is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["σ/ε_0", "σ/2ε_0", "σ x ε_0", "शून्य"],
+      "en": ["σ/ε_0", "σ/2ε_0", "σ x ε_0", "Zero"]
+    },
+    "answer": {
+      "hi": "σ/2ε_0",
+      "en": "σ/2ε_0"
+    }
+  },
+  {
+    "question": {
+      "hi": "किसी आवेशित चालक के नजदीक विद्युत् तीव्रता E का मान होता है –",
+      "en": "The value of electric intensity E near a charged conductor is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["σ/ε_0", "σ/2ε_0", "σ x ε_0", "शून्य"],
+      "en": ["σ/ε_0", "σ/2ε_0", "σ x ε_0", "Zero"]
+    },
+    "answer": {
+      "hi": "σ/ε_0",
+      "en": "σ/ε_0"
+    }
+  },
+  {
+    "question": {
+      "hi": "किसी अचालक पदार्थ के गोले को आवेश देने पर वह वितरित होता है –",
+      "en": "When charge is given to a sphere of non-conducting material, it is distributed –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["सतह पर", "सतह के अलावा अंदर भी", "केवल भीतर", "इनमें से कोई नहीं"],
+      "en": ["On the surface", "Inside as well as on the surface", "Only inside", "None of these"]
+    },
+    "answer": {
+      "hi": "इनमें से कोई नहीं",
+      "en": "None of these"
+    }
+  },
+  {
+    "question": {
+      "hi": "चालक पदार्थ से बने असीमित आवेशित पतली चादर की सतह के निकट स्थित किसी बिन्दु पर विद्युतीय क्षेत्र का मान होता है –",
+      "en": "The value of electric field at a point near the surface of an infinite charged thin sheet made of conducting material is –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["ε_0σ", "σ/ε_0", "σ/2ε_0", "1/2 σε_0"],
+      "en": ["ε_0σ", "σ/ε_0", "σ/2ε_0", "1/2 σε_0"]
+    },
+    "answer": {
+      "hi": "σ/ε_0",
+      "en": "σ/ε_0"
+    }
+  },
+  {
+    "question": {
+      "hi": "जब किसी वस्तु को आवेशित किया जाता है, तो उसका द्रव्यमान –",
+      "en": "When an object is charged, its mass –"
+    },
+    "image": "",
+    "options": {
+      "hi": ["बढ़ता है", "घटता है", "अचर रहता है", "बढ़ या घट सकता है"],
+      "en": ["Increases", "Decreases", "Remains constant", "May increase or decrease"]
+    },
+    "answer": {
+      "hi": "बढ़ या घट सकता है",
+      "en": "May increase or decrease"
+    }
+  }
+]
