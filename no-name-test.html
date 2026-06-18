@@ -67,33 +67,6 @@
       box-sizing: border-box;
     }
 
-    #nameInput { 
-      text-align: center; padding: 40px 24px; 
-      display: flex; flex-direction: column; align-items: center; 
-      max-width: 400px; margin: 40px auto;
-      border: 1px solid var(--border-color); border-radius: 12px;
-      box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.05);
-      position: relative;
-      z-index: 10;
-    }
-    .category-tag { 
-      font-size: 11px; font-weight: 700; color: var(--primary-color); 
-      margin-bottom: 16px; background: var(--primary-light);
-      padding: 4px 12px; border-radius: 20px; text-transform: uppercase;
-    }
-    h2 { margin: 0 0 20px 0; font-size: 22px; font-weight: 700; color: var(--text-main); }
-    #studentName { 
-      width: 100%; padding: 12px 14px; font-size: 14px; 
-      border: 1px solid #cbd5e1; border-radius: 6px; outline: none; 
-      margin-bottom: 16px; text-align: center; box-sizing: border-box;
-    }
-    
-    .start-btn { 
-      width: 100%; padding: 14px; background: var(--primary-color); 
-      color: white; border: none; border-radius: 6px; 
-      font-size: 14px; font-weight: 600; cursor: pointer;
-    }
-
     #testContainer { display: none; width: 100%; }
     
     /* COMPACT TOP BAR */
@@ -203,7 +176,7 @@
       margin: 0;
     }
     
-    /* MAIN EXAM CONTAINER IMAGES STYLING FROM JSON */
+    /* MAIN EXAM CONTAINER IMAGES STYLING */
     .q-image { 
       display: block;
       max-width: 100%; 
@@ -431,16 +404,9 @@
        Banner Advertisement Space
     </div>
 
-    <div id="nameInput">
-      <span class="category-tag">📖 Lucent Online Assessment</span>
-      <h2>Quiz Management Portal</h2>
-      <input type="text" id="studentName" placeholder="Enter Student Full Name" autocomplete="off">
-      <button class="start-btn" onclick="startTest()">Start Online Test</button>
-    </div>
-
     <div id="testContainer">
       <div class="top-bar">
-        <span id="testTitle" style="font-weight:600;">Loading User...</span>
+        <span id="testTitle" style="font-weight:600;">Live Assessment</span>
         <div class="header-right">
           <div id="timer">🕒 50:00</div>
           <button id="paletteToggle" onclick="togglePalette()">☰</button>
@@ -497,12 +463,12 @@
   let timeLeft = 1200; 
   const NEGATIVE_MARK = 0.0; 
 
-  let questions = [], currentIdx = 0, userAns = [], reviewList = [], timerId = null, sName = "";
+  let questions = [], currentIdx = 0, userAns = [], reviewList = [], timerId = null;
   let subjectOrder = Object.keys(SUBJECT_CONFIG);
   let subjectCounts = {}; 
 
   function saveToLocal() {
-    const data = { sName, questions, currentIdx, userAns, reviewList, timeLeft, isActive: true };
+    const data = { questions, currentIdx, userAns, reviewList, timeLeft, isActive: true };
     localStorage.setItem('quiz_session_elite', JSON.stringify(data));
   }
 
@@ -516,14 +482,21 @@
           showCancelButton: true, confirmButtonText: 'Yes, Resume', cancelButtonText: 'No, Start Fresh'
         }).then((result) => {
           if (result.isConfirmed) {
-            sName = data.sName; questions = data.questions; currentIdx = data.currentIdx;
+            questions = data.questions; currentIdx = data.currentIdx;
             userAns = data.userAns; reviewList = data.reviewList; timeLeft = data.timeLeft;
             calculateCounts();
             launchTest();
-          } else { localStorage.removeItem('quiz_session_elite'); }
+          } else { 
+            localStorage.removeItem('quiz_session_elite');
+            fetchAndInitializeTest();
+          }
         });
+        return;
       }
     }
+    
+    // Direct open fresh test
+    fetchAndInitializeTest();
 
     window.addEventListener('keydown', (e) => {
       if (document.getElementById('testContainer').style.display === 'block') {
@@ -572,10 +545,7 @@
     }
   }
 
-  async function startTest() {
-    sName = document.getElementById('studentName').value.trim();
-    if(!sName) return Swal.fire('Attention Required', 'Kripya apna poora naam darj karein.', 'warning');
-    
+  async function fetchAndInitializeTest() {
     Swal.fire({title: 'Loading Exam Papers...', text: 'Sabhi subjects ke questions fetch ho rahe hain.', didOpen: () => Swal.showLoading()});
     
     try {
@@ -585,7 +555,7 @@
         let response = await fetch(url);
         let data = await response.json();
         
-        // Fisher-Yates Shuffling: Shuffle within each fetched subject data array
+        // Fisher-Yates Shuffling
         for (let i = data.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
           [data[i], data[j]] = [data[j], data[i]];
@@ -604,8 +574,6 @@
       reviewList = new Array(questions.length).fill(false);
       Swal.close();
       
-      let elem = document.documentElement;
-      if (elem.requestFullscreen) { elem.requestFullscreen(); }
       launchTest();
     } catch (e) {
       Swal.fire('Connection Error', 'Questions load karne me samasya hui. Kripya URL check karein.', 'error');
@@ -613,7 +581,6 @@
   }
 
   function launchTest() {
-    document.getElementById('nameInput').style.display = 'none';
     document.getElementById('testContainer').style.display = 'block';
     loadQuestion();
     timerId = setInterval(() => {
@@ -626,7 +593,6 @@
 
   function loadQuestion() {
     const q = questions[currentIdx];
-    document.getElementById('testTitle').innerText = `${sName}`;
     
     let currentNum = (currentIdx + 1) < 10 ? `0${currentIdx + 1}` : (currentIdx + 1);
     let totalNum = questions.length < 10 ? `0${questions.length}` : questions.length;
@@ -636,7 +602,6 @@
     let subIndicator = `<span style="color:var(--primary-color); font-size:11px; font-weight:700; display:block; margin-bottom:2px; text-transform:uppercase; letter-spacing:0.03em;">SECTION: ${q.associatedSubject}</span>`;
     document.getElementById('qText').innerHTML = subIndicator + q.question;
     
-    // SAFE DYNAMIC IMAGE LOGIC FROM JSON FIELD
     let imgContainer = document.getElementById('qImageContainer');
     if (q.image && q.image.trim() !== "") {
       imgContainer.innerHTML = `<img src="${q.image}" class="q-image" alt="Question Image">`;
@@ -728,7 +693,6 @@
   async function submitQuiz() {
     clearInterval(timerId);
     localStorage.removeItem('quiz_session_elite');
-    if (document.fullscreenElement) { document.exitFullscreen(); }
 
     let rawScore = 0, correctCount = 0, wrongCount = 0, summaryHtml = "";
     
@@ -769,7 +733,7 @@
       title: '', width: '98%',
       html: `
         <div class="summary-header">
-           <h3>Result: ${sName}</h3>
+           <h3>Assessment Result</h3>
            <div class="score-display">${finalScore} / ${totalQ}</div>
            
            <div class="metrics-grid">
