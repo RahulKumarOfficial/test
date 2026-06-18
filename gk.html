@@ -73,6 +73,8 @@
       max-width: 400px; margin: 40px auto;
       border: 1px solid var(--border-color); border-radius: 12px;
       box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.05);
+      position: relative;
+      z-index: 10;
     }
     .category-tag { 
       font-size: 11px; font-weight: 700; color: var(--primary-color); 
@@ -266,7 +268,7 @@
     .next { background: var(--primary-color); color: white; font-weight: 700; }
     .next:hover { background: #1d4ed8; }
 
-    /* Side Palette Hub - FIXED CUTTING ISSUE AND ADJUSTED BOX SIZES */
+    /* Side Palette Hub - FIXED BLOCKING ISSUE WITH VISIBILITY AND POINTER EVENTS */
     #sidePalette { 
       position: fixed; 
       right: 0; 
@@ -275,15 +277,21 @@
       height: 100%; 
       background: white; 
       box-shadow: -5px 0 25px rgba(0,0,0,0.08); 
-      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1); 
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.25s; 
       z-index: 1001; 
       padding: 16px; 
       box-sizing: border-box; 
       display: flex; 
       flex-direction: column; 
       transform: translateX(100%);
+      visibility: hidden;
+      pointer-events: none;
     }
-    #sidePalette.open { transform: translateX(0); }
+    #sidePalette.open { 
+      transform: translateX(0); 
+      visibility: visible;
+      pointer-events: auto;
+    }
     
     .stats-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin: 12px 0; background: #f8fafc; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); text-align: center; }
     .stat-box { font-size: 11px; font-weight: 500; color: var(--text-muted); }
@@ -323,7 +331,7 @@
 
     @media (min-width: 1025px) {
       .container { margin-right: 300px; width: calc(100% - 300px); max-width: 100%; border-right: 1px solid var(--border-color); padding-top: 12px; }
-      #sidePalette { right: 0 !important; border-left: 1px solid var(--border-color); box-shadow: none; transform: none !important; }
+      #sidePalette { right: 0 !important; border-left: 1px solid var(--border-color); box-shadow: none; transform: none !important; visibility: visible; pointer-events: auto; }
       #sidePalette button[onclick="togglePalette()"] { display: none; }
       #paletteToggle { display: none; }
     }
@@ -483,7 +491,7 @@
 
 <script>
   const SUBJECT_CONFIG = {
-    "Reasoning": "gk.json"
+    "Reasoning": "https://rahulkumarofficial.github.io/test/history-10.json"
   };
 
   let timeLeft = 1200; 
@@ -653,4 +661,138 @@
   function saveAns(val, el) {
     userAns[currentIdx] = val;
     reviewList[currentIdx] = false;
-    document.querySelectorAll('.option-label').forEach(
+    document.querySelectorAll('.option-label').forEach(l => l.classList.remove('selected'));
+    el.classList.add('selected');
+    renderPalette();
+    saveToLocal();
+  }
+
+  function markReview() { 
+    reviewList[currentIdx] = true; 
+    userAns[currentIdx] = null; 
+    saveToLocal(); 
+    handleNext(); 
+  }
+  
+  function togglePalette() { document.getElementById('sidePalette').classList.toggle('open'); }
+  
+  function renderPalette() {
+    const grid = document.getElementById('paletteGrid'); grid.innerHTML = "";
+    let solved = 0, reviewed = 0;
+
+    questions.forEach((_, i) => {
+      const btn = document.createElement('button');
+      btn.innerText = i + 1;
+      btn.className = 'palette-btn';
+      if(i === currentIdx) btn.classList.add('current');
+      
+      if(reviewList[i]) { btn.classList.add('reviewed'); reviewed++; }
+      else if(userAns[i]) { btn.classList.add('answered'); solved++; }
+      
+      btn.onclick = () => { 
+        currentIdx = i; loadQuestion(); 
+        if(window.innerWidth <= 1024) togglePalette(); 
+      };
+      grid.appendChild(btn);
+    });
+
+    document.getElementById('statSolved').innerText = solved;
+    document.getElementById('statReview').innerText = reviewed;
+    document.getElementById('statLeft').innerText = questions.length - (solved + reviewed);
+  }
+
+  function previousQuestion() { if(currentIdx > 0) { currentIdx--; loadQuestion(); } }
+  function handleNext() { if(currentIdx < questions.length - 1) { currentIdx++; loadQuestion(); } else { triggerManualSubmit(); } }
+
+  function triggerManualSubmit() {
+    Swal.fire({ title: 'Finish Assessment?', text: 'Kya aap is online test ko submit karna chahte hain?', icon: 'question', showCancelButton: true, confirmButtonText: 'Yes, Submit' }).then(r => { if(r.isConfirmed) submitQuiz(); });
+  }
+
+  function filterAnswersReport(type, btnElement) {
+    document.querySelectorAll('.filter-action-btn').forEach(btn => btn.classList.remove('active-filter'));
+    btnElement.classList.add('active-filter');
+
+    document.querySelectorAll('.sum-item').forEach(item => {
+      if (type === 'all') {
+        item.style.display = "block";
+      } else if (type === 'right' && item.classList.contains('sum-correct')) {
+        item.style.display = "block";
+      } else if (type === 'wrong' && item.classList.contains('sum-wrong')) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+
+  async function submitQuiz() {
+    clearInterval(timerId);
+    localStorage.removeItem('quiz_session_elite');
+    if (document.fullscreenElement) { document.exitFullscreen(); }
+
+    let rawScore = 0, correctCount = 0, wrongCount = 0, summaryHtml = "";
+    
+    questions.forEach((q, i) => {
+      let isCorrect = userAns[i] === q.answer;
+      let statusClass = isCorrect ? 'sum-correct' : (userAns[i] ? 'sum-wrong' : 'sum-skipped');
+      
+      if(userAns[i]) {
+          if(isCorrect) { 
+            correctCount++; 
+            rawScore += 1; 
+          } else { 
+            wrongCount++; 
+            rawScore -= NEGATIVE_MARK; 
+          }
+      }
+
+      let resultImageHtml = (q.image && q.image.trim() !== "") ? `<img src="${q.image}" class="result-q-image" alt="Review Image">` : '';
+
+      summaryHtml += `<div class="sum-item ${statusClass}">
+        <span style="font-size:10px; font-weight:700; opacity: 0.8; display:block; margin-bottom:2px;">[${q.associatedSubject}]</span>
+        <b>Q.${i+1}: ${q.question}</b><br>
+        ${resultImageHtml}
+        Your Ans: <span style="font-weight:700">${userAns[i] || 'Skipped'}</span> ${isCorrect ? '✅' : (userAns[i] ? '❌ (-' + NEGATIVE_MARK + ')' : '')}<br>
+        <span style="font-weight:700;">Correct Answer: ${q.answer}</span>
+      </div>`;
+    });
+
+    let finalScore = rawScore.toFixed(2);
+    let totalQ = questions.length;
+    let percent = ((rawScore / totalQ) * 100).toFixed(1);
+    if(percent < 0) percent = 0; 
+    let skippedCount = totalQ - (correctCount + wrongCount);
+
+    await Swal.fire({ title: 'Processing Results...', text: 'Report card generate ho rahi hai.', icon: 'success', timer: 1500, showConfirmButton: false });
+
+    Swal.fire({
+      title: '', width: '98%',
+      html: `
+        <div class="summary-header">
+           <h3>Result: ${sName}</h3>
+           <div class="score-display">${finalScore} / ${totalQ}</div>
+           
+           <div class="metrics-grid">
+              <div class="m-card">Accuracy<b>${percent}%</b></div>
+              <div class="m-card">Correct<b style="color:#4ade80">${correctCount}</b></div>
+              <div class="m-card">Wrong<b style="color:#f87171">${wrongCount}</b></div>
+              <div class="m-card">Skipped<b style="color:#94a3b8">${skippedCount}</b></div>
+           </div>
+        </div>
+
+        <div class="section-result-title">📊 Filter Question Performance</div>
+        <div class="filter-btn-grid">
+           <button class="filter-action-btn btn-right" onclick="filterAnswersReport('right', this)">Right Answers</button>
+           <button class="filter-action-btn btn-wrong" onclick="filterAnswersReport('wrong', this)">Wrong Answers</button>
+        </div>
+
+        <div class="section-result-title">📝 Question Analysis Summary</div>
+        <div class="summary-box" id="reviewSummaryBox">${summaryHtml}</div>
+      `,
+      confirmButtonText: 'Restart Portal', 
+      allowOutsideClick: false
+    }).then(() => location.reload());
+  }
+</script>
+</body>
+</html>
