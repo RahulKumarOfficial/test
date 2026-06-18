@@ -1,0 +1,252 @@
+[
+  {
+    "question": "मनुष्य का वैज्ञानिक नाम क्या है?",
+    "options": ["Homo erectus", "Homo sapiens", "Humanus", "Homo habilis"],
+    "answer": "Homo sapiens"
+  },
+  {
+    "question": "गाय का वैज्ञानिक नाम क्या है?",
+    "options": ["Bos taurus", "Bos indicus", "Canis familiaris", "Equus caballus"],
+    "answer": "Bos indicus"
+  },
+  {
+    "question": "आम का वैज्ञानिक नाम क्या है?",
+    "options": ["Mangifera indica", "Musa paradisiaca", "Citrus limon", "Psidium guajava"],
+    "answer": "Mangifera indica"
+  },
+  {
+    "question": "कुत्ते का वैज्ञानिक नाम क्या है?",
+    "options": ["Felis catus", "Bos indicus", "Canis familiaris", "Panthera leo"],
+    "answer": "Canis familiaris"
+  },
+  {
+    "question": "शेर का वैज्ञानिक नाम क्या है?",
+    "options": ["Panthera tigris", "Panthera leo", "Felis catus", "Equus caballus"],
+    "answer": "Panthera leo"
+  },
+  {
+    "question": "मौर्य वंश के संस्थापक कौन थे?",
+    "options": ["अशोक", "चंद्रगुप्त मौर्य", "बिंदुसार", "हर्षवर्धन"],
+    "answer": "चंद्रगुप्त मौर्य"
+  },
+  {
+    "question": "गुप्त वंश के संस्थापक कौन थे?",
+    "options": ["समुद्रगुप्त", "चंद्रगुप्त-I", "श्रीगुप्त", "स्कंदगुप्त"],
+    "answer": "श्रीगुप्त"
+  },
+  {
+    "question": "दिल्ली सल्तनत के संस्थापक कौन थे?",
+    "options": ["इल्तुतमिश", "बलबन", "कुतुबुद्दीन ऐबक", "अलाउद्दीन खिलजी"],
+    "answer": "कुतुबुद्दीन ऐबक"
+  },
+  {
+    "question": "मुगल वंश के संस्थापक कौन थे?",
+    "options": ["अकबर", "बाबर", "हुमायूं", "शाहजहाँ"],
+    "answer": "बाबर"
+  },
+  {
+    "question": "मराठा साम्राज्य के संस्थापक कौन थे?",
+    "options": ["बाजीराव", "शिवाजी महाराज", "संभाजी", "शाहू"],
+    "answer": "शिवाजी महाराज"
+  },
+  {
+    "question": "सिक्ख धर्म के संस्थापक कौन थे?",
+    "options": ["गुरु गोबिंद सिंह", "गुरु अर्जुन देव", "गुरु नानक देव", "गुरु तेग बहादुर"],
+    "answer": "गुरु नानक देव"
+  },
+  {
+    "question": "ब्रह्म समाज की स्थापना किसने की?",
+    "options": ["विवेकानंद", "राजा राममोहन राय", "दयानंद सरस्वती", "गांधीजी"],
+    "answer": "राजा राममोहन राय"
+  },
+  {
+    "question": "आर्य समाज के संस्थापक कौन थे?",
+    "options": ["विवेकानंद", "रामकृष्ण परमहंस", "दयानंद सरस्वती", "अरविंद घोष"],
+    "answer": "दयानंद सरस्वती"
+  },
+  {
+    "question": "भारतीय राष्ट्रीय कांग्रेस के संस्थापक कौन थे?",
+    "options": ["गांधीजी", "नेहरू", "ए. ओ. ह्यूम", "तिलक"],
+    "answer": "ए. ओ. ह्यूम"
+  },
+  {
+    "question": "बिजली के बल्ब का आविष्कार किसने किया?",
+    "options": ["बेल", "एडिसन", "न्यूटन", "फैराडे"],
+    "answer": "एडिसन"
+  },
+  {
+    "question": "टेलीफोन का आविष्कार किसने किया?",
+    "options": ["एडिसन", "मारकोनी", "ग्राहम बेल", "वाट"],
+    "answer": "ग्राहम बेल"
+  },
+  {
+    "question": "रेडियो का आविष्कार किसने किया?",
+    "options": ["एडिसन", "बेल", "मारकोनी", "न्यूटन"],
+    "answer": "मारकोनी"
+  },
+  {
+    "question": "कंप्यूटर के जनक कौन हैं?",
+    "options": ["बिल गेट्स", "एलन ट्यूरिंग", "चार्ल्स बैबेज", "स्टीव जॉब्स"],
+    "answer": "चार्ल्स बैबेज"
+  },
+  {
+    "question": "भाप इंजन का आविष्कार किसने किया?",
+    "options": ["जेम्स वाट", "एडिसन", "बेल", "न्यूटन"],
+    "answer": "जेम्स वाट"
+  },
+  {
+    "question": "हवाई जहाज का आविष्कार किसने किया?",
+    "options": ["राइट ब्रदर्स", "एडिसन", "न्यूटन", "मारकोनी"],
+    "answer": "राइट ब्रदर्स"
+  },
+  {
+    "question": "एक्स-रे की खोज किसने की?",
+    "options": ["रदरफोर्ड", "रॉन्टजन", "बोहर", "डाल्टन"],
+    "answer": "रॉन्टजन"
+  },
+  {
+    "question": "पेनिसिलिन की खोज किसने की?",
+    "options": ["फ्लेमिंग", "पास्चर", "कोच", "जेनर"],
+    "answer": "फ्लेमिंग"
+  },
+  {
+    "question": "डायनामाइट का आविष्कार किसने किया?",
+    "options": ["नोबेल", "न्यूटन", "एडिसन", "बेल"],
+    "answer": "नोबेल"
+  },
+  {
+    "question": "शून्य की खोज किसने की?",
+    "options": ["भास्कराचार्य", "रामानुजन", "आर्यभट्ट", "यूक्लिड"],
+    "answer": "आर्यभट्ट"
+  },
+  {
+    "question": "पाइथागोरस प्रमेय किसने दिया?",
+    "options": ["यूक्लिड", "पाइथागोरस", "न्यूटन", "आर्यभट्ट"],
+    "answer": "पाइथागोरस"
+  },
+  {
+    "question": "बीजगणित के जनक कौन हैं?",
+    "options": ["आर्यभट्ट", "अल-ख्वारिज्मी", "भास्कराचार्य", "रामानुजन"],
+    "answer": "अल-ख्वारिज्मी"
+  },
+  {
+    "question": "लघुगणक की खोज किसने की?",
+    "options": ["नेपियर", "न्यूटन", "यूक्लिड", "गॉस"],
+    "answer": "नेपियर"
+  },
+  {
+    "question": "गुरुत्वाकर्षण का सिद्धांत किसने दिया?",
+    "options": ["आइंस्टीन", "न्यूटन", "गैलीलियो", "केप्लर"],
+    "answer": "न्यूटन"
+  },
+  {
+    "question": "सापेक्षता का सिद्धांत किसने दिया?",
+    "options": ["न्यूटन", "बोहर", "आइंस्टीन", "डाल्टन"],
+    "answer": "आइंस्टीन"
+  },
+  {
+    "question": "रमन प्रभाव की खोज किसने की?",
+    "options": ["सी. वी. रमन", "मेघनाद साहा", "होमी भाभा", "बोस"],
+    "answer": "सी. वी. रमन"
+  },
+  {
+    "question": "Vitamin A का रासायनिक नाम क्या है?",
+    "options": ["Calciferol", "Retinol", "Tocopherol", "Ascorbic Acid"],
+    "answer": "Retinol"
+  },
+  {
+    "question": "Vitamin B1 का रासायनिक नाम क्या है?",
+    "options": ["Thiamine", "Niacin", "Biotin", "Riboflavin"],
+    "answer": "Thiamine"
+  },
+  {
+    "question": "Vitamin C का रासायनिक नाम क्या है?",
+    "options": ["Retinol", "Ascorbic Acid", "Calciferol", "Biotin"],
+    "answer": "Ascorbic Acid"
+  },
+  {
+    "question": "Vitamin D का रासायनिक नाम क्या है?",
+    "options": ["Tocopherol", "Retinol", "Calciferol", "Niacin"],
+    "answer": "Calciferol"
+  },
+  {
+    "question": "Vitamin E का रासायनिक नाम क्या है?",
+    "options": ["Tocopherol", "Retinol", "Biotin", "Pyridoxine"],
+    "answer": "Tocopherol"
+  },
+  {
+    "question": "Vitamin K का रासायनिक नाम क्या है?",
+    "options": ["Folic Acid", "Cyanocobalamin", "Phylloquinone", "Niacin"],
+    "answer": "Phylloquinone"
+  },
+  {
+    "question": "Vitamin B12 का रासायनिक नाम क्या है?",
+    "options": ["Cyanocobalamin", "Thiamine", "Riboflavin", "Biotin"],
+    "answer": "Cyanocobalamin"
+  },
+  {
+    "question": "हाइड्रोजन की परमाणु संख्या क्या है?",
+    "options": ["1", "2", "8", "10"],
+    "answer": "1"
+  },
+  {
+    "question": "ऑक्सीजन की परमाणु संख्या क्या है?",
+    "options": ["6", "7", "8", "9"],
+    "answer": "8"
+  },
+  {
+    "question": "सोडियम का संकेत क्या है?",
+    "options": ["So", "S", "Na", "Sd"],
+    "answer": "Na"
+  },
+  {
+    "question": "लोहा का संकेत क्या है?",
+    "options": ["Fe", "Lo", "Ir", "Lh"],
+    "answer": "Fe"
+  },
+  {
+    "question": "तांबा का संकेत क्या है?",
+    "options": ["Co", "Cu", "Ca", "Cb"],
+    "answer": "Cu"
+  },
+  {
+    "question": "चांदी का संकेत क्या है?",
+    "options": ["Au", "Ag", "Al", "Sn"],
+    "answer": "Ag"
+  },
+  {
+    "question": "सोना का संकेत क्या है?",
+    "options": ["Ag", "Au", "Go", "Gd"],
+    "answer": "Au"
+  },
+  {
+    "question": "बल की SI इकाई क्या है?",
+    "options": ["जूल", "वाट", "न्यूटन", "पास्कल"],
+    "answer": "न्यूटन"
+  },
+  {
+    "question": "कार्य/ऊर्जा की SI इकाई क्या है?",
+    "options": ["जूल", "न्यूटन", "वाट", "हर्ट्ज"],
+    "answer": "जूल"
+  },
+  {
+    "question": "शक्ति की SI इकाई क्या है?",
+    "options": ["जूल", "वाट", "पास्कल", "कूलाम"],
+    "answer": "वाट"
+  },
+  {
+    "question": "दाब की SI इकाई क्या है?",
+    "options": ["वाट", "न्यूटन", "पास्कल", "जूल"],
+    "answer": "पास्कल"
+  },
+  {
+    "question": "आवृत्ति की SI इकाई क्या है?",
+    "options": ["हर्ट्ज", "वोल्ट", "कूलाम", "ओम"],
+    "answer": "हर्ट्ज"
+  },
+  {
+    "question": "विद्युत आवेश की SI इकाई क्या है?",
+    "options": ["वोल्ट", "एम्पीयर", "कूलाम", "ओम"],
+    "answer": "कूलाम"
+  }
+    ]
