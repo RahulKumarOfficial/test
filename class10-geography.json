@@ -1,0 +1,2252 @@
+[
+  {
+    "question": {
+      "hi": "संसाधन के रूप में किसी पदार्थ का अस्तित्व किस पर निर्भर करता है?",
+      "en": "The existence of a substance as a resource depends on what?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["रंग", "उपयोगिता", "आकार", "वजन"],
+      "en": ["Color", "Utility", "Size", "Weight"]
+    },
+    "answer": {
+      "hi": "उपयोगिता",
+      "en": "Utility"
+    }
+  },
+  {
+    "question": {
+      "hi": "निम्नलिखित में कौन प्राकृतिक संसाधन नहीं है?",
+      "en": "Which of the following is not a natural resource?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वन", "नदी", "खनिज", "नगर"],
+      "en": ["Forest", "River", "Mineral", "City"]
+    },
+    "answer": {
+      "hi": "नगर",
+      "en": "City"
+    }
+  },
+  {
+    "question": {
+      "hi": "लौह-अयस्क किस प्रकार का संसाधन है?",
+      "en": "What type of resource is iron ore?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["नवीकरणीय", "जैव", "अनवीकरणीय", "मानवकृत"],
+      "en": ["Renewable", "Biological", "Non-renewable", "Human-made"]
+    },
+    "answer": {
+      "hi": "अनवीकरणीय",
+      "en": "Non-renewable"
+    }
+  },
+  {
+    "question": {
+      "hi": "पवन ऊर्जा किस प्रकार का संसाधन है?",
+      "en": "What type of resource is wind energy?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["अनवीकरणीय", "नवीकरणीय", "जैव", "मानवकृत"],
+      "en": ["Non-renewable", "Renewable", "Biological", "Human-made"]
+    },
+    "answer": {
+      "hi": "नवीकरणीय",
+      "en": "Renewable"
+    }
+  },
+  {
+    "question": {
+      "hi": "कोयला किस प्रकार का संसाधन है?",
+      "en": "What type of resource is coal?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["नवीकरणीय", "अनवीकरणीय", "प्रवाह", "मानव संसाधन"],
+      "en": ["Renewable", "Non-renewable", "Flow", "Human resource"]
+    },
+    "answer": {
+      "hi": "अनवीकरणीय",
+      "en": "Non-renewable"
+    }
+  },
+  {
+    "question": {
+      "hi": "सौर ऊर्जा किस प्रकार का संसाधन है?",
+      "en": "What type of resource is solar energy?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["पुनःपूर्ति योग्य", "अनवीकरणीय", "अजैविक खनिज", "मानवकृत"],
+      "en": ["Renewable", "Non-renewable", "Inorganic mineral", "Human-made"]
+    },
+    "answer": {
+      "hi": "पुनःपूर्ति योग्य",
+      "en": "Renewable"
+    }
+  },
+  {
+    "question": {
+      "hi": "काली मिट्टी का दूसरा नाम क्या है?",
+      "en": "What is another name for black soil?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["खादर", "रेगुर", "बांगर", "जलोढ़"],
+      "en": ["Khadar", "Regur", "Bangar", "Alluvial"]
+    },
+    "answer": {
+      "hi": "रेगुर",
+      "en": "Regur"
+    }
+  },
+  {
+    "question": {
+      "hi": "सोपानी कृषि मुख्यतः किस क्षेत्र में की जाती है?",
+      "en": "In which region is terrace farming mainly practiced?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["राजस्थान", "पंजाब", "उत्तराखंड", "गुजरात"],
+      "en": ["Rajasthan", "Punjab", "Uttarakhand", "Gujarat"]
+    },
+    "answer": {
+      "hi": "उत्तराखंड",
+      "en": "Uttarakhand"
+    }
+  },
+  {
+    "question": {
+      "hi": "मरुस्थलीय मिट्टी मुख्यतः किस राज्य में पाई जाती है?",
+      "en": "In which state is desert soil mainly found?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["बिहार", "राजस्थान", "असम", "केरल"],
+      "en": ["Bihar", "Rajasthan", "Assam", "Kerala"]
+    },
+    "answer": {
+      "hi": "राजस्थान",
+      "en": "Rajasthan"
+    }
+  },
+  {
+    "question": {
+      "hi": "सतत पोषणीय विकास की अवधारणा किस आयोग से जुड़ी है?",
+      "en": "The concept of sustainable development is associated with which commission?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["रटलेज आयोग", "ब्रुंटलैंड आयोग", "मंडल आयोग", "सरकारिया आयोग"],
+      "en": ["Rutledge Commission", "Brundtland Commission", "Mandal Commission", "Sarkaria Commission"]
+    },
+    "answer": {
+      "hi": "ब्रुंटलैंड आयोग",
+      "en": "Brundtland Commission"
+    }
+  },
+  {
+    "question": {
+      "hi": "‘Limits to Growth’ पुस्तक किस वर्ष प्रकाशित हुई?",
+      "en": "In which year was the book 'Limits to Growth' published?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["1968", "1972", "1987", "1992"],
+      "en": ["1968", "1972", "1987", "1992"]
+    },
+    "answer": {
+      "hi": "1972",
+      "en": "1972"
+    }
+  },
+  {
+    "question": {
+      "hi": "पृथ्वी सम्मेलन 1992 में कहाँ हुआ था?",
+      "en": "Where was the Earth Summit held in 1992?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["पेरिस", "रियो डी जेनेरो", "लंदन", "जेनेवा"],
+      "en": ["Paris", "Rio de Janeiro", "London", "Geneva"]
+    },
+    "answer": {
+      "hi": "रियो डी जेनेरो",
+      "en": "Rio de Janeiro"
+    }
+  },
+  {
+    "question": {
+      "hi": "क्योटो सम्मेलन किस वर्ष हुआ था?",
+      "en": "In which year was the Kyoto Conference held?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["1992", "1995", "1997", "2001"],
+      "en": ["1992", "1995", "1997", "2001"]
+    },
+    "answer": {
+      "hi": "1997",
+      "en": "1997"
+    }
+  },
+  {
+    "question": {
+      "hi": "पर्यावरण संरक्षण का पहला विश्व सम्मेलन कहाँ हुआ था?",
+      "en": "Where was the first world conference on environmental protection held?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["स्टॉकहोम", "दिल्ली", "जेनेवा", "टोक्यो"],
+      "en": ["Stockholm", "Delhi", "Geneva", "Tokyo"]
+    },
+    "answer": {
+      "hi": "स्टॉकहोम",
+      "en": "Stockholm"
+    }
+  },
+  {
+    "question": {
+      "hi": "सार्वजनिक स्थान पर स्थित मंदिर किस प्रकार का संसाधन माना जाता है?",
+      "en": "A temple located in a public place is considered what type of resource?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["व्यक्तिगत", "सामुदायिक", "राष्ट्रीय", "अंतरराष्ट्रीय"],
+      "en": ["Individual", "Community", "National", "International"]
+    },
+    "answer": {
+      "hi": "सामुदायिक",
+      "en": "Community"
+    }
+  },
+  {
+    "question": {
+      "hi": "‘संसाधन होते नहीं, बनते हैं’ कथन किससे संबंधित है?",
+      "en": "The statement 'Resources are not, they become' is associated with whom?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["जिम्मरमैन", "नेहरू", "गाँधी", "शुमाकर"],
+      "en": ["Zimmermann", "Nehru", "Gandhi", "Schumacher"]
+    },
+    "answer": {
+      "hi": "जिम्मरमैन",
+      "en": "Zimmermann"
+    }
+  },
+  {
+    "question": {
+      "hi": "तटीय क्षेत्र से 200 समुद्री मील तक का क्षेत्र किससे संबंधित है?",
+      "en": "The area extending up to 200 nautical miles from the coast is related to what?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["प्रादेशिक जल", "विशिष्ट आर्थिक क्षेत्र", "अंतरराष्ट्रीय जल", "नदी क्षेत्र"],
+      "en": ["Territorial waters", "Exclusive Economic Zone", "International waters", "River region"]
+    },
+    "answer": {
+      "hi": "विशिष्ट आर्थिक क्षेत्र",
+      "en": "Exclusive Economic Zone"
+    }
+  },
+  {
+    "question": {
+      "hi": "इनमें सबसे कीमती अनवीकरणीय संसाधन कौन है?",
+      "en": "Which of the following is a valuable non-renewable resource?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["पवन", "जल", "खनिज", "सूर्य"],
+      "en": ["Wind", "Water", "Minerals", "Sun"]
+    },
+    "answer": {
+      "hi": "खनिज",
+      "en": "Minerals"
+    }
+  },
+  {
+    "question": {
+      "hi": "राजस्थान में किस संसाधन की अपेक्षाकृत कमी है?",
+      "en": "Which resource is relatively scarce in Rajasthan?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["सौर ऊर्जा", "जल", "पवन", "खनिज"],
+      "en": ["Solar energy", "Water", "Wind", "Minerals"]
+    },
+    "answer": {
+      "hi": "जल",
+      "en": "Water"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत में वन क्षेत्र का विस्तार लगभग कितना है?",
+      "en": "Approximately what percentage of India's area is covered by forests?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["10%", "19.27%", "30%", "40%"],
+      "en": ["10%", "19.27%", "30%", "40%"]
+    },
+    "answer": {
+      "hi": "19.27%",
+      "en": "19.27%"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारतीय कृषि मुख्यतः किस पर निर्भर करती है?",
+      "en": "Indian agriculture mainly depends on what?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["मानसून", "समुद्र", "हिमपात", "उद्योग"],
+      "en": ["Monsoon", "Sea", "Snowfall", "Industry"]
+    },
+    "answer": {
+      "hi": "मानसून",
+      "en": "Monsoon"
+    }
+  },
+  {
+    "question": {
+      "hi": "खरीफ फसल कौन-सी है?",
+      "en": "Which of the following is a Kharif crop?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["गेहूँ", "चना", "धान", "सरसों"],
+      "en": ["Wheat", "Gram", "Rice", "Mustard"]
+    },
+    "answer": {
+      "hi": "धान",
+      "en": "Rice"
+    }
+  },
+  {
+    "question": {
+      "hi": "रबी फसल कौन-सी है?",
+      "en": "Which of the following is a Rabi crop?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["धान", "गेहूँ", "जूट", "कपास"],
+      "en": ["Rice", "Wheat", "Jute", "Cotton"]
+    },
+    "answer": {
+      "hi": "गेहूँ",
+      "en": "Wheat"
+    }
+  },
+  {
+    "question": {
+      "hi": "काली मिट्टी किस फसल के लिए प्रसिद्ध है?",
+      "en": "Black soil is famous for which crop?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["कपास", "चाय", "जूट", "गन्ना"],
+      "en": ["Cotton", "Tea", "Jute", "Sugarcane"]
+    },
+    "answer": {
+      "hi": "कपास",
+      "en": "Cotton"
+    }
+  },
+  {
+    "question": {
+      "hi": "जलोढ़ मिट्टी मुख्यतः कहाँ पाई जाती है?",
+      "en": "Where is alluvial soil mainly found?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["उत्तरी मैदान", "पश्चिमी घाट", "थार मरुस्थल", "दक्कन के पठार"],
+      "en": ["Northern Plains", "Western Ghats", "Thar Desert", "Deccan Plateau"]
+    },
+    "answer": {
+      "hi": "उत्तरी मैदान",
+      "en": "Northern Plains"
+    }
+  },
+  {
+    "question": {
+      "hi": "लाल मिट्टी का रंग मुख्यतः किस कारण होता है?",
+      "en": "The red color of red soil is mainly due to what?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["कैल्शियम", "लौह", "मैग्नीशियम", "नमक"],
+      "en": ["Calcium", "Iron", "Magnesium", "Salt"]
+    },
+    "answer": {
+      "hi": "लौह",
+      "en": "Iron"
+    }
+  },
+  {
+    "question": {
+      "hi": "मिट्टी के कटाव को क्या कहा जाता है?",
+      "en": "What is the removal of soil called?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["मृदा अपरदन", "सिंचाई", "निक्षेपण", "जुताई"],
+      "en": ["Soil erosion", "Irrigation", "Deposition", "Ploughing"]
+    },
+    "answer": {
+      "hi": "मृदा अपरदन",
+      "en": "Soil erosion"
+    }
+  },
+  {
+    "question": {
+      "hi": "अधिक सिंचाई से कौन-सी समस्या उत्पन्न हो सकती है?",
+      "en": "Which problem can arise due to excessive irrigation?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["जलभराव", "वनों की वृद्धि", "वर्षा वृद्धि", "तापमान कमी"],
+      "en": ["Waterlogging", "Increase in forests", "Increase in rainfall", "Decrease in temperature"]
+    },
+    "answer": {
+      "hi": "जलभराव",
+      "en": "Waterlogging"
+    }
+  },
+  {
+    "question": {
+      "hi": "भूमि निम्नीकरण का प्रमुख कारण कौन-सा है?",
+      "en": "Which is a major cause of land degradation?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वनीकरण", "अति-पशुचारण", "वर्षा जल संचयन", "फसल चक्र"],
+      "en": ["Afforestation", "Overgrazing", "Rainwater harvesting", "Crop rotation"]
+    },
+    "answer": {
+      "hi": "अति-पशुचारण",
+      "en": "Overgrazing"
+    }
+  },
+  {
+    "question": {
+      "hi": "भूमि संरक्षण के लिए कौन-सा उपाय उपयोगी है?",
+      "en": "Which measure is useful for land conservation?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वनों की कटाई", "वृक्षारोपण", "अत्यधिक चराई", "अत्यधिक सिंचाई"],
+      "en": ["Deforestation", "Tree plantation", "Overgrazing", "Excessive irrigation"]
+    },
+    "answer": {
+      "hi": "वृक्षारोपण",
+      "en": "Tree plantation"
+    }
+  },
+  {
+    "question": {
+      "hi": "ढालू भूमि पर मिट्टी संरक्षण के लिए कौन-सी कृषि उपयोगी है?",
+      "en": "Which type of farming is useful for soil conservation on sloping land?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["सोपानी कृषि", "झूम कृषि", "स्थानांतरण कृषि", "बागान कृषि"],
+      "en": ["Terrace farming", "Jhum cultivation", "Shifting cultivation", "Plantation farming"]
+    },
+    "answer": {
+      "hi": "सोपानी कृषि",
+      "en": "Terrace farming"
+    }
+  },
+  {
+    "question": {
+      "hi": "काली मिट्टी का निर्माण मुख्यतः किससे संबंधित है?",
+      "en": "Black soil is mainly associated with the formation from which type of rock?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["ज्वालामुखीय चट्टान", "बलुआ पत्थर", "चूना पत्थर", "ग्रेनाइट"],
+      "en": ["Volcanic rock", "Sandstone", "Limestone", "Granite"]
+    },
+    "answer": {
+      "hi": "ज्वालामुखीय चट्टान",
+      "en": "Volcanic rock"
+    }
+  },
+  {
+    "question": {
+      "hi": "मिट्टी में जैव पदार्थ बढ़ाने के लिए क्या उपयोगी है?",
+      "en": "What is useful for increasing organic matter in soil?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["जैविक खाद", "प्लास्टिक", "पेट्रोल", "नमक"],
+      "en": ["Organic manure", "Plastic", "Petrol", "Salt"]
+    },
+    "answer": {
+      "hi": "जैविक खाद",
+      "en": "Organic manure"
+    }
+  },
+  {
+    "question": {
+      "hi": "भूमि का सबसे प्रमुख उपयोग किस क्षेत्र में होता है?",
+      "en": "What is the major use of land?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["कृषि", "परिवहन", "उद्योग", "संचार"],
+      "en": ["Agriculture", "Transport", "Industry", "Communication"]
+    },
+    "answer": {
+      "hi": "कृषि",
+      "en": "Agriculture"
+    }
+  },
+  {
+    "question": {
+      "hi": "मिट्टी संरक्षण का सबसे प्राकृतिक उपाय कौन-सा है?",
+      "en": "What is the most natural method of soil conservation?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वनीकरण", "खनन", "शहरीकरण", "औद्योगीकरण"],
+      "en": ["Afforestation", "Mining", "Urbanization", "Industrialization"]
+    },
+    "answer": {
+      "hi": "वनीकरण",
+      "en": "Afforestation"
+    }
+  },
+  {
+    "question": {
+      "hi": "पृथ्वी को नीला ग्रह क्यों कहा जाता है?",
+      "en": "Why is Earth called the Blue Planet?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वन अधिक हैं", "जल का विशाल विस्तार है", "मिट्टी नीली है", "पर्वत अधिक हैं"],
+      "en": ["There are many forests", "There is a vast expanse of water", "The soil is blue", "There are many mountains"]
+    },
+    "answer": {
+      "hi": "जल का विशाल विस्तार है",
+      "en": "There is a vast expanse of water"
+    }
+  },
+  {
+    "question": {
+      "hi": "पृथ्वी के कुल जल का लगभग कितना भाग महासागरों में है?",
+      "en": "Approximately what percentage of Earth's total water is in the oceans?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["50%", "71%", "96.5%", "25%"],
+      "en": ["50%", "71%", "96.5%", "25%"]
+    },
+    "answer": {
+      "hi": "96.5%",
+      "en": "96.5%"
+    }
+  },
+  {
+    "question": {
+      "hi": "कुल जल में मीठे जल का हिस्सा लगभग कितना है?",
+      "en": "Approximately what percentage of total water is freshwater?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["2.5%", "10%", "25%", "50%"],
+      "en": ["2.5%", "10%", "25%", "50%"]
+    },
+    "answer": {
+      "hi": "2.5%",
+      "en": "2.5%"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत में जल का सबसे अधिक उपयोग किस क्षेत्र में होता है?",
+      "en": "In which sector is water used the most in India?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["उद्योग", "सिंचाई", "घरेलू उपयोग", "परिवहन"],
+      "en": ["Industry", "Irrigation", "Domestic use", "Transport"]
+    },
+    "answer": {
+      "hi": "सिंचाई",
+      "en": "Irrigation"
+    }
+  },
+  {
+    "question": {
+      "hi": "जल किस प्रकार का संसाधन है?",
+      "en": "What type of resource is water?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["चक्रीय", "अनवीकरणीय", "मानवकृत", "खनिज"],
+      "en": ["Cyclic", "Non-renewable", "Human-made", "Mineral"]
+    },
+    "answer": {
+      "hi": "चक्रीय",
+      "en": "Cyclic"
+    }
+  },
+  {
+    "question": {
+      "hi": "वर्षा जल संचयन को अंग्रेजी में क्या कहते हैं?",
+      "en": "What is rainwater collection called in English?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["Rainwater Harvesting", "Water Mining", "Water Transport", "River Linking"],
+      "en": ["Rainwater Harvesting", "Water Mining", "Water Transport", "River Linking"]
+    },
+    "answer": {
+      "hi": "Rainwater Harvesting",
+      "en": "Rainwater Harvesting"
+    }
+  },
+  {
+    "question": {
+      "hi": "बिहार में अत्यधिक भूजल दोहन से किस तत्व की समस्या बढ़ सकती है?",
+      "en": "Which element-related problem can increase due to excessive groundwater extraction in Bihar?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["आर्सेनिक", "सोना", "चाँदी", "तांबा"],
+      "en": ["Arsenic", "Gold", "Silver", "Copper"]
+    },
+    "answer": {
+      "hi": "आर्सेनिक",
+      "en": "Arsenic"
+    }
+  },
+  {
+    "question": {
+      "hi": "वर्षा जल संचयन को कानूनी रूप से अनिवार्य करने वाला राज्य कौन है?",
+      "en": "Which state made rainwater harvesting legally mandatory?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["बिहार", "तमिलनाडु", "पंजाब", "गुजरात"],
+      "en": ["Bihar", "Tamil Nadu", "Punjab", "Gujarat"]
+    },
+    "answer": {
+      "hi": "तमिलनाडु",
+      "en": "Tamil Nadu"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत की राष्ट्रीय जल नीति पहली बार कब घोषित हुई?",
+      "en": "When was India's National Water Policy first announced?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["1975", "1987", "1997", "2005"],
+      "en": ["1975", "1987", "1997", "2005"]
+    },
+    "answer": {
+      "hi": "1987",
+      "en": "1987"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत में सबसे अधिक जल किस कार्य में खर्च होता है?",
+      "en": "For which purpose is the most water used in India?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["सिंचाई", "घरेलू कार्य", "उद्योग", "परिवहन"],
+      "en": ["Irrigation", "Domestic work", "Industry", "Transport"]
+    },
+    "answer": {
+      "hi": "सिंचाई",
+      "en": "Irrigation"
+    }
+  },
+  {
+    "question": {
+      "hi": "कोसी परियोजना का प्रमुख उद्देश्य क्या रहा है?",
+      "en": "What has been the major objective of the Kosi Project?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["बाढ़ नियंत्रण", "खनन", "पर्यटन", "मत्स्य पालन"],
+      "en": ["Flood control", "Mining", "Tourism", "Fishing"]
+    },
+    "answer": {
+      "hi": "बाढ़ नियंत्रण",
+      "en": "Flood control"
+    }
+  },
+  {
+    "question": {
+      "hi": "इंद्रपुरी जलाशय परियोजना किस राज्य में है?",
+      "en": "In which state is the Indrapuri Reservoir Project located?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["बिहार", "राजस्थान", "पंजाब", "असम"],
+      "en": ["Bihar", "Rajasthan", "Punjab", "Assam"]
+    },
+    "answer": {
+      "hi": "बिहार",
+      "en": "Bihar"
+    }
+  },
+  {
+    "question": {
+      "hi": "गंडक परियोजना मुख्यतः किन राज्यों से संबंधित है?",
+      "en": "The Gandak Project is mainly associated with which states?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["बिहार और उत्तर प्रदेश", "गुजरात और महाराष्ट्र", "पंजाब और हरियाणा", "केरल और तमिलनाडु"],
+      "en": ["Bihar and Uttar Pradesh", "Gujarat and Maharashtra", "Punjab and Haryana", "Kerala and Tamil Nadu"]
+    },
+    "answer": {
+      "hi": "बिहार और उत्तर प्रदेश",
+      "en": "Bihar and Uttar Pradesh"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत में जलविद्युत का प्रमुख स्रोत क्या है?",
+      "en": "What is the major source of hydroelectricity in India?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["नदियाँ", "कोयला", "पेट्रोलियम", "प्राकृतिक गैस"],
+      "en": ["Rivers", "Coal", "Petroleum", "Natural gas"]
+    },
+    "answer": {
+      "hi": "नदियाँ",
+      "en": "Rivers"
+    }
+  },
+  {
+    "question": {
+      "hi": "बाँधों को ‘भारत का मंदिर’ किसने कहा था?",
+      "en": "Who called dams the 'temples of modern India'?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["महात्मा गाँधी", "जवाहरलाल नेहरू", "राजेंद्र प्रसाद", "विवेकानंद"],
+      "en": ["Mahatma Gandhi", "Jawaharlal Nehru", "Rajendra Prasad", "Vivekananda"]
+    },
+    "answer": {
+      "hi": "जवाहरलाल नेहरू",
+      "en": "Jawaharlal Nehru"
+    }
+  },
+  {
+    "question": {
+      "hi": "वन किस प्रकार की संपत्ति हैं?",
+      "en": "What type of asset are forests?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["केवल व्यक्तिगत", "नवीकरणीय प्राकृतिक संपत्ति", "केवल मानवकृत", "अनवीकरणीय"],
+      "en": ["Only individual", "Renewable natural asset", "Only human-made", "Non-renewable"]
+    },
+    "answer": {
+      "hi": "नवीकरणीय प्राकृतिक संपत्ति",
+      "en": "Renewable natural asset"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत से कौन-सा वन्य प्राणी एक समय विलुप्त हो गया था?",
+      "en": "Which wild animal had become extinct in India at one time?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["चीता", "हाथी", "गैंडा", "हिरण"],
+      "en": ["Cheetah", "Elephant", "Rhinoceros", "Deer"]
+    },
+    "answer": {
+      "hi": "चीता",
+      "en": "Cheetah"
+    }
+  },
+  {
+    "question": {
+      "hi": "बांधवगढ़ राष्ट्रीय उद्यान किस राज्य में है?",
+      "en": "In which state is Bandhavgarh National Park located?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["बिहार", "मध्य प्रदेश", "राजस्थान", "असम"],
+      "en": ["Bihar", "Madhya Pradesh", "Rajasthan", "Assam"]
+    },
+    "answer": {
+      "hi": "मध्य प्रदेश",
+      "en": "Madhya Pradesh"
+    }
+  },
+  {
+    "question": {
+      "hi": "वन्य जीव संरक्षण का मुख्य उद्देश्य क्या है?",
+      "en": "What is the main objective of wildlife conservation?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["जैव विविधता संरक्षण", "शिकार बढ़ाना", "वनों की कटाई", "शहरीकरण"],
+      "en": ["Biodiversity conservation", "Increasing hunting", "Deforestation", "Urbanization"]
+    },
+    "answer": {
+      "hi": "जैव विविधता संरक्षण",
+      "en": "Biodiversity conservation"
+    }
+  },
+  {
+    "question": {
+      "hi": "जैव विविधता का अर्थ क्या है?",
+      "en": "What does biodiversity mean?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["केवल पेड़ों की संख्या", "जीवों की विविधता", "केवल पशुओं की संख्या", "केवल पक्षियों की संख्या"],
+      "en": ["Only the number of trees", "Diversity of living organisms", "Only the number of animals", "Only the number of birds"]
+    },
+    "answer": {
+      "hi": "जीवों की विविधता",
+      "en": "Diversity of living organisms"
+    }
+  },
+  {
+    "question": {
+      "hi": "वन्य जीव संरक्षण के लिए कौन-सा क्षेत्र बनाया जाता है?",
+      "en": "Which area is created for wildlife conservation?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["राष्ट्रीय उद्यान", "औद्योगिक क्षेत्र", "खनन क्षेत्र", "बाजार क्षेत्र"],
+      "en": ["National park", "Industrial area", "Mining area", "Market area"]
+    },
+    "answer": {
+      "hi": "राष्ट्रीय उद्यान",
+      "en": "National park"
+    }
+  },
+  {
+    "question": {
+      "hi": "वन संरक्षण से किसमें सहायता मिलती है?",
+      "en": "What does forest conservation help with?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["मृदा संरक्षण", "मरुस्थलीकरण", "प्रदूषण वृद्धि", "मिट्टी कटाव"],
+      "en": ["Soil conservation", "Desertification", "Increase in pollution", "Soil erosion"]
+    },
+    "answer": {
+      "hi": "मृदा संरक्षण",
+      "en": "Soil conservation"
+    }
+  },
+  {
+    "question": {
+      "hi": "चिपको आंदोलन किससे संबंधित था?",
+      "en": "The Chipko Movement was related to what?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वन संरक्षण", "खनन", "सिंचाई", "उद्योग"],
+      "en": ["Forest conservation", "Mining", "Irrigation", "Industry"]
+    },
+    "answer": {
+      "hi": "वन संरक्षण",
+      "en": "Forest conservation"
+    }
+  },
+  {
+    "question": {
+      "hi": "वन्य जीवों के अवैध शिकार को क्या कहा जाता है?",
+      "en": "What is illegal hunting of wildlife called?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वनीकरण", "पोचिंग", "सिंचाई", "संरक्षण"],
+      "en": ["Afforestation", "Poaching", "Irrigation", "Conservation"]
+    },
+    "answer": {
+      "hi": "पोचिंग",
+      "en": "Poaching"
+    }
+  },
+  {
+    "question": {
+      "hi": "वन्य जीव संरक्षण अधिनियम भारत में किस वर्ष लागू हुआ?",
+      "en": "In which year was the Wildlife Protection Act implemented in India?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["1962", "1972", "1982", "1992"],
+      "en": ["1962", "1972", "1982", "1992"]
+    },
+    "answer": {
+      "hi": "1972",
+      "en": "1972"
+    }
+  },
+  {
+    "question": {
+      "hi": "वन महोत्सव का संबंध किससे है?",
+      "en": "Van Mahotsav is related to what?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वृक्षारोपण", "खनन", "सिंचाई", "उद्योग"],
+      "en": ["Tree plantation", "Mining", "Irrigation", "Industry"]
+    },
+    "answer": {
+      "hi": "वृक्षारोपण",
+      "en": "Tree plantation"
+    }
+  },
+  {
+    "question": {
+      "hi": "वन किस प्रकार का संसाधन हैं?",
+      "en": "What type of resource are forests?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["जैविक", "अजैविक", "खनिज", "मानवकृत"],
+      "en": ["Biological", "Abiotic", "Mineral", "Human-made"]
+    },
+    "answer": {
+      "hi": "जैविक",
+      "en": "Biological"
+    }
+  },
+  {
+    "question": {
+      "hi": "वन्यजीवों की संख्या घटने का एक प्रमुख कारण क्या है?",
+      "en": "What is a major reason for the decline in wildlife population?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["आवास का विनाश", "वर्षा जल संचयन", "वनीकरण", "संरक्षण"],
+      "en": ["Destruction of habitat", "Rainwater harvesting", "Afforestation", "Conservation"]
+    },
+    "answer": {
+      "hi": "आवास का विनाश",
+      "en": "Destruction of habitat"
+    }
+  },
+  {
+    "question": {
+      "hi": "संकटग्रस्त प्रजातियों का अंतरराष्ट्रीय व्यापार किससे संबंधित है?",
+      "en": "International trade in endangered species is related to what?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["CITES", "WHO", "WTO", "IMF"],
+      "en": ["CITES", "WHO", "WTO", "IMF"]
+    },
+    "answer": {
+      "hi": "CITES",
+      "en": "CITES"
+    }
+  },
+  {
+    "question": {
+      "hi": "वन संरक्षण से वातावरण में किस गैस का संतुलन बनाए रखने में मदद मिलती है?",
+      "en": "Forest conservation helps maintain the balance of which gas in the atmosphere?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["ऑक्सीजन", "नाइट्रोजन", "हीलियम", "हाइड्रोजन"],
+      "en": ["Oxygen", "Nitrogen", "Helium", "Hydrogen"]
+    },
+    "answer": {
+      "hi": "ऑक्सीजन",
+      "en": "Oxygen"
+    }
+  },
+  {
+    "question": {
+      "hi": "उद्योगों की जननी किस खनिज को कहा जाता है?",
+      "en": "Which mineral is called the mother of industries?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["लोहा", "अभ्रक", "ताँबा", "सोना"],
+      "en": ["Iron", "Mica", "Copper", "Gold"]
+    },
+    "answer": {
+      "hi": "लोहा",
+      "en": "Iron"
+    }
+  },
+  {
+    "question": {
+      "hi": "लौह-अयस्क का प्रमुख उपयोग किसमें होता है?",
+      "en": "What is the main use of iron ore?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["इस्पात उद्योग", "कागज उद्योग", "कपड़ा उद्योग", "खाद्य उद्योग"],
+      "en": ["Steel industry", "Paper industry", "Textile industry", "Food industry"]
+    },
+    "answer": {
+      "hi": "इस्पात उद्योग",
+      "en": "Steel industry"
+    }
+  },
+  {
+    "question": {
+      "hi": "अभ्रक का अंग्रेजी नाम क्या है?",
+      "en": "What is the English name of अभ्रक?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["Mica", "Iron", "Copper", "Bauxite"],
+      "en": ["Mica", "Iron", "Copper", "Bauxite"]
+    },
+    "answer": {
+      "hi": "Mica",
+      "en": "Mica"
+    }
+  },
+  {
+    "question": {
+      "hi": "बॉक्साइट किस धातु का अयस्क है?",
+      "en": "Bauxite is an ore of which metal?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["लोहा", "एल्युमिनियम", "तांबा", "सोना"],
+      "en": ["Iron", "Aluminium", "Copper", "Gold"]
+    },
+    "answer": {
+      "hi": "एल्युमिनियम",
+      "en": "Aluminium"
+    }
+  },
+  {
+    "question": {
+      "hi": "ताँबा किस प्रकार का खनिज है?",
+      "en": "What type of mineral is copper?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["धात्विक", "अधात्विक", "जैविक", "ऊर्जा"],
+      "en": ["Metallic", "Non-metallic", "Biological", "Energy"]
+    },
+    "answer": {
+      "hi": "धात्विक",
+      "en": "Metallic"
+    }
+  },
+  {
+    "question": {
+      "hi": "चूना पत्थर किस प्रकार का खनिज है?",
+      "en": "What type of mineral is limestone?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["धात्विक", "अधात्विक", "ऊर्जा खनिज", "जैविक"],
+      "en": ["Metallic", "Non-metallic", "Energy mineral", "Biological"]
+    },
+    "answer": {
+      "hi": "अधात्विक",
+      "en": "Non-metallic"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत में लौह-अयस्क के प्रमुख क्षेत्र में कौन-सा राज्य शामिल है?",
+      "en": "Which state is included among the major iron ore producing regions of India?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["ओडिशा", "पंजाब", "हरियाणा", "बिहार"],
+      "en": ["Odisha", "Punjab", "Haryana", "Bihar"]
+    },
+    "answer": {
+      "hi": "ओडिशा",
+      "en": "Odisha"
+    }
+  },
+  {
+    "question": {
+      "hi": "खनिज तेल किस प्रकार का संसाधन है?",
+      "en": "What type of resource is mineral oil?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["नवीकरणीय", "अनवीकरणीय", "जैविक", "प्रवाह"],
+      "en": ["Renewable", "Non-renewable", "Biological", "Flow"]
+    },
+    "answer": {
+      "hi": "अनवीकरणीय",
+      "en": "Non-renewable"
+    }
+  },
+  {
+    "question": {
+      "hi": "अभ्रक का उपयोग किस उद्योग में अधिक होता है?",
+      "en": "In which industry is mica widely used?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["विद्युत उद्योग", "खाद्य उद्योग", "वस्त्र उद्योग", "कागज उद्योग"],
+      "en": ["Electrical industry", "Food industry", "Textile industry", "Paper industry"]
+    },
+    "answer": {
+      "hi": "विद्युत उद्योग",
+      "en": "Electrical industry"
+    }
+  },
+  {
+    "question": {
+      "hi": "लौह-अयस्क का निर्यात करने वाला प्रमुख बंदरगाह कौन है?",
+      "en": "Which is a major port for exporting iron ore?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["विशाखापत्तनम", "मुंबई", "कांडला", "कोच्चि"],
+      "en": ["Visakhapatnam", "Mumbai", "Kandla", "Kochi"]
+    },
+    "answer": {
+      "hi": "विशाखापत्तनम",
+      "en": "Visakhapatnam"
+    }
+  },
+  {
+    "question": {
+      "hi": "खनिजों का निर्माण मुख्यतः किस प्राकृतिक प्रक्रिया से होता है?",
+      "en": "Minerals are mainly formed through which natural process?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["भूगर्भीय प्रक्रिया", "वर्षा", "सिंचाई", "कृषि"],
+      "en": ["Geological process", "Rainfall", "Irrigation", "Agriculture"]
+    },
+    "answer": {
+      "hi": "भूगर्भीय प्रक्रिया",
+      "en": "Geological process"
+    }
+  },
+  {
+    "question": {
+      "hi": "खनिज संसाधन सामान्यतः किस प्रकार के होते हैं?",
+      "en": "What are mineral resources generally like?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["सीमित", "असीमित", "हर वर्ष बनने वाले", "चक्रीय"],
+      "en": ["Limited", "Unlimited", "Formed every year", "Cyclic"]
+    },
+    "answer": {
+      "hi": "सीमित",
+      "en": "Limited"
+    }
+  },
+  {
+    "question": {
+      "hi": "मैंगनीज का प्रमुख उपयोग किसमें होता है?",
+      "en": "What is the major use of manganese?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["इस्पात निर्माण", "चीनी निर्माण", "कागज निर्माण", "वस्त्र निर्माण"],
+      "en": ["Steel production", "Sugar production", "Paper production", "Textile production"]
+    },
+    "answer": {
+      "hi": "इस्पात निर्माण",
+      "en": "Steel production"
+    }
+  },
+  {
+    "question": {
+      "hi": "सोना किस प्रकार का खनिज है?",
+      "en": "What type of mineral is gold?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["धात्विक", "अधात्विक", "ऊर्जा", "जैविक"],
+      "en": ["Metallic", "Non-metallic", "Energy", "Biological"]
+    },
+    "answer": {
+      "hi": "धात्विक",
+      "en": "Metallic"
+    }
+  },
+  {
+    "question": {
+      "hi": "खनिज संरक्षण क्यों आवश्यक है?",
+      "en": "Why is mineral conservation necessary?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["भंडार सीमित होने के कारण", "वे असीमित हैं", "वे हर वर्ष बनते हैं", "उनका कोई उपयोग नहीं"],
+      "en": ["Because reserves are limited", "Because they are unlimited", "Because they form every year", "Because they have no use"]
+    },
+    "answer": {
+      "hi": "भंडार सीमित होने के कारण",
+      "en": "Because reserves are limited"
+    }
+  },
+  {
+    "question": {
+      "hi": "कोयला किस प्रकार का ऊर्जा संसाधन है?",
+      "en": "What type of energy resource is coal?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["परंपरागत", "गैर-परंपरागत", "जैविक", "चक्रीय"],
+      "en": ["Conventional", "Non-conventional", "Biological", "Cyclic"]
+    },
+    "answer": {
+      "hi": "परंपरागत",
+      "en": "Conventional"
+    }
+  },
+  {
+    "question": {
+      "hi": "सौर ऊर्जा किस प्रकार की ऊर्जा है?",
+      "en": "What type of energy is solar energy?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["गैर-परंपरागत", "परंपरागत", "जीवाश्म ऊर्जा", "खनिज ऊर्जा"],
+      "en": ["Non-conventional", "Conventional", "Fossil energy", "Mineral energy"]
+    },
+    "answer": {
+      "hi": "गैर-परंपरागत",
+      "en": "Non-conventional"
+    }
+  },
+  {
+    "question": {
+      "hi": "पेट्रोलियम को किस नाम से भी जाना जाता है?",
+      "en": "By what other name is petroleum known?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["काला सोना", "सफेद सोना", "लाल सोना", "हरा सोना"],
+      "en": ["Black gold", "White gold", "Red gold", "Green gold"]
+    },
+    "answer": {
+      "hi": "काला सोना",
+      "en": "Black gold"
+    }
+  },
+  {
+    "question": {
+      "hi": "प्राकृतिक गैस किस प्रकार का संसाधन है?",
+      "en": "What type of resource is natural gas?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["जीवाश्म ईंधन", "सौर संसाधन", "जैविक खाद", "चक्रीय संसाधन"],
+      "en": ["Fossil fuel", "Solar resource", "Organic manure", "Cyclic resource"]
+    },
+    "answer": {
+      "hi": "जीवाश्म ईंधन",
+      "en": "Fossil fuel"
+    }
+  },
+  {
+    "question": {
+      "hi": "जलविद्युत किससे उत्पन्न की जाती है?",
+      "en": "Hydroelectricity is generated from what?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["बहते जल से", "कोयले से", "पेट्रोलियम से", "गैस से"],
+      "en": ["Flowing water", "Coal", "Petroleum", "Gas"]
+    },
+    "answer": {
+      "hi": "बहते जल से",
+      "en": "Flowing water"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत में परमाणु ऊर्जा का प्रमुख ईंधन कौन-सा है?",
+      "en": "Which is a major fuel for nuclear energy in India?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["यूरेनियम", "कोयला", "पेट्रोलियम", "लोहा"],
+      "en": ["Uranium", "Coal", "Petroleum", "Iron"]
+    },
+    "answer": {
+      "hi": "यूरेनियम",
+      "en": "Uranium"
+    }
+  },
+  {
+    "question": {
+      "hi": "पवन ऊर्जा किससे प्राप्त होती है?",
+      "en": "Wind energy is obtained from what?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["हवा", "पानी", "मिट्टी", "कोयला"],
+      "en": ["Wind", "Water", "Soil", "Coal"]
+    },
+    "answer": {
+      "hi": "हवा",
+      "en": "Wind"
+    }
+  },
+  {
+    "question": {
+      "hi": "सौर ऊर्जा का प्रमुख स्रोत क्या है?",
+      "en": "What is the main source of solar energy?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["सूर्य", "चंद्रमा", "पृथ्वी", "समुद्र"],
+      "en": ["Sun", "Moon", "Earth", "Sea"]
+    },
+    "answer": {
+      "hi": "सूर्य",
+      "en": "Sun"
+    }
+  },
+  {
+    "question": {
+      "hi": "ताप विद्युत मुख्यतः किस ईंधन पर आधारित है?",
+      "en": "Thermal power is mainly based on which fuel?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["कोयला", "सूर्य", "हवा", "जल"],
+      "en": ["Coal", "Sun", "Wind", "Water"]
+    },
+    "answer": {
+      "hi": "कोयला",
+      "en": "Coal"
+    }
+  },
+  {
+    "question": {
+      "hi": "ऊर्जा संरक्षण का अर्थ क्या है?",
+      "en": "What does energy conservation mean?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["ऊर्जा का विवेकपूर्ण उपयोग", "ऊर्जा की बर्बादी", "अधिक खपत", "संसाधनों का नष्ट करना"],
+      "en": ["Judicious use of energy", "Wastage of energy", "Excessive consumption", "Destruction of resources"]
+    },
+    "answer": {
+      "hi": "ऊर्जा का विवेकपूर्ण उपयोग",
+      "en": "Judicious use of energy"
+    }
+  },
+  {
+    "question": {
+      "hi": "बायोगैस मुख्यतः किससे बनाई जाती है?",
+      "en": "Biogas is mainly produced from what?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["जैविक अपशिष्ट", "पत्थर", "लौह-अयस्क", "पेट्रोलियम"],
+      "en": ["Organic waste", "Stone", "Iron ore", "Petroleum"]
+    },
+    "answer": {
+      "hi": "जैविक अपशिष्ट",
+      "en": "Organic waste"
+    }
+  },
+  {
+    "question": {
+      "hi": "ज्वारीय ऊर्जा किससे संबंधित है?",
+      "en": "Tidal energy is related to what?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["समुद्री ज्वार-भाटा", "कोयला", "वन", "मिट्टी"],
+      "en": ["Sea tides", "Coal", "Forests", "Soil"]
+    },
+    "answer": {
+      "hi": "समुद्री ज्वार-भाटा",
+      "en": "Sea tides"
+    }
+  },
+  {
+    "question": {
+      "hi": "भू-तापीय ऊर्जा का स्रोत क्या है?",
+      "en": "What is the source of geothermal energy?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["पृथ्वी की आंतरिक ऊष्मा", "सूर्य", "हवा", "नदी"],
+      "en": ["Earth's internal heat", "Sun", "Wind", "River"]
+    },
+    "answer": {
+      "hi": "पृथ्वी की आंतरिक ऊष्मा",
+      "en": "Earth's internal heat"
+    }
+  },
+  {
+    "question": {
+      "hi": "जीवाश्म ईंधन का उदाहरण कौन है?",
+      "en": "Which of the following is an example of a fossil fuel?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["कोयला", "सूर्य", "हवा", "ज्वारीय ऊर्जा"],
+      "en": ["Coal", "Sun", "Wind", "Tidal energy"]
+    },
+    "answer": {
+      "hi": "कोयला",
+      "en": "Coal"
+    }
+  },
+  {
+    "question": {
+      "hi": "गैर-परंपरागत ऊर्जा स्रोत का उदाहरण कौन है?",
+      "en": "Which of the following is an example of a non-conventional energy source?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["सौर ऊर्जा", "कोयला", "पेट्रोलियम", "प्राकृतिक गैस"],
+      "en": ["Solar energy", "Coal", "Petroleum", "Natural gas"]
+    },
+    "answer": {
+      "hi": "सौर ऊर्जा",
+      "en": "Solar energy"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत में संसाधन संरक्षण की आवश्यकता क्यों है?",
+      "en": "Why is resource conservation necessary in India?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["संसाधन सीमित हैं", "संसाधन असीमित हैं", "उनका कोई उपयोग नहीं", "वे सभी नवीकरणीय हैं"],
+      "en": ["Resources are limited", "Resources are unlimited", "They have no use", "They are all renewable"]
+    },
+    "answer": {
+      "hi": "संसाधन सीमित हैं",
+      "en": "Resources are limited"
+    }
+  },
+  {
+    "question": {
+      "hi": "निम्न में कौन नवीकरणीय संसाधन है?",
+      "en": "Which of the following is a renewable resource?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["कोयला", "पेट्रोलियम", "सौर ऊर्जा", "प्राकृतिक गैस"],
+      "en": ["Coal", "Petroleum", "Solar energy", "Natural gas"]
+    },
+    "answer": {
+      "hi": "सौर ऊर्जा",
+      "en": "Solar energy"
+    }
+  },
+  {
+    "question": {
+      "hi": "निम्न में कौन अनवीकरणीय संसाधन है?",
+      "en": "Which of the following is a non-renewable resource?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["पवन", "सूर्य", "कोयला", "जल"],
+      "en": ["Wind", "Sun", "Coal", "Water"]
+    },
+    "answer": {
+      "hi": "कोयला",
+      "en": "Coal"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत में सर्वाधिक वर्षा वाला स्थान कौन-सा माना जाता है?",
+      "en": "Which place is considered to receive the highest rainfall in India?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["मासिनराम", "जैसलमेर", "दिल्ली", "पटना"],
+      "en": ["Mawsynram", "Jaisalmer", "Delhi", "Patna"]
+    },
+    "answer": {
+      "hi": "मासिनराम",
+      "en": "Mawsynram"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत में जल का सबसे बड़ा उपयोगकर्ता कौन है?",
+      "en": "What is the largest user of water in India?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["कृषि", "उद्योग", "घरेलू क्षेत्र", "परिवहन"],
+      "en": ["Agriculture", "Industry", "Domestic sector", "Transport"]
+    },
+    "answer": {
+      "hi": "कृषि",
+      "en": "Agriculture"
+    }
+  },
+  {
+    "question": {
+      "hi": "मृदा अपरदन रोकने में कौन सहायक है?",
+      "en": "What helps prevent soil erosion?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वृक्षारोपण", "वनों की कटाई", "अत्यधिक चराई", "खनन"],
+      "en": ["Tree plantation", "Deforestation", "Overgrazing", "Mining"]
+    },
+    "answer": {
+      "hi": "वृक्षारोपण",
+      "en": "Tree plantation"
+    }
+  },
+  {
+    "question": {
+      "hi": "जल संरक्षण का सबसे अच्छा उपाय कौन है?",
+      "en": "Which is the best method of water conservation?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वर्षाजल संचयन", "जल की बर्बादी", "अत्यधिक भूजल दोहन", "नदियों को प्रदूषित करना"],
+      "en": ["Rainwater harvesting", "Wastage of water", "Excessive groundwater extraction", "Polluting rivers"]
+    },
+    "answer": {
+      "hi": "वर्षाजल संचयन",
+      "en": "Rainwater harvesting"
+    }
+  },
+  {
+    "question": {
+      "hi": "जैव विविधता के संरक्षण के लिए क्या आवश्यक है?",
+      "en": "What is necessary for biodiversity conservation?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वन संरक्षण", "वनों की कटाई", "शिकार", "प्रदूषण"],
+      "en": ["Forest conservation", "Deforestation", "Hunting", "Pollution"]
+    },
+    "answer": {
+      "hi": "वन संरक्षण",
+      "en": "Forest conservation"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत में वन्यजीवों की सुरक्षा के लिए कौन-सा क्षेत्र बनाया जाता है?",
+      "en": "Which area is created for wildlife protection in India?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["अभयारण्य", "औद्योगिक क्षेत्र", "खनन क्षेत्र", "बाजार"],
+      "en": ["Sanctuary", "Industrial area", "Mining area", "Market"]
+    },
+    "answer": {
+      "hi": "अभयारण्य",
+      "en": "Sanctuary"
+    }
+  },
+  {
+    "question": {
+      "hi": "कौन-सा खनिज इस्पात उद्योग के लिए अत्यंत महत्वपूर्ण है?",
+      "en": "Which mineral is extremely important for the steel industry?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["लौह-अयस्क", "अभ्रक", "चूना", "नमक"],
+      "en": ["Iron ore", "Mica", "Limestone", "Salt"]
+    },
+    "answer": {
+      "hi": "लौह-अयस्क",
+      "en": "Iron ore"
+    }
+  },
+  {
+    "question": {
+      "hi": "बॉक्साइट से कौन-सी धातु प्राप्त होती है?",
+      "en": "Which metal is obtained from bauxite?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["एल्युमिनियम", "लोहा", "तांबा", "सोना"],
+      "en": ["Aluminium", "Iron", "Copper", "Gold"]
+    },
+    "answer": {
+      "hi": "एल्युमिनियम",
+      "en": "Aluminium"
+    }
+  },
+  {
+    "question": {
+      "hi": "अभ्रक का प्रमुख उपयोग किसमें होता है?",
+      "en": "What is the main use of mica?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["विद्युत उपकरण", "खाद्य पदार्थ", "सिंचाई", "सड़क निर्माण"],
+      "en": ["Electrical equipment", "Food products", "Irrigation", "Road construction"]
+    },
+    "answer": {
+      "hi": "विद्युत उपकरण",
+      "en": "Electrical equipment"
+    }
+  },
+  {
+    "question": {
+      "hi": "पेट्रोलियम का प्रमुख उपयोग किसमें होता है?",
+      "en": "What is the main use of petroleum?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["ईंधन", "खाद", "वन संरक्षण", "सिंचाई"],
+      "en": ["Fuel", "Fertilizer", "Forest conservation", "Irrigation"]
+    },
+    "answer": {
+      "hi": "ईंधन",
+      "en": "Fuel"
+    }
+  },
+  {
+    "question": {
+      "hi": "प्राकृतिक गैस किसका उदाहरण है?",
+      "en": "Natural gas is an example of what?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["जीवाश्म ईंधन", "नवीकरणीय ऊर्जा", "जैविक खाद", "पवन ऊर्जा"],
+      "en": ["Fossil fuel", "Renewable energy", "Organic manure", "Wind energy"]
+    },
+    "answer": {
+      "hi": "जीवाश्म ईंधन",
+      "en": "Fossil fuel"
+    }
+  },
+  {
+    "question": {
+      "hi": "जलविद्युत किस प्रकार की ऊर्जा है?",
+      "en": "What type of energy is hydroelectricity?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["नवीकरणीय", "अनवीकरणीय", "जीवाश्म", "खनिज"],
+      "en": ["Renewable", "Non-renewable", "Fossil", "Mineral"]
+    },
+    "answer": {
+      "hi": "नवीकरणीय",
+      "en": "Renewable"
+    }
+  },
+  {
+    "question": {
+      "hi": "पवन ऊर्जा का सबसे बड़ा लाभ क्या है?",
+      "en": "What is the biggest advantage of wind energy?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["प्रदूषण अपेक्षाकृत कम", "कोयले की आवश्यकता", "पेट्रोलियम की आवश्यकता", "खनिज की आवश्यकता"],
+      "en": ["Relatively low pollution", "Need for coal", "Need for petroleum", "Need for minerals"]
+    },
+    "answer": {
+      "hi": "प्रदूषण अपेक्षाकृत कम",
+      "en": "Relatively low pollution"
+    }
+  },
+  {
+    "question": {
+      "hi": "ऊर्जा संकट का प्रमुख कारण क्या है?",
+      "en": "What is the major cause of the energy crisis?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["ऊर्जा की बढ़ती माँग", "ऊर्जा की कम आवश्यकता", "अधिक वनीकरण", "कम जनसंख्या"],
+      "en": ["Increasing demand for energy", "Low need for energy", "More afforestation", "Low population"]
+    },
+    "answer": {
+      "hi": "ऊर्जा की बढ़ती माँग",
+      "en": "Increasing demand for energy"
+    }
+  },
+  {
+    "question": {
+      "hi": "संसाधनों का विवेकपूर्ण उपयोग किसके लिए आवश्यक है?",
+      "en": "For whom is the judicious use of resources necessary?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["भावी पीढ़ियों के लिए", "केवल वर्तमान के लिए", "केवल उद्योगों के लिए", "केवल शहरों के लिए"],
+      "en": ["For future generations", "Only for the present", "Only for industries", "Only for cities"]
+    },
+    "answer": {
+      "hi": "भावी पीढ़ियों के लिए",
+      "en": "For future generations"
+    }
+  },
+  {
+    "question": {
+      "hi": "सतत विकास का मुख्य उद्देश्य क्या है?",
+      "en": "What is the main objective of sustainable development?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वर्तमान और भविष्य दोनों की आवश्यकताओं का संतुलन", "केवल वर्तमान की आवश्यकताएँ", "केवल औद्योगिक विकास", "केवल कृषि विकास"],
+      "en": ["Balancing the needs of both present and future", "Only present needs", "Only industrial development", "Only agricultural development"]
+    },
+    "answer": {
+      "hi": "वर्तमान और भविष्य दोनों की आवश्यकताओं का संतुलन",
+      "en": "Balancing the needs of both present and future"
+    }
+  },
+  {
+    "question": {
+      "hi": "जल प्रदूषण का प्रमुख कारण कौन है?",
+      "en": "What is a major cause of water pollution?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["औद्योगिक अपशिष्ट", "वर्षा", "वनीकरण", "वर्षाजल संचयन"],
+      "en": ["Industrial waste", "Rainfall", "Afforestation", "Rainwater harvesting"]
+    },
+    "answer": {
+      "hi": "औद्योगिक अपशिष्ट",
+      "en": "Industrial waste"
+    }
+  },
+  {
+    "question": {
+      "hi": "वनों की कटाई से कौन-सी समस्या बढ़ती है?",
+      "en": "Which problem increases due to deforestation?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["मृदा अपरदन", "जैव विविधता", "वर्षाजल संचयन", "वन क्षेत्र"],
+      "en": ["Soil erosion", "Biodiversity", "Rainwater harvesting", "Forest area"]
+    },
+    "answer": {
+      "hi": "मृदा अपरदन",
+      "en": "Soil erosion"
+    }
+  },
+  {
+    "question": {
+      "hi": "अधिक पशुचारण से क्या होता है?",
+      "en": "What happens due to overgrazing?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["भूमि निम्नीकरण", "भूमि सुधार", "वन वृद्धि", "जल संरक्षण"],
+      "en": ["Land degradation", "Land improvement", "Forest growth", "Water conservation"]
+    },
+    "answer": {
+      "hi": "भूमि निम्नीकरण",
+      "en": "Land degradation"
+    }
+  },
+  {
+    "question": {
+      "hi": "नदी किस प्रकार का संसाधन है?",
+      "en": "What type of resource is a river?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["प्रवाहमान संसाधन", "अनवीकरणीय", "धात्विक", "मानवकृत"],
+      "en": ["Flow resource", "Non-renewable", "Metallic", "Human-made"]
+    },
+    "answer": {
+      "hi": "प्रवाहमान संसाधन",
+      "en": "Flow resource"
+    }
+  },
+  {
+    "question": {
+      "hi": "खनिज तेल का भंडार कैसा है?",
+      "en": "What is the nature of mineral oil reserves?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["सीमित", "असीमित", "चक्रीय", "पुनःपूर्ति योग्य"],
+      "en": ["Limited", "Unlimited", "Cyclic", "Renewable"]
+    },
+    "answer": {
+      "hi": "सीमित",
+      "en": "Limited"
+    }
+  },
+  {
+    "question": {
+      "hi": "वन किस गैस को अवशोषित करने में महत्वपूर्ण भूमिका निभाते हैं?",
+      "en": "Forests play an important role in absorbing which gas?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["कार्बन डाइऑक्साइड", "हीलियम", "हाइड्रोजन", "नीयॉन"],
+      "en": ["Carbon dioxide", "Helium", "Hydrogen", "Neon"]
+    },
+    "answer": {
+      "hi": "कार्बन डाइऑक्साइड",
+      "en": "Carbon dioxide"
+    }
+  },
+  {
+    "question": {
+      "hi": "वन संरक्षण का संबंध किससे है?",
+      "en": "Forest conservation is related to what?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["पारिस्थितिक संतुलन", "केवल उद्योग", "केवल खनन", "केवल परिवहन"],
+      "en": ["Ecological balance", "Only industry", "Only mining", "Only transport"]
+    },
+    "answer": {
+      "hi": "पारिस्थितिक संतुलन",
+      "en": "Ecological balance"
+    }
+  },
+  {
+    "question": {
+      "hi": "राष्ट्रीय उद्यानों का मुख्य उद्देश्य क्या है?",
+      "en": "What is the main objective of national parks?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वन्यजीव संरक्षण", "उद्योग स्थापना", "खनन", "शहरी विकास"],
+      "en": ["Wildlife conservation", "Industrial establishment", "Mining", "Urban development"]
+    },
+    "answer": {
+      "hi": "वन्यजीव संरक्षण",
+      "en": "Wildlife conservation"
+    }
+  },
+  {
+    "question": {
+      "hi": "‘काला सोना’ किसे कहा जाता है?",
+      "en": "What is called 'black gold'?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["पेट्रोलियम", "लोहा", "अभ्रक", "कोयला"],
+      "en": ["Petroleum", "Iron", "Mica", "Coal"]
+    },
+    "answer": {
+      "hi": "पेट्रोलियम",
+      "en": "Petroleum"
+    }
+  },
+  {
+    "question": {
+      "hi": "‘उद्योगों की जननी’ किस खनिज को कहा जाता है?",
+      "en": "Which mineral is called the 'mother of industries'?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["लोहा", "सोना", "चाँदी", "ताँबा"],
+      "en": ["Iron", "Gold", "Silver", "Copper"]
+    },
+    "answer": {
+      "hi": "लोहा",
+      "en": "Iron"
+    }
+  },
+  {
+    "question": {
+      "hi": "ऊर्जा का सबसे स्वच्छ स्रोत कौन-सा माना जाता है?",
+      "en": "Which is considered one of the cleanest sources of energy?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["सौर ऊर्जा", "कोयला", "पेट्रोलियम", "डीजल"],
+      "en": ["Solar energy", "Coal", "Petroleum", "Diesel"]
+    },
+    "answer": {
+      "hi": "सौर ऊर्जा",
+      "en": "Solar energy"
+    }
+  },
+  {
+    "question": {
+      "hi": "भूजल का पुनर्भरण मुख्यतः किससे होता है?",
+      "en": "Groundwater is mainly recharged by what?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वर्षा", "खनन", "उद्योग", "सड़क निर्माण"],
+      "en": ["Rainfall", "Mining", "Industry", "Road construction"]
+    },
+    "answer": {
+      "hi": "वर्षा",
+      "en": "Rainfall"
+    }
+  },
+  {
+    "question": {
+      "hi": "जल संरक्षण के लिए कौन-सा कार्य अनुचित है?",
+      "en": "Which action is inappropriate for water conservation?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वर्षाजल संचयन", "जल की बर्बादी", "तालाब संरक्षण", "भूजल पुनर्भरण"],
+      "en": ["Rainwater harvesting", "Wastage of water", "Pond conservation", "Groundwater recharge"]
+    },
+    "answer": {
+      "hi": "जल की बर्बादी",
+      "en": "Wastage of water"
+    }
+  },
+  {
+    "question": {
+      "hi": "मृदा संरक्षण के लिए कौन-सी विधि उपयोगी है?",
+      "en": "Which method is useful for soil conservation?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["समोच्च जुताई", "वनों की कटाई", "अति-चराई", "ढाल पर सीधी जुताई"],
+      "en": ["Contour ploughing", "Deforestation", "Overgrazing", "Straight ploughing on slopes"]
+    },
+    "answer": {
+      "hi": "समोच्च जुताई",
+      "en": "Contour ploughing"
+    }
+  },
+  {
+    "question": {
+      "hi": "भूमि निम्नीकरण का कारण कौन नहीं है?",
+      "en": "Which of the following is not a cause of land degradation?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वनीकरण", "खनन", "अति-पशुचारण", "अत्यधिक सिंचाई"],
+      "en": ["Afforestation", "Mining", "Overgrazing", "Excessive irrigation"]
+    },
+    "answer": {
+      "hi": "वनीकरण",
+      "en": "Afforestation"
+    }
+  },
+  {
+    "question": {
+      "hi": "खनिज संरक्षण का सर्वोत्तम तरीका क्या है?",
+      "en": "What is the best method of mineral conservation?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["पुनर्चक्रण और विवेकपूर्ण उपयोग", "अधिक बर्बादी", "अनियंत्रित खनन", "खुले में फेंकना"],
+      "en": ["Recycling and judicious use", "More wastage", "Uncontrolled mining", "Dumping in the open"]
+    },
+    "answer": {
+      "hi": "पुनर्चक्रण और विवेकपूर्ण उपयोग",
+      "en": "Recycling and judicious use"
+    }
+  },
+  {
+    "question": {
+      "hi": "सौर ऊर्जा का उपयोग किस उपकरण में किया जा सकता है?",
+      "en": "Solar energy can be used in which device?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["सोलर कुकर", "डीजल इंजन", "कोयला भट्ठी", "पेट्रोल इंजन"],
+      "en": ["Solar cooker", "Diesel engine", "Coal furnace", "Petrol engine"]
+    },
+    "answer": {
+      "hi": "सोलर कुकर",
+      "en": "Solar cooker"
+    }
+  },
+  {
+    "question": {
+      "hi": "बायोगैस का प्रमुख घटक कौन-सा है?",
+      "en": "What is the main component of biogas?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["मीथेन", "ऑक्सीजन", "नाइट्रोजन", "हाइड्रोजन"],
+      "en": ["Methane", "Oxygen", "Nitrogen", "Hydrogen"]
+    },
+    "answer": {
+      "hi": "मीथेन",
+      "en": "Methane"
+    }
+  },
+  {
+    "question": {
+      "hi": "जलविद्युत परियोजनाएँ सामान्यतः कहाँ स्थापित की जाती हैं?",
+      "en": "Where are hydroelectric projects generally established?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["नदियों पर", "मरुस्थल में", "समुद्र के बीच", "घने शहरों में"],
+      "en": ["On rivers", "In deserts", "In the middle of the sea", "In dense cities"]
+    },
+    "answer": {
+      "hi": "नदियों पर",
+      "en": "On rivers"
+    }
+  },
+  {
+    "question": {
+      "hi": "कोयला किस प्रकार का ईंधन है?",
+      "en": "What type of fuel is coal?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["जीवाश्म ईंधन", "सौर ईंधन", "पवन ईंधन", "ज्वारीय ईंधन"],
+      "en": ["Fossil fuel", "Solar fuel", "Wind fuel", "Tidal fuel"]
+    },
+    "answer": {
+      "hi": "जीवाश्म ईंधन",
+      "en": "Fossil fuel"
+    }
+  },
+  {
+    "question": {
+      "hi": "परमाणु ऊर्जा के लिए कौन-सा खनिज महत्वपूर्ण है?",
+      "en": "Which mineral is important for nuclear energy?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["यूरेनियम", "चूना पत्थर", "अभ्रक", "मैंगनीज"],
+      "en": ["Uranium", "Limestone", "Mica", "Manganese"]
+    },
+    "answer": {
+      "hi": "यूरेनियम",
+      "en": "Uranium"
+    }
+  },
+  {
+    "question": {
+      "hi": "संसाधनों का वर्गीकरण किस आधार पर किया जा सकता है?",
+      "en": "On what basis can resources be classified?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["उत्पत्ति और समाप्ति", "केवल रंग", "केवल आकार", "केवल वजन"],
+      "en": ["Origin and exhaustibility", "Only color", "Only size", "Only weight"]
+    },
+    "answer": {
+      "hi": "उत्पत्ति और समाप्ति",
+      "en": "Origin and exhaustibility"
+    }
+  },
+  {
+    "question": {
+      "hi": "मानव संसाधन का उदाहरण कौन है?",
+      "en": "Which is an example of a human resource?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["शिक्षित व्यक्ति", "नदी", "कोयला", "वन"],
+      "en": ["Educated person", "River", "Coal", "Forest"]
+    },
+    "answer": {
+      "hi": "शिक्षित व्यक्ति",
+      "en": "Educated person"
+    }
+  },
+  {
+    "question": {
+      "hi": "मानवकृत संसाधन का उदाहरण कौन है?",
+      "en": "Which is an example of a human-made resource?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["मशीन", "नदी", "जंगल", "खनिज"],
+      "en": ["Machine", "River", "Forest", "Mineral"]
+    },
+    "answer": {
+      "hi": "मशीन",
+      "en": "Machine"
+    }
+  },
+  {
+    "question": {
+      "hi": "सामुदायिक संसाधन का उदाहरण कौन है?",
+      "en": "Which is an example of a community resource?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["सार्वजनिक पार्क", "निजी खेत", "निजी मकान", "व्यक्तिगत वाहन"],
+      "en": ["Public park", "Private farm", "Private house", "Personal vehicle"]
+    },
+    "answer": {
+      "hi": "सार्वजनिक पार्क",
+      "en": "Public park"
+    }
+  },
+  {
+    "question": {
+      "hi": "राष्ट्रीय संसाधन का उदाहरण कौन है?",
+      "en": "Which is an example of a national resource?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["देश के क्षेत्र में स्थित प्राकृतिक संसाधन", "निजी मकान", "निजी वाहन", "व्यक्तिगत खेत"],
+      "en": ["Natural resources located within a country's territory", "Private house", "Private vehicle", "Personal farm"]
+    },
+    "answer": {
+      "hi": "देश के क्षेत्र में स्थित प्राकृतिक संसाधन",
+      "en": "Natural resources located within a country's territory"
+    }
+  },
+  {
+    "question": {
+      "hi": "अंतरराष्ट्रीय संसाधनों का संबंध किससे है?",
+      "en": "International resources are related to what?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["अंतरराष्ट्रीय नियंत्रण या अधिकार वाले क्षेत्रों से", "निजी खेत से", "घरेलू उपयोग से", "स्थानीय बाजार से"],
+      "en": ["Areas under international control or rights", "Private farms", "Domestic use", "Local markets"]
+    },
+    "answer": {
+      "hi": "अंतरराष्ट्रीय नियंत्रण या अधिकार वाले क्षेत्रों से",
+      "en": "Areas under international control or rights"
+    }
+  },
+  {
+    "question": {
+      "hi": "भारत में जल संसाधन का प्रमुख स्रोत क्या है?",
+      "en": "What is the major source of water resources in India?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["मानसूनी वर्षा", "हिमपात ही केवल", "समुद्री जल", "भूमिगत तेल"],
+      "en": ["Monsoon rainfall", "Only snowfall", "Sea water", "Underground oil"]
+    },
+    "answer": {
+      "hi": "मानसूनी वर्षा",
+      "en": "Monsoon rainfall"
+    }
+  },
+  {
+    "question": {
+      "hi": "बाढ़ नियंत्रण में कौन-सी परियोजना प्रसिद्ध है?",
+      "en": "Which project is famous for flood control?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["कोसी परियोजना", "चंबल परियोजना", "भाखड़ा परियोजना", "नागार्जुन सागर"],
+      "en": ["Kosi Project", "Chambal Project", "Bhakra Project", "Nagarjuna Sagar"]
+    },
+    "answer": {
+      "hi": "कोसी परियोजना",
+      "en": "Kosi Project"
+    }
+  },
+  {
+    "question": {
+      "hi": "इंद्रपुरी परियोजना किस नदी से संबंधित है?",
+      "en": "The Indrapuri Project is associated with which river?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["सोन", "गंगा", "कोसी", "गंडक"],
+      "en": ["Son", "Ganga", "Kosi", "Gandak"]
+    },
+    "answer": {
+      "hi": "सोन",
+      "en": "Son"
+    }
+  },
+  {
+    "question": {
+      "hi": "गंडक परियोजना का प्रमुख लाभ क्या है?",
+      "en": "What is the major benefit of the Gandak Project?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["सिंचाई", "पेट्रोल उत्पादन", "लौह उत्पादन", "वन कटाई"],
+      "en": ["Irrigation", "Petroleum production", "Iron production", "Deforestation"]
+    },
+    "answer": {
+      "hi": "सिंचाई",
+      "en": "Irrigation"
+    }
+  },
+  {
+    "question": {
+      "hi": "वन्यजीव संरक्षण में स्थानीय लोगों की भागीदारी क्यों जरूरी है?",
+      "en": "Why is local community participation important in wildlife conservation?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["संरक्षण को प्रभावी बनाने के लिए", "शिकार बढ़ाने के लिए", "वन कटाई के लिए", "खनन बढ़ाने के लिए"],
+      "en": ["To make conservation effective", "To increase hunting", "For deforestation", "To increase mining"]
+    },
+    "answer": {
+      "hi": "संरक्षण को प्रभावी बनाने के लिए",
+      "en": "To make conservation effective"
+    }
+  },
+  {
+    "question": {
+      "hi": "संसाधनों के अंधाधुंध उपयोग से क्या समस्या उत्पन्न होती है?",
+      "en": "What problem arises from indiscriminate use of resources?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["संसाधन क्षय", "संसाधन वृद्धि", "जैव विविधता वृद्धि", "भूमि सुधार"],
+      "en": ["Resource depletion", "Resource increase", "Increase in biodiversity", "Land improvement"]
+    },
+    "answer": {
+      "hi": "संसाधन क्षय",
+      "en": "Resource depletion"
+    }
+  },
+  {
+    "question": {
+      "hi": "पर्यावरण संतुलन बनाए रखने में कौन महत्वपूर्ण है?",
+      "en": "What is important for maintaining environmental balance?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वन", "प्लास्टिक", "औद्योगिक अपशिष्ट", "धुआँ"],
+      "en": ["Forests", "Plastic", "Industrial waste", "Smoke"]
+    },
+    "answer": {
+      "hi": "वन",
+      "en": "Forests"
+    }
+  },
+  {
+    "question": {
+      "hi": "सतत विकास में किसका संतुलित उपयोग आवश्यक है?",
+      "en": "What needs to be used in a balanced manner for sustainable development?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["प्राकृतिक संसाधनों का", "केवल खनिजों का", "केवल जल का", "केवल ऊर्जा का"],
+      "en": ["Natural resources", "Only minerals", "Only water", "Only energy"]
+    },
+    "answer": {
+      "hi": "प्राकृतिक संसाधनों का",
+      "en": "Natural resources"
+    }
+  },
+  {
+    "question": {
+      "hi": "प्राकृतिक संसाधनों के संरक्षण का मुख्य उद्देश्य क्या है?",
+      "en": "What is the main objective of conserving natural resources?"
+    },
+    "image": "",
+    "options": {
+      "hi": ["वर्तमान और भविष्य की आवश्यकताओं को सुरक्षित रखना", "संसाधनों को नष्ट करना", "केवल औद्योगिक विकास", "केवल शहरीकरण"],
+      "en": ["Securing present and future needs", "Destroying resources", "Only industrial development", "Only urbanization"]
+    },
+    "answer": {
+      "hi": "वर्तमान और भविष्य की आवश्यकताओं को सुरक्षित रखना",
+      "en": "Securing present and future needs"
+    }
+  }
+]
