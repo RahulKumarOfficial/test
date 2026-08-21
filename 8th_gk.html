@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hindi Grammar MCQ Test</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Noto Sans Devanagari","Segoe UI",Arial,sans-serif;
+    background:#f3f6fb;
+    color:#222;
+    line-height:1.6;
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+    width:100%;
+    max-width:850px;
+    margin:auto;
+    padding:15px;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+    color:#fff;
+    text-align:center;
+    padding:25px 15px;
+    border-radius:0 0 20px 20px;
+    margin-bottom:20px;
+}
+
+.header h1{
+    font-size:27px;
+    margin-bottom:5px;
+}
+
+.header p{
+    font-size:15px;
+}
+
+/* ================= CARDS ================= */
+
+.student-card,
+.test-card,
+.result-card,
+.test-top,
+.question-nav{
+    background:#fff;
+    border-radius:16px;
+    padding:22px;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
+}
+
+/* ================= STUDENT DETAILS ================= */
+
+.student-card h2{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:22px;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+    font-weight:600;
+    margin-bottom:7px;
+}
+
+.form-group input{
+    width:100%;
+    padding:13px 14px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+.form-group input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.12);
+}
+
+/* ================= BUTTON ================= */
+
+.btn{
+    width:100%;
+    border:0;
+    padding:14px;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* ================= TEST ================= */
+
+#testSection,
+#resultSection{
+    display:none;
+}
+
+.test-top{
+    margin-bottom:15px;
+    padding:15px;
+}
+
+.student-info{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    flex-wrap:wrap;
+    font-size:14px;
+    margin-bottom:12px;
+}
+
+.progress-box{
+    width:100%;
+    height:9px;
+    background:#e5e7eb;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress{
+    height:100%;
+    width:0%;
+    background:#2563eb;
+    transition:.3s;
+}
+
+/* ================= QUESTION ================= */
+
+.question-number{
+    color:#2563eb;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.question{
+    font-size:19px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.option{
+    display:block;
+    border:1px solid #dbe1ea;
+    border-radius:10px;
+    padding:12px 13px;
+    margin:10px 0;
+    cursor:pointer;
+    transition:.2s;
+    background:#fff;
+}
+
+.option:hover{
+    background:#f0f5ff;
+    border-color:#2563eb;
+}
+
+.option input{
+    margin-right:8px;
+    transform:scale(1.15);
+}
+
+/* ================= NAVIGATION ================= */
+
+.navigation{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.nav-btn{
+    flex:1;
+    padding:12px;
+    border:0;
+    border-radius:9px;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.prev{
+    background:#e5e7eb;
+    color:#111827;
+}
+
+.next{
+    background:#2563eb;
+    color:white;
+}
+
+.submit{
+    background:#16a34a;
+    color:white;
+}
+
+.submit:hover{
+    background:#15803d;
+}
+
+/* ================= QUESTION LIST ================= */
+
+.question-nav{
+    margin-top:15px;
+    padding:15px;
+}
+
+.question-nav h3{
+    margin-bottom:10px;
+    font-size:16px;
+}
+
+.q-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+}
+
+.q-btn{
+    width:38px;
+    height:38px;
+    border:1px solid #d1d5db;
+    background:white;
+    border-radius:7px;
+    cursor:pointer;
+}
+
+.q-btn.active{
+    background:#2563eb;
+    color:white;
+}
+
+.q-btn.answered{
+    border-color:#16a34a;
+    border-width:2px;
+}
+
+/* ================= RESULT ================= */
+
+.result-card{
+    text-align:center;
+}
+
+.result-card h2{
+    color:#16a34a;
+    margin-bottom:15px;
+}
+
+.score{
+    font-size:42px;
+    font-weight:bold;
+    color:#2563eb;
+    margin:15px 0;
+}
+
+.result-details{
+    margin:20px 0;
+}
+
+.result-details div{
+    padding:10px;
+    margin:7px 0;
+    border-radius:8px;
+    background:#f3f4f6;
+}
+
+.restart{
+    background:#2563eb;
+    margin-top:10px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:600px){
+
+    .header{
+        padding:20px 12px;
+        border-radius:0 0 15px 15px;
+    }
+
+    .header h1{
+        font-size:21px;
+    }
+
+    .header p{
+        font-size:13px;
+    }
+
+    .container{
+        padding:10px;
+    }
+
+    .student-card,
+    .test-card,
+    .result-card{
+        padding:16px;
+    }
+
+    .question{
+        font-size:17px;
+    }
+
+    .option{
+        font-size:15px;
+        padding:11px;
+    }
+
+    .navigation{
+        position:sticky;
+        bottom:5px;
+        background:white;
+        padding:8px;
+        border-radius:10px;
+        box-shadow:0 0 15px rgba(0,0,0,.12);
+        z-index:10;
+    }
+
+    .q-btn{
+        width:35px;
+        height:35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<div class="header">
+
+    <h1>Hindi Grammar MCQ Test</h1>
+
+    <p>
+        संज्ञा • सर्वनाम • विशेषण | Total 50 Questions
+    </p>
+
+</div>
+
+
+<div class="container">
+
+<!-- =====================================================
+     STUDENT DETAILS
+===================================================== -->
+
+<section id="studentSection">
+
+    <div class="student-card">
+
+        <h2>Student Details</h2>
+
+        <div class="form-group">
+
+            <label for="studentName">
+                Student Name *
+            </label>
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your name"
+                autocomplete="name"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="fatherName">
+                Father's Name *
+            </label>
+
+            <input
+                type="text"
+                id="fatherName"
+                placeholder="Enter father's name"
+            >
+
+        </div>
+
+
+        <button
+            class="btn"
+            onclick="startTest()"
+        >
+            Start Test
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TEST SECTION
+===================================================== -->
+
+<section id="testSection">
+
+    <!-- TEST TOP -->
+
+    <div class="test-top">
+
+        <div class="student-info">
+
+            <span>
+                👤 <b id="showStudent"></b>
+            </span>
+
+            <span>
+                Father's Name:
+                <b id="showFather"></b>
+            </span>
+
+            <span>
+                Question:
+                <b id="currentNumber">1</b>/50
+            </span>
+
+        </div>
+
+
+        <div class="progress-box">
+
+            <div
+                class="progress"
+                id="progress"
+            ></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- QUESTION CARD -->
+
+    <div class="test-card">
+
+        <div
+            class="question-number"
+            id="questionNumber"
+        >
+            Question 1
+        </div>
+
+
+        <div
+            class="question"
+            id="questionText"
+        ></div>
+
+
+        <div id="options"></div>
+
+
+        <!-- PREVIOUS NEXT -->
+
+        <div class="navigation">
+
+            <button
+                class="nav-btn prev"
+                onclick="previousQuestion()"
+            >
+                ← Previous
+            </button>
+
+
+            <button
+                class="nav-btn next"
+                onclick="nextQuestion()"
+            >
+                Next →
+            </button>
+
+        </div>
+
+
+        <!-- SUBMIT -->
+
+        <button
+            class="nav-btn submit"
+            onclick="submitTest()"
+            style="width:100%;margin-top:10px;"
+        >
+            ✓ Submit Test
+        </button>
+
+    </div>
+
+
+    <!-- QUESTION LIST -->
+
+    <div class="question-nav">
+
+        <h3>Question List</h3>
+
+        <div
+            class="q-buttons"
+            id="questionButtons"
+        ></div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     RESULT SECTION
+===================================================== -->
+
+<section id="resultSection">
+
+    <div class="result-card">
+
+        <h2>🎉 Test Completed!</h2>
+
+
+        <p id="resultStudent"></p>
+
+
+        <div
+            class="score"
+            id="score"
+        >
+        </div>
+
+
+        <div class="result-details">
+
+            <div>
+                Total Questions:
+                <b>50</b>
+            </div>
+
+
+            <div>
+                Correct Answers:
+                <b id="correct"></b>
+            </div>
+
+
+            <div>
+                Wrong Answers:
+                <b id="wrong"></b>
+            </div>
+
+
+            <div>
+                Unanswered:
+                <b id="unanswered"></b>
+            </div>
+
+
+            <div>
+                Percentage:
+                <b id="percentage"></b>
+            </div>
+
+        </div>
+
+
+        <button
+            class="btn restart"
+            onclick="location.reload()"
+        >
+            🔄 Retake Test
+        </button>
+
+    </div>
+
+</section>
+
+</div>
+
+
+<script>
+
+/* =====================================================
+   QUESTIONS
+===================================================== */
+
+const questions = [
+
+/* ================= SANGYA ================= */
+
+{
+q:"'राम विद्यालय जाता है।' वाक्य में 'राम' कौन-सी संज्ञा है?",
+o:["जातिवाचक संज्ञा","व्यक्तिवाचक संज्ञा","भाववाचक संज्ञा","द्रव्यवाचक संज्ञा"],
+a:1
+},
+
+{
+q:"'लड़का खेल रहा है।' वाक्य में 'लड़का' कौन-सी संज्ञा है?",
+o:["व्यक्तिवाचक","जातिवाचक","भाववाचक","द्रव्यवाचक"],
+a:1
+},
+
+{
+q:"'गंगा भारत की पवित्र नदी है।' इसमें 'गंगा' है—",
+o:["जातिवाचक संज्ञा","भाववाचक संज्ञा","व्यक्तिवाचक संज्ञा","समूहवाचक संज्ञा"],
+a:2
+},
+
+{
+q:"'ईमानदारी सबसे अच्छी नीति है।' इसमें 'ईमानदारी' है—",
+o:["जातिवाचक","व्यक्तिवाचक","भाववाचक","द्रव्यवाचक"],
+a:2
+},
+
+{
+q:"'सोना बहुत मूल्यवान है।' इसमें 'सोना' कौन-सी संज्ञा है?",
+o:["द्रव्यवाचक","जातिवाचक","भाववाचक","व्यक्तिवाचक"],
+a:0
+},
+
+{
+q:"'सेना देश की रक्षा करती है।' इसमें 'सेना' है—",
+o:["समूहवाचक संज्ञा","भाववाचक संज्ञा","व्यक्तिवाचक संज्ञा","द्रव्यवाचक संज्ञा"],
+a:0
+},
+
+{
+q:"'बचपन' कौन-सी संज्ञा है?",
+o:["जातिवाचक","भाववाचक","व्यक्तिवाचक","समूहवाचक"],
+a:1
+},
+
+{
+q:"'दिल्ली' कौन-सी संज्ञा है?",
+o:["भाववाचक","जातिवाचक","व्यक्तिवाचक","द्रव्यवाचक"],
+a:2
+},
+
+{
+q:"'पक्षी आकाश में उड़ रहे हैं।' इसमें 'पक्षी' है—",
+o:["व्यक्तिवाचक","जातिवाचक","भाववाचक","द्रव्यवाचक"],
+a:1
+},
+
+{
+q:"'मिठास' शब्द में कौन-सी संज्ञा है?",
+o:["जातिवाचक","भाववाचक","व्यक्तिवाचक","समूहवाचक"],
+a:1
+},
+
+{
+q:"'झुंड' किस प्रकार की संज्ञा है?",
+o:["समूहवाचक","भाववाचक","व्यक्तिवाचक","द्रव्यवाचक"],
+a:0
+},
+
+{
+q:"'चाँदी' कौन-सी संज्ञा है?",
+o:["भाववाचक","जातिवाचक","द्रव्यवाचक","व्यक्तिवाचक"],
+a:2
+},
+
+{
+q:"'सुंदरता' शब्द किस संज्ञा का उदाहरण है?",
+o:["व्यक्तिवाचक","भाववाचक","जातिवाचक","समूहवाचक"],
+a:1
+},
+
+{
+q:"'हिमालय' कौन-सी संज्ञा है?",
+o:["जातिवाचक","भाववाचक","व्यक्तिवाचक","द्रव्यवाचक"],
+a:2
+},
+
+{
+q:"'विद्यालय' कौन-सी संज्ञा है?",
+o:["जातिवाचक","व्यक्तिवाचक","भाववाचक","द्रव्यवाचक"],
+a:0
+},
+
+
+/* ================= SARVANAM ================= */
+
+{
+q:"'रमेश बाजार गया। वह फल लाया।' इसमें 'वह' कौन-सा शब्द है?",
+o:["संज्ञा","सर्वनाम","विशेषण","क्रिया"],
+a:1
+},
+
+{
+q:"'मैं प्रतिदिन पढ़ता हूँ।' इसमें 'मैं' कौन-सा सर्वनाम है?",
+o:["पुरुषवाचक","निजवाचक","निश्चयवाचक","प्रश्नवाचक"],
+a:0
+},
+
+{
+q:"'तुम कहाँ जा रहे हो?' इसमें 'तुम' है—",
+o:["निजवाचक सर्वनाम","पुरुषवाचक सर्वनाम","प्रश्नवाचक सर्वनाम","संबंधवाचक सर्वनाम"],
+a:1
+},
+
+{
+q:"'कौन आया है?' में 'कौन' कौन-सा सर्वनाम है?",
+o:["पुरुषवाचक","निजवाचक","प्रश्नवाचक","निश्चयवाचक"],
+a:2
+},
+
+{
+q:"'जो मेहनत करता है, वह सफल होता है।' इसमें 'जो' है—",
+o:["प्रश्नवाचक","संबंधवाचक","निजवाचक","पुरुषवाचक"],
+a:1
+},
+
+{
+q:"'मैं अपना काम स्वयं करता हूँ।' इसमें 'स्वयं' है—",
+o:["निजवाचक सर्वनाम","प्रश्नवाचक","संबंधवाचक","पुरुषवाचक"],
+a:0
+},
+
+{
+q:"'यह मेरी पुस्तक है।' इसमें 'यह' कौन-सा सर्वनाम है?",
+o:["निश्चयवाचक","प्रश्नवाचक","निजवाचक","संबंधवाचक"],
+a:0
+},
+
+{
+q:"'कोई दरवाजे पर है।' इसमें 'कोई' है—",
+o:["अनिश्चयवाचक सर्वनाम","निजवाचक","पुरुषवाचक","प्रश्नवाचक"],
+a:0
+},
+
+{
+q:"'आप कैसे हैं?' में 'आप' कौन-सा सर्वनाम है?",
+o:["पुरुषवाचक","निजवाचक","प्रश्नवाचक","संबंधवाचक"],
+a:0
+},
+
+{
+q:"'जिसकी लाठी उसकी भैंस।' में 'जिसकी' है—",
+o:["प्रश्नवाचक","संबंधवाचक","निजवाचक","अनिश्चयवाचक"],
+a:1
+},
+
+{
+q:"'कुछ लोग बाहर खड़े हैं।' इसमें 'कुछ' है—",
+o:["निश्चयवाचक","अनिश्चयवाचक","निजवाचक","पुरुषवाचक"],
+a:1
+},
+
+{
+q:"'वह स्वयं बाजार गया।' इसमें 'स्वयं' है—",
+o:["पुरुषवाचक","निजवाचक","प्रश्नवाचक","संबंधवाचक"],
+a:1
+},
+
+{
+q:"संज्ञा के स्थान पर प्रयुक्त होने वाले शब्द को क्या कहते हैं?",
+o:["विशेषण","क्रिया","सर्वनाम","अव्यय"],
+a:2
+},
+
+{
+q:"'हम भारतवासी हैं।' इसमें 'हम' है—",
+o:["पुरुषवाचक सर्वनाम","निजवाचक सर्वनाम","प्रश्नवाचक","संबंधवाचक"],
+a:0
+},
+
+{
+q:"'जिसने मेहनत की, वही जीता।' इसमें 'वही' है—",
+o:["निश्चयवाचक सर्वनाम","प्रश्नवाचक","निजवाचक","अनिश्चयवाचक"],
+a:0
+},
+
+
+/* ================= VISHESHAN ================= */
+
+{
+q:"'सुंदर फूल खिला है।' इसमें 'सुंदर' क्या है?",
+o:["संज्ञा","सर्वनाम","विशेषण","क्रिया"],
+a:2
+},
+
+{
+q:"'राम के पास पाँच आम हैं।' इसमें 'पाँच' है—",
+o:["गुणवाचक विशेषण","संख्यावाचक विशेषण","परिमाणवाचक विशेषण","सार्वनामिक"],
+a:1
+},
+
+{
+q:"'थोड़ा पानी लाओ।' इसमें 'थोड़ा' कौन-सा विशेषण है?",
+o:["संख्यावाचक","परिमाणवाचक","गुणवाचक","संबंधवाचक"],
+a:1
+},
+
+{
+q:"'लाल गुलाब सुंदर है।' इसमें 'लाल' है—",
+o:["गुणवाचक विशेषण","संख्यावाचक","परिमाणवाचक","सार्वनामिक"],
+a:0
+},
+
+{
+q:"'चार लड़के खेल रहे हैं।' इसमें 'चार' है—",
+o:["गुणवाचक","परिमाणवाचक","संख्यावाचक","भाववाचक"],
+a:2
+},
+
+{
+q:"'बहुत दूध है।' इसमें 'बहुत' है—",
+o:["परिमाणवाचक विशेषण","गुणवाचक","संख्यावाचक","व्यक्तिवाचक"],
+a:0
+},
+
+{
+q:"'मेहनती विद्यार्थी सफल होता है।' इसमें 'मेहनती' है—",
+o:["संख्यावाचक","गुणवाचक","परिमाणवाचक","संबंधवाचक"],
+a:1
+},
+
+{
+q:"'दो किलो चावल लाओ।' इसमें 'दो' है—",
+o:["गुणवाचक","संख्यावाचक","परिमाणवाचक","सार्वनामिक"],
+a:1
+},
+
+{
+q:"'यह लड़का होशियार है।' इसमें 'यह' है—",
+o:["सार्वनामिक विशेषण","गुणवाचक विशेषण","संख्यावाचक","परिमाणवाचक"],
+a:0
+},
+
+{
+q:"'कुछ बच्चे मैदान में खेल रहे हैं।' इसमें 'कुछ' है—",
+o:["सार्वनामिक विशेषण","गुणवाचक","परिमाणवाचक","भाववाचक"],
+a:0
+},
+
+{
+q:"'काला घोड़ा तेज दौड़ता है।' इसमें 'काला' है—",
+o:["गुणवाचक विशेषण","संख्यावाचक","परिमाणवाचक","सार्वनामिक"],
+a:0
+},
+
+{
+q:"'आधा किलो चीनी लाओ।' इसमें 'आधा' है—",
+o:["गुणवाचक","संख्यावाचक","परिमाणवाचक","सार्वनामिक"],
+a:2
+},
+
+{
+q:"'पहला लड़का विजेता बना।' इसमें 'पहला' है—",
+o:["क्रमवाचक संख्यावाचक विशेषण","गुणवाचक","परिमाणवाचक","सार्वनामिक"],
+a:0
+},
+
+{
+q:"'मीठा आम स्वादिष्ट है।' इसमें 'मीठा' है—",
+o:["गुणवाचक विशेषण","संख्यावाचक","परिमाणवाचक","सार्वनामिक"],
+a:0
+},
+
+{
+q:"'उस घर में कोई आदमी नहीं है।' इसमें 'उस' है—",
+o:["सार्वनामिक विशेषण","गुणवाचक","संख्यावाचक","परिमाणवाचक"],
+a:0
+},
+
+{
+q:"'बहादुर सैनिक देश की रक्षा करते हैं।' इसमें 'बहादुर' है—",
+o:["गुणवाचक विशेषण","संख्यावाचक","परिमाणवाचक","सार्वनामिक"],
+a:0
+},
+
+{
+q:"'दस विद्यार्थी उपस्थित हैं।' इसमें 'दस' है—",
+o:["गुणवाचक","परिमाणवाचक","संख्यावाचक","सार्वनामिक"],
+a:2
+},
+
+{
+q:"'कुछ पानी गिलास में है।' इसमें 'कुछ' है—",
+o:["परिमाणवाचक विशेषण","गुणवाचक","संख्यावाचक","सार्वनामिक"],
+a:0
+},
+
+{
+q:"'नीला आकाश बहुत सुंदर है।' इसमें 'नीला' है—",
+o:["गुणवाचक विशेषण","संख्यावाचक","परिमाणवाचक","सार्वनामिक"],
+a:0
+},
+
+{
+q:"'इतने बच्चे क्यों आए हैं?' इसमें 'इतने' है—",
+o:["सार्वनामिक विशेषण","गुणवाचक","परिमाणवाचक","भाववाचक"],
+a:0
+}
+
+];
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+let currentQuestion = 0;
+
+let answers =
+    new Array(questions.length).fill(null);
+
+
+/* =====================================================
+   START TEST
+===================================================== */
+
+function startTest(){
+
+    const student =
+        document.getElementById("studentName")
+        .value
+        .trim();
+
+    const father =
+        document.getElementById("fatherName")
+        .value
+        .trim();
+
+
+    if(student === "" || father === ""){
+
+        alert(
+            "Please enter Student Name and Father's Name."
+        );
+
+        return;
+    }
+
+
+    document.getElementById("showStudent")
+        .textContent = student;
+
+    document.getElementById("showFather")
+        .textContent = father;
+
+
+    document.getElementById("studentSection")
+        .style.display = "none";
+
+
+    document.getElementById("testSection")
+        .style.display = "block";
+
+
+    createQuestionButtons();
+
+    showQuestion();
+}
+
+
+/* =====================================================
+   SHOW QUESTION
+===================================================== */
+
+function showQuestion(){
+
+    const q =
+        questions[currentQuestion];
+
+
+    document.getElementById("questionNumber")
+        .textContent =
+        "Question " + (currentQuestion + 1);
+
+
+    document.getElementById("currentNumber")
+        .textContent =
+        currentQuestion + 1;
+
+
+    document.getElementById("questionText")
+        .textContent = q.q;
+
+
+    const optionsDiv =
+        document.getElementById("options");
+
+
+    optionsDiv.innerHTML = "";
+
+
+    q.o.forEach((option,index)=>{
+
+        const label =
+            document.createElement("label");
+
+
+        label.className = "option";
+
+
+        label.innerHTML = `
+            <input
+                type="radio"
+                name="answer"
+                value="${index}"
+                ${
+                    answers[currentQuestion] === index
+                    ? "checked"
+                    : ""
+                }
+            >
+            ${String.fromCharCode(65+index)}.
+            ${option}
+        `;
+
+
+        label
+            .querySelector("input")
+            .addEventListener(
+                "change",
+                function(){
+
+                    answers[currentQuestion] =
+                        index;
+
+                    updateQuestionButtons();
+
+                }
+            );
+
+
+        optionsDiv.appendChild(label);
+
+    });
+
+
+    const progress =
+        ((currentQuestion + 1) /
+        questions.length) * 100;
+
+
+    document.getElementById("progress")
+        .style.width =
+        progress + "%";
+
+
+    updateQuestionButtons();
+}
+
+
+/* =====================================================
+   NEXT QUESTION
+===================================================== */
+
+function nextQuestion(){
+
+    saveAnswer();
+
+
+    if(
+        currentQuestion <
+        questions.length - 1
+    ){
+
+        currentQuestion++;
+
+        showQuestion();
+
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
+
+    }
+    else{
+
+        alert(
+            "This is the last question. Please click Submit Test."
+        );
+
+    }
+}
+
+
+/* =====================================================
+   PREVIOUS QUESTION
+===================================================== */
+
+function previousQuestion(){
+
+    saveAnswer();
+
+
+    if(currentQuestion > 0){
+
+        currentQuestion--;
+
+        showQuestion();
+
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
+
+    }
+
+}
+
+
+/* =====================================================
+   SAVE ANSWER
+===================================================== */
+
+function saveAnswer(){
+
+    const selected =
+        document.querySelector(
+            'input[name="answer"]:checked'
+        );
+
+
+    if(selected){
+
+        answers[currentQuestion] =
+            parseInt(selected.value);
+
+    }
+
+}
+
+
+/* =====================================================
+   QUESTION BUTTONS
+===================================================== */
+
+function createQuestionButtons(){
+
+    const box =
+        document.getElementById(
+            "questionButtons"
+        );
+
+
+    box.innerHTML = "";
+
+
+    questions.forEach(
+        (q,index)=>{
+
+            const btn =
+                document.createElement(
+                    "button"
+                );
+
+
+            btn.className = "q-btn";
+
+            btn.textContent =
+                index + 1;
+
+
+            btn.onclick = function(){
+
+                saveAnswer();
+
+                currentQuestion =
+                    index;
+
+                showQuestion();
+
+
+                window.scrollTo({
+                    top:0,
+                    behavior:"smooth"
+                });
+
+            };
+
+
+            box.appendChild(btn);
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   UPDATE QUESTION BUTTONS
+===================================================== */
+
+function updateQuestionButtons(){
+
+    const buttons =
+        document.querySelectorAll(
+            ".q-btn"
+        );
+
+
+    buttons.forEach(
+        (btn,index)=>{
+
+            btn.classList.remove(
+                "active"
+            );
+
+
+            if(
+                answers[index] !== null
+            ){
+
+                btn.classList.add(
+                    "answered"
+                );
+
+            }
+
+
+            if(
+                index === currentQuestion
+            ){
+
+                btn.classList.add(
+                    "active"
+                );
+
+            }
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   SUBMIT TEST
+===================================================== */
+
+function submitTest(){
+
+    saveAnswer();
+
+
+    const unanswered =
+        answers.filter(
+            a => a === null
+        ).length;
+
+
+    if(unanswered > 0){
+
+        const confirmSubmit =
+            confirm(
+                "You have " +
+                unanswered +
+                " unanswered question(s).\n\n" +
+                "Do you still want to submit the test?"
+            );
+
+
+        if(!confirmSubmit){
+
+            return;
+
+        }
+
+    }
+
+
+    let correct = 0;
+
+
+    questions.forEach(
+        (q,index)=>{
+
+            if(
+                answers[index] === q.a
+            ){
+
+                correct++;
+
+            }
+
+        }
+    );
+
+
+    const wrong =
+        questions.length -
+        correct -
+        unanswered;
+
+
+    const percentage =
+        (
+            (correct /
+            questions.length) * 100
+        ).toFixed(2);
+
+
+    document.getElementById(
+        "testSection"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "resultSection"
+    ).style.display = "block";
+
+
+    document.getElementById(
+        "resultStudent"
+    ).innerHTML =
+        `
+        <b>Student:</b>
+        ${
+            document.getElementById(
+                "studentName"
+            ).value
+        }
+
+        <br>
+
+        <b>Father's Name:</b>
+        ${
+            document.getElementById(
+                "fatherName"
+            ).value
+        }
+        `;
+
+
+    document.getElementById(
+        "score"
+    ).textContent =
+        correct + " / 50";
+
+
+    document.getElementById(
+        "correct"
+    ).textContent =
+        correct;
+
+
+    document.getElementById(
+        "wrong"
+    ).textContent =
+        wrong;
+
+
+    document.getElementById(
+        "unanswered"
+    ).textContent =
+        unanswered;
+
+
+    document.getElementById(
+        "percentage"
+    ).textContent =
+        percentage + "%";
+
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+}
+
+</script>
+
+</body>
+</html>
